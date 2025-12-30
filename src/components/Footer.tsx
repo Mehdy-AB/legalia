@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Brain } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -18,37 +19,48 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">خدماتنا</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#services" className="hover:text-blue-400 transition-colors">الدردشة الذكية</a></li>
-              <li><a href="#services" className="hover:text-blue-400 transition-colors">تحليل المستندات</a></li>
-              <li><a href="#services" className="hover:text-blue-400 transition-colors">تمثيل الوقائع</a></li>
-              <li><a href="#services" className="hover:text-blue-400 transition-colors">الأمن والخصوصية</a></li>
+              <li><Link href="/services/ai-chat" className="hover:text-blue-400 transition-colors">الدردشة الذكية</Link></li>
+              <li><Link href="/services/legal-model" className="hover:text-blue-400 transition-colors">النموذج القانوني</Link></li>
+              <li><Link href="/services/document-analysis" className="hover:text-blue-400 transition-colors">تحليل المستندات</Link></li>
+              <li><Link href="/services/visual-facts" className="hover:text-blue-400 transition-colors">تمثيل الوقائع</Link></li>
+              <li><Link href="/services/security" className="hover:text-blue-400 transition-colors">الأمن والخصوصية</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-bold text-lg mb-4">روابط سريعة</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#about" className="hover:text-blue-400 transition-colors">من نحن</a></li>
-              <li><a href="#faq" className="hover:text-blue-400 transition-colors">الأسئلة الشائعة</a></li>
-              <li><a href="#pricing" className="hover:text-blue-400 transition-colors">الأسعار</a></li>
-              <li><a href="#contact" className="hover:text-blue-400 transition-colors">اتصل بنا</a></li>
+              <li><Link href="/about" className="hover:text-blue-400 transition-colors">من نحن</Link></li>
+              <li><Link href="/faq" className="hover:text-blue-400 transition-colors">الأسئلة الشائعة</Link></li>
+              <li><Link href="/pricing" className="hover:text-blue-400 transition-colors">الأسعار</Link></li>
+              <li><Link href="/blog" className="hover:text-blue-400 transition-colors">المدونة</Link></li>
+              <li><Link href="/contact" className="hover:text-blue-400 transition-colors">اتصل بنا</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-bold text-lg mb-4">اتصل بنا</h3>
-            <div className="space-y-3 text-gray-400">
-              <div className="flex items-center">
-                <MapPin className="w-5 h-5 ml-3 text-blue-400" />
-                <span>Harju maakond, Tallinn, Kesklinna linnaosa, Pärnu mnt 139b, 11317</span>
+            <div className="space-y-3 text-gray-400 text-sm">
+              <div className="flex items-start gap-2">
+                <Mail className="w-5 h-5 flex-shrink-0 text-blue-400 mt-0.5" />
+                <a href="mailto:lai-info@proton.me" className="hover:text-blue-400 transition-colors">
+                  lai-info@proton.me
+                </a>
               </div>
-              <div className="flex items-center">
-                <Mail className="w-5 h-5 ml-3 text-blue-400" />
-                <span>lai-info@proton.me</span>
+              <div className="flex items-start gap-2">
+                <Phone className="w-5 h-5 flex-shrink-0 text-blue-400 mt-0.5" />
+                <a href="tel:+213549031698" className="hover:text-blue-400 transition-colors">
+                  +213 549 031 698
+                </a>
               </div>
-              <div className="flex items-center">
-                <Phone className="w-5 h-5 ml-3 text-blue-400" />
-                <span>+213 549 031 698</span>
+              <div className="flex items-start gap-2">
+                <MapPin className="w-5 h-5 flex-shrink-0 text-blue-400 mt-0.5" />
+                <div>
+                  <p className="font-medium text-white mb-1">🇪🇪 Tallinn, Estonia</p>
+                  <p className="text-xs">Pärnu mnt 139b, 11317</p>
+                  <p className="font-medium text-white mt-2 mb-1">🇩🇿 Sétif, Algeria</p>
+                  <p className="text-xs">Blair, Sétif / ⴰⵙⴷⵉⴼ</p>
+                </div>
               </div>
             </div>
           </div>
