@@ -1,3 +1,4 @@
+import PageHero from '@/components/PageHero'
 import { Shield, Mail, Globe, Cloud, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 
@@ -5,19 +6,17 @@ export default function SecurityPage() {
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <Shield className="w-20 h-20 mx-auto mb-6 text-blue-400" />
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                            الأمن والخصوصية الرقمية
-                        </h1>
-                        <p className="text-xl text-gray-300 leading-relaxed">
-                            نولي أهمية قصوى لحماية البيانات وسرية المعلومات، انطلاقًا من إدراكنا لحساسية العمل القانوني ومتطلبات الثقة والامتثال
-                        </p>
-                    </div>
+            <PageHero className="text-white">
+                <div className="max-w-4xl mx-auto text-center">
+                    <Shield className="w-20 h-20 mx-auto mb-6 text-blue-400" />
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                        الأمن والخصوصية الرقمية
+                    </h1>
+                    <p className="text-xl text-gray-200 leading-relaxed font-light">
+                        نولي أهمية قصوى لحماية البيانات وسرية المعلومات، انطلاقًا من إدراكنا لحساسية العمل القانوني ومتطلبات الثقة والامتثال
+                    </p>
                 </div>
-            </section>
+            </PageHero>
 
             {/* Main Services */}
             <section className="py-20 bg-white">

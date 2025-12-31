@@ -31,7 +31,13 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 space-x-reverse">
-            <Brain className={`w-8 h-8 transition-colors ${isScrolled ? 'text-blue-400' : 'text-white'}`} />
+            <div className="relative w-10 h-10 md:w-12 md:h-12">
+              <img
+                src="/logo.png"
+                alt="LegalAI Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
             <span className={`text-xl font-bold transition-colors ${isScrolled ? 'text-gray-800' : 'text-white'}`}>LegalAI</span>
           </Link>
 

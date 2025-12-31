@@ -8,7 +8,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-2 space-x-reverse mb-4">
-              <Brain className="w-8 h-8 text-blue-400" />
+              <div className="relative w-10 h-10">
+                <img
+                  src="/logo.png"
+                  alt="LegalAI Logo"
+                  className="w-full h-full object-contain brightness-0 invert" // Invert to make it white for dark footer
+                />
+              </div>
               <span className="text-xl font-bold">LegalAI</span>
             </div>
             <p className="text-gray-400 text-sm">

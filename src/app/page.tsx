@@ -3,25 +3,66 @@ import VideoHero from '@/components/VideoHero'
 import ImageSection from '@/components/ImageSection'
 import ServicesSection from '@/components/ServicesSection'
 import QuotesSection from '@/components/QuotesSection'
+import PricingSection from '@/components/PricingSection'
 import ModernServiceCard from '@/components/ModernServiceCard'
 import Link from 'next/link'
-import { Brain, FileText, Image as ImageIcon, Shield, Video } from 'lucide-react'
+import { ArrowRight, Brain, CheckCircle, Cloud, FileText, Globe, Image as ImageIcon, Mail, Shield, Video } from 'lucide-react'
+import { blogPosts } from '@/data/blogPosts'
 
 export default function Home() {
+  const services = [
+    {
+      id: 'ai-chat',
+      icon: Brain,
+      title: 'دردشة ذكاء اصطناعي متعددة النماذج',
+      description: 'نظام دردشة قانونية متقدم يعمل عبر نموذج وسيط خاص بالمنصة، يربط بين عدة نماذج ذكاء اصطناعي ويختار الأنسب تلقائياً',
+      features: ['التوجيه الذكي للنماذج', 'تحسين جودة الإجابة', 'تصفية البيانات الحساسة'],
+      gradient: 'from-amber-500 to-amber-600',
+      bgGradient: 'from-amber-50 to-amber-100',
+      borderColor: 'border-amber-200'
+    },
+    {
+      id: 'legal-model',
+      icon: FileText,
+      title: 'نموذج Legal AI الخاص',
+      description: 'نموذج ذكاء اصطناعي قانوني مملوك للمنصة، مصمم خصيصاً للتحليل والصياغة القانونية وإنشاء الوثائق',
+      features: ['تحليل الوقائع القانونية', 'صياغة الوثائق', 'قاعدة معرفية واسعة'],
+      gradient: 'from-amber-500 to-amber-600',
+      bgGradient: 'from-amber-50 to-amber-100',
+      borderColor: 'border-amber-200'
+    },
+    {
+      id: 'document-analysis',
+      icon: ImageIcon,
+      title: 'تحليل المستندات والصور',
+      description: 'دردشة مباشرة مع المستندات القانونية والمواد البصرية لفهم الملفات المعقدة بسرعة ودقة',
+      features: ['تحليل PDF وWord', 'معالجة الصور', 'مقارنة المستندات'],
+      gradient: 'from-amber-500 to-amber-600',
+      bgGradient: 'from-amber-50 to-amber-100',
+      borderColor: 'border-amber-200'
+    },
+    {
+      id: 'visual-facts',
+      icon: Video,
+      title: 'إعادة تمثيل الوقائع بصرياً',
+      description: 'تحويل البيانات غير المنظمة والسرديات المعقدة إلى محاكاة بصرية تحاكي تسلسل الأحداث',
+      features: ['محاكاة الأحداث', 'اختبار السيناريوهات', 'تعزيز الدليل البصري'],
+      gradient: 'from-amber-500 to-amber-600',
+      bgGradient: 'from-amber-50 to-amber-100',
+      borderColor: 'border-amber-200'
+    }
+  ]
   return (
     <main className="min-h-screen">
       {/* Video Hero Section */}
       <VideoHero
-        title="Legal AI"
-        subtitle="منصة قانونية ذكية"
-        description="منصة قانونية ذكية تجمع بين التحليل القانوني المتقدم، الصياغة الدقيقة، والتمثيل البصري للوقائع، مدعومة ببنية ذكاء اصطناعي متعددة النماذج ونموذج قانوني خاص بالمنصة."
       />
 
       {/* Overview Section */}
       <section className="py-20 bg-white relative overflow-hidden">
         {/* Decorative Elements */}
-        <div className="absolute top-10 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
-        <div className="absolute top-10 right-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
+        <div className="absolute top-10 left-10 w-72 h-72 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
+        <div className="absolute top-10 right-10 w-72 h-72 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -35,143 +76,299 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mission Section with Image */}
-      <ImageSection
-        title="تسريع الإتقان المهني"
-        description="من خلال الجمع بين البحث القانوني المعمق والابتكار المتطور، صُممت تقنيات الذكاء الاصطناعي القانوني لمساعدة الممارسين القانونيين على تطوير خبراتهم بشكل أسرع.
+      {/* Mission Section */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-يلتزم فريقنا بفهم احتياجاتكم الخاصة، ويسعى جاهداً لإحداث نقلة نوعية من خلال حلول ذكية مدعومة بالذكاء الاصطناعي، مصممة خصيصاً لتلبية احتياجاتكم المهنية والأكاديمية."
-        imagePlaceholderText="صورة الفريق والتطوير"
-        imagePosition="left"
-        className="bg-gray-50"
-      />
+              {/* Text Content */}
+              <div className="space-y-10">
+                <div className="space-y-6">
+                  <div className="inline-block px-4 py-1.5 bg-amber-100 text-amber-800 rounded-full text-sm font-bold tracking-wide uppercase">
+                    Who we are
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                    Accelerating Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-700">Mastery</span>
+                  </h2>
+                  <p className="text-xl text-gray-600 leading-relaxed font-light">
+                    By combining deep legal research with cutting-edge innovation, <span className="font-semibold text-gray-900">LegalAI</span> is designed to help legal practitioners develop their expertise faster.
+                  </p>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Our team is committed to understanding your specific needs and strives to transform the legal profession with smart, AI-powered solutions built to serve your professional and academic needs.
+                  </p>
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-8">
+                  <div className="space-y-3">
+                    <h4 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                      <div className="w-10 h-1 rounded bg-amber-500"></div> Our Mission
+                    </h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      We find that legal work needs to be as dynamic as the world it serves. We leverage the newest AI technologies to turn everyday tasks—research, document management, and drafting—into integrated, intelligent processes. We cut through administrative complexity, uncover profound insights, and concentrate on what really matters: providing outstanding legal services.
+                    </p>
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                      <div className="w-10 h-1 rounded bg-slate-800"></div> Our Approach
+                    </h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      That’s why we take a collaborative approach, working closely with our clients to deliver tailored solutions that align with their goals. With our devotion to accuracy, security, and innovation, we're spearheading a new age of legal excellence.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center pt-4 border-t border-gray-100">
+                  <div className="flex items-center gap-8">
+                    <div>
+                      <div className="text-3xl font-extrabold text-amber-600">150+</div>
+                      <div className="text-sm font-medium text-gray-500 uppercase tracking-wider">Client Served</div>
+                    </div>
+                    <div className="w-px h-12 bg-gray-200"></div>
+                    <div>
+                      <div className="text-3xl font-extrabold text-slate-800">98%</div>
+                      <div className="text-sm font-medium text-gray-500 uppercase tracking-wider">Success Rate</div>
+                    </div>
+                  </div>
+
+                  <Link
+                    href="/about"
+                    className="group inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                  >
+                    More about us
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Image Content */}
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-slate-900/20 rounded-[2.5rem] transform rotate-3 scale-105 blur-2xl"></div>
+                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/50">
+                  <img
+                    src="/images/mission.png"
+                    alt="LegalAI Team Collaboration"
+                    className="w-full h-full object-cover transform transition-transform duration-700 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                    <p className="text-white font-medium">Collaborating to shape the future of law.</p>
+                  </div>
+                </div>
+                {/* Decorative Elements */}
+                <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+                <div className="absolute -top-10 -right-10 w-40 h-40 bg-slate-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Services Overview */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               خدماتنا الرئيسية
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6 rounded-full" />
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6 rounded-full" />
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               اكتشف مجموعة شاملة من الخدمات القانونية المدعومة بالذكاء الاصطناعي
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-            {/* Service 1 - AI Chat */}
-            <ModernServiceCard
-              href="/services/ai-chat"
-              title="دردشة ذكاء اصطناعي متعددة"
-              description="نظام دردشة قانونية متقدم يربط بين عدة نماذج ذكاء اصطناعي"
-              gradientFrom="from-blue-50"
-              gradientTo="to-blue-100"
-              borderColor="border-blue-200"
-              icon={Brain}
-              bgColor="bg-gradient-to-br from-blue-500 to-blue-600"
-              imageSrc="/images/ai-chat.png"
-              imageAlt="الدردشة الذكاء الاصطناعي"
-            />
+          <div className="max-w-6xl mx-auto space-y-16">
+            {services.map((service, index) => (
+              <div
+                key={service.id}
+                className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''
+                  }`}
+              >
+                {/* Image Placeholder */}
+                <div className={`order-${index % 2 === 0 ? '1' : '2'}`}>
+                  <div className={`bg-white rounded-2xl border border-gray-100 shadow-xl min-h-[350px] flex items-center justify-center relative overflow-hidden group hover:border-amber-400/30 transition-colors duration-500`}>
+                    {/* Luxe Glow Effect */}
+                    <div className="absolute -inset-1 bg-gradient-to-r from-amber-100 to-transparent opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500"></div>
 
-            {/* Service 2 - Legal Model */}
-            <ModernServiceCard
-              href="/services/legal-model"
-              title="نموذج Legal AI الخاص"
-              description="نموذج قانوني مملوك للتحليل والصياغة القانونية المتقدمة"
-              gradientFrom="from-purple-50"
-              gradientTo="to-purple-100"
-              borderColor="border-purple-200"
-              icon={FileText}
-              bgColor="bg-gradient-to-br from-purple-500 to-purple-600"
-              imageSrc="/images/legal-model.png"
-              imageAlt="النموذج القانوني"
-            />
+                    <div className="text-center z-10">
+                      <div className="w-20 h-20 bg-amber-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
+                        <service.icon className="w-8 h-8 text-amber-600" />
+                      </div>
+                      <p className="text-gray-500 font-medium">صورة توضيحية للخدمة</p>
+                    </div>
+                  </div>
+                </div>
 
-            {/* Service 3 - Document Analysis */}
-            <ModernServiceCard
-              href="/services/document-analysis"
-              title="تحليل المستندات والصور"
-              description="دردشة مباشرة مع المستندات القانونية والمواد البصرية"
-              gradientFrom="from-green-50"
-              gradientTo="to-green-100"
-              borderColor="border-green-200"
-              icon={ImageIcon}
-              bgColor="bg-gradient-to-br from-green-500 to-green-600"
-              imageSrc="/images/document-analysis.png"
-              imageAlt="تحليل المستندات"
-            />
-
-            {/* Service 4 - Visual Facts */}
-            <ModernServiceCard
-              href="/services/visual-facts"
-              title="التمثيل البصري للوقائع"
-              description="تحويل الوقائع القانونية إلى محاكاة بصرية متسلسلة"
-              gradientFrom="from-orange-50"
-              gradientTo="to-orange-100"
-              borderColor="border-orange-200"
-              icon={Video}
-              bgColor="bg-gradient-to-br from-orange-500 to-orange-600"
-              imageSrc="/images/visual-facts.png"
-              imageAlt="التمثيل البصري للوقائع"
-            />
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              href="/services"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl font-semibold hover:shadow-lg hover-lift transition-all duration-300"
-            >
-              عرض جميع الخدمات →
-            </Link>
+                {/* Content */}
+                <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
+                  <div className={`w-14 h-14 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-amber-500/20`}>
+                    <service.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    {service.title}
+                  </h2>
+                  <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  <div className="space-y-2 mb-6">
+                    {service.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <CheckCircle className="w-5 h-5 text-amber-500" />
+                        <span className="text-gray-700">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <Link
+                    href={`/services/${service.id}`}
+                    className={`inline-flex items-center gap-2 px-6 py-3 bg-white border border-amber-200 text-amber-700 rounded-lg font-semibold hover:bg-amber-50 hover:border-amber-300 transition-all duration-300 group`}
+                  >
+                    اكتشف المزيد
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Security Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <Shield className="w-16 h-16 text-blue-400 mx-auto mb-6" />
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                الأمن والخصوصية الرقمية
-              </h2>
-              <p className="text-xl text-gray-300">
-                نحن نولي أهمية قصوى لحماية بياناتك وسرية معلوماتك
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl border border-white/20">
-                <h3 className="text-2xl font-bold mb-4 border-r-4 border-blue-400 pr-4">بريد مشفّر</h3>
-                <p className="text-gray-300 leading-relaxed">
-                  خدمة بريد إلكتروني مشفّرة بالكامل للتواصل القانوني الحساس
+          <div className="max-w-6xl mx-auto space-y-24">
+            {/* Email Service */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="w-16 h-16 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
+                  <Mail className="w-8 h-8 text-slate-700" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 border-r-4 border-amber-500 pr-4">
+                  البريد الإلكتروني المشفّر
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  نظام مراسلات قانونية مؤمن بأعلى معايير التشفير (End-to-End Encryption)، يضمن سرية التواصل بين المحامي والموكل، ويحمي الوثائق المرفقة من أي اختراق أو اعتراض.
                 </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                    <span className="text-gray-700 font-medium">تشفير عسكري للمراسلات (AES-256)</span>
+                  </div>
+                </div>
               </div>
-
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl border border-white/20">
-                <h3 className="text-2xl font-bold mb-4 border-r-4 border-purple-400 pr-4">VPN آمن</h3>
-                <p className="text-gray-300 leading-relaxed">
-                  حماية الهوية الرقمية ومنع التتبع لبيئة عمل آمنة
-                </p>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl border border-white/20">
-                <h3 className="text-2xl font-bold mb-4 border-r-4 border-green-400 pr-4">تخزين مشفّر</h3>
-                <p className="text-gray-300 leading-relaxed">
-                  تخزين سحابي مشفّر لحفظ القضايا والملفات الحساسة
-                </p>
+              <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-100 p-8 shadow-lg relative overflow-hidden group">
+                <div className="absolute top-0 left-0 w-32 h-32 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
+                <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[300px]">
+                  <Mail className="w-16 h-16 text-slate-400 mb-4" />
+                  <span className="text-slate-500">Secure Email Visualization</span>
+                </div>
               </div>
             </div>
 
-            <div className="text-center mt-12">
-              <Link
-                href="/services/security"
-                className="inline-block px-8 py-4 bg-blue-400 text-white rounded-lg font-semibold hover:bg-blue-500 transition-all duration-300"
-              >
-                اكتشف المزيد عن الأمان
-              </Link>
+            {/* VPN Service */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1 bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-100 p-8 shadow-lg relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
+                <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[300px]">
+                  <Globe className="w-16 h-16 text-slate-400 mb-4" />
+                  <span className="text-slate-500">VPN Network Visualization</span>
+                </div>
+              </div>
+              <div className="order-1 md:order-2">
+                <div className="w-16 h-16 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
+                  <Globe className="w-8 h-8 text-slate-700" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 border-r-4 border-amber-500 pr-4">
+                  شبكة افتراضية خاصة (VPN)
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  تصفح آمن ومنع كامل للتتبع الرقمي، مما يتيح للمحامين العمل على القضايا الحساسة من أي مكان في العالم دون المخاطرة بكشف الهوية أو الموقع الجغرافي.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                    <span className="text-gray-700 font-medium">إخفاء عنوان IP وتشفير الاتصال</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Cloud Storage */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="w-16 h-16 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
+                  <Cloud className="w-8 h-8 text-slate-700" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 border-r-4 border-amber-500 pr-4">
+                  التخزين السحابي القانوني
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  مساحة تخزين سحابية معزولة ومحمية، تتيح أرشفة ملفات القضايا وتنظيمها ومشاركتها مع الموكلين أو الزملاء ضمن بيئة رقمية محصنة ضد الفقدان أو التسريب.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                    <span className="text-gray-700 font-medium">نسخ احتياطي تلقائي مشفّر</span>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-100 p-8 shadow-lg relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
+                <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[300px]">
+                  <Cloud className="w-16 h-16 text-slate-400 mb-4" />
+                  <span className="text-slate-500">Secure Cloud Visualization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Principles */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
+              مبادئ الحوكمة والخصوصية
+            </h2>
+            <div className="w-24 h-1 bg-amber-500 mx-auto mb-12" />
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-xl shadow-sm border-r-4 border-amber-400">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  السيطرة الكاملة على البيانات
+                </h4>
+                <p className="text-gray-600">
+                  المستخدم يحتفظ بالسيطرة الكاملة على بياناته
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border-r-4 border-slate-700">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  عدم استخدام البيانات للتدريب
+                </h4>
+                <p className="text-gray-600">
+                  لا يتم استخدام البيانات في تدريب نماذج الذكاء الاصطناعي
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border-r-4 border-amber-400">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  عدم المشاركة مع أطراف ثالثة
+                </h4>
+                <p className="text-gray-600">
+                  لا تتم مشاركة المعلومات مع أطراف ثالثة
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border-r-4 border-slate-700">
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  احترام المعايير التنظيمية
+                </h4>
+                <p className="text-gray-600">
+                  احترام صارم لمتطلبات السرية والامتثال
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -180,201 +377,14 @@ export default function Home() {
       {/* Quotes Section */}
       <QuotesSection />
 
-      {/* About Preview Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 opacity-50" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">
-                  من نحن
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-                  نجمع بين الخبرة القانونية والابتكار التقني
-                </h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  فريق متعدد التخصصات من خبراء القانون ومطوري الذكاء الاصطناعي، نعمل على بناء منظومة قانونية رقمية حديثة تحترم دور الإنسان ولا تحل محله.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 bg-gradient-to-br from-blue-50 to-white rounded-xl border border-blue-100">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">100%</div>
-                    <div className="text-sm text-gray-600">خصوصية البيانات</div>
-                  </div>
-                  <div className="p-4 bg-gradient-to-br from-purple-50 to-white rounded-xl border border-purple-100">
-                    <div className="text-3xl font-bold text-purple-600 mb-1">24/7</div>
-                    <div className="text-sm text-gray-600">دعم متواصل</div>
-                  </div>
-                </div>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-4 transition-all duration-300"
-                >
-                  اقرأ المزيد عن فريقنا
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </Link>
-              </div>
-              <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl flex items-center justify-center border-2 border-dashed border-blue-200 group hover:scale-105 transition-transform duration-500">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-500">
-                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-500 font-medium">صورة الفريق</p>
-                  </div>
-                </div>
-                {/* Floating decoration */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-400 rounded-full opacity-20 blur-2xl animate-pulse" />
-                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-400 rounded-full opacity-20 blur-2xl animate-pulse" style={{ animationDelay: '1s' }} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Preview Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
-              الأسعار
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              خطط مرنة لكل احتياج
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              نظام تسعير قائم على الأرصدة يمنحك المرونة الكاملة
-            </p>
-          </div>
-
-          <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            {/* Basic Plan */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-gray-200 hover:border-blue-400 transition-all duration-300 hover-lift">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">الأساسية</h3>
-                <div className="mb-6">
-                  <span className="text-5xl font-bold text-gray-900">قريباً</span>
-                </div>
-                <p className="text-gray-600 mb-6">للاستخدام الشخصي والمحامين الأفراد</p>
-                <ul className="space-y-3 mb-8 text-right">
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">100 رصيد شهرياً</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">جميع الخدمات الأساسية</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">دعم فني</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Pro Plan - Featured */}
-            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden transform md:-translate-y-4 hover-lift">
-              <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-bold">
-                الأكثر شعبية
-              </div>
-              <div className="absolute inset-0 bg-white/5 backdrop-blur-sm opacity-0 hover:opacity-100 transition-opacity" />
-              <div className="text-center relative z-10">
-                <h3 className="text-2xl font-bold mb-2">الاحترافية</h3>
-                <div className="mb-6">
-                  <span className="text-5xl font-bold">قريباً</span>
-                </div>
-                <p className="text-blue-100 mb-6">للمكاتب القانونية والشركات</p>
-                <ul className="space-y-3 mb-8 text-right">
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>500 رصيد شهرياً</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>جميع الخدمات المتقدمة</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>دعم أولوية 24/7</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>تحليلات متقدمة</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Enterprise Plan */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-gray-200 hover:border-purple-400 transition-all duration-300 hover-lift">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">المؤسسات</h3>
-                <div className="mb-6">
-                  <span className="text-5xl font-bold text-gray-900">مخصص</span>
-                </div>
-                <p className="text-gray-600 mb-6">للمؤسسات الكبيرة والهيئات</p>
-                <ul className="space-y-3 mb-8 text-right">
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">أرصدة غير محدودة</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">حلول مخصصة</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">مدير حساب مخصص</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              href="/pricing"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg hover-lift transition-all duration-300"
-            >
-              عرض جميع الخطط والأسعار
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Pricing Section */}
+      <PricingSection />
 
       {/* Blog Preview Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block px-4 py-2 bg-amber-50 text-amber-600 rounded-full text-sm font-semibold mb-4 border border-amber-100">
               المدونة
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -386,104 +396,52 @@ export default function Home() {
           </div>
 
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            {/* Blog Post 1 - Blue */}
-            <div className="group bg-white rounded-2xl border-2 border-gray-200 overflow-hidden hover:border-blue-400 transition-all duration-300 hover-lift">
-              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <div className="p-6">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs font-semibold mb-3">
-                  التكنولوجيا
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                  مستقبل الذكاء الاصطناعي في المجال القانوني
-                </h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  قريباً - نعمل على إضافة محتوى قيّم ومتخصص...
-                </p>
-                <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>قريباً</span>
-                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
+            {blogPosts.slice(0, 3).map((post) => (
+              <Link
+                key={post.id}
+                href={`/blog/${post.slug}`}
+                className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-amber-400 transition-all duration-300 hover:shadow-xl block h-full"
+              >
+                <div className={`h-48 bg-gray-100 flex items-center justify-center relative`}>
+                  {/* Fallback pattern if no image, or showing simple icon style */}
+                  <FileText className="w-16 h-16 text-gray-300 group-hover:text-amber-500 transition-colors duration-500" />
                 </div>
-              </div>
-            </div>
-
-            {/* Blog Post 2 - Green */}
-            <div className="group bg-white rounded-2xl border-2 border-gray-200 overflow-hidden hover:border-blue-400 transition-all duration-300 hover-lift">
-              <div className="h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <div className="p-6">
-                <span className="inline-block px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-semibold mb-3">
-                  الأمن
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                  أهمية حماية البيانات في العمل القانوني
-                </h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  قريباً - نعمل على إضافة محتوى قيّم ومتخصص...
-                </p>
-                <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>قريباً</span>
-                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
+                <div className="p-6">
+                  <span className="inline-block px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-xs font-semibold mb-3 border border-amber-100">
+                    {post.category}
+                  </span>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between text-sm text-gray-500 mt-auto">
+                    <span>{post.date}</span>
+                    <ArrowRight className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform text-amber-500" />
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Blog Post 3 - Purple */}
-            <div className="group bg-white rounded-2xl border-2 border-gray-200 overflow-hidden hover:border-blue-400 transition-all duration-300 hover-lift">
-              <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <div className="p-6">
-                <span className="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs font-semibold mb-3">
-                  الإنتاجية
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                  كيفية تحسين كفاءة البحث القانوني
-                </h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  قريباً - نعمل على إضافة محتوى قيّم ومتخصص...
-                </p>
-                <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>قريباً</span>
-                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+              </Link>
+            ))}
           </div>
 
           <div className="text-center mt-12">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-xl font-semibold hover:border-blue-400 hover:text-blue-600 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 border border-gray-300 text-gray-700 rounded-xl font-semibold hover:border-amber-400 hover:text-amber-600 transition-all duration-300"
             >
               عرض جميع المقالات
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+              <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* FAQ Preview Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block px-4 py-2 bg-slate-200 text-slate-700 rounded-full text-sm font-semibold mb-4">
               الأسئلة الشائعة
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -513,14 +471,16 @@ export default function Home() {
                 a: 'المنصة موجهة للممارسين القانونيين، مكاتب المحاماة، الباحثين، الأكاديميين، وطلبة القانون.'
               }
             ].map((faq, index) => (
-              <details key={index} className="group bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-400 transition-all duration-300">
+              <details key={index} className="group bg-white rounded-2xl border border-gray-200 hover:border-amber-400 transition-all duration-300">
                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors ml-4">
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-amber-600 transition-colors ml-4">
                     {faq.q}
                   </h3>
-                  <svg className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
+                  <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
                 </summary>
                 <div className="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
                   {faq.a}
@@ -532,30 +492,28 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/faq"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-700 rounded-xl font-semibold border-2 border-gray-200 hover:border-blue-400 hover:text-blue-600 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-700 rounded-xl font-semibold border border-gray-200 hover:border-amber-400 hover:text-amber-600 transition-all duration-300"
             >
               عرض جميع الأسئلة
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+              <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-500 text-white">
+      <section className="py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-amber-500">
             جاهز لتحويل عملك القانوني؟
           </h2>
-          <p className="text-xl text-blue-50 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             انضم إلى مئات المحامين والمهنيين القانونيين الذين يستخدمون LegalAI
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="px-8 py-4 bg-amber-500 text-slate-900 rounded-lg font-bold hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-amber-500/20"
             >
               ابدأ الآن
             </Link>

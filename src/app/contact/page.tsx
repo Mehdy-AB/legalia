@@ -1,19 +1,18 @@
+import PageHero from '@/components/PageHero'
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
 
 export default function ContactPage() {
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-blue-600 to-blue-500 text-white py-20">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">اتصل بنا</h1>
-                        <p className="text-xl text-blue-50 leading-relaxed">
-                            نحن هنا للإجابة على أسئلتك ومساعدتك في تحويل عملك القانوني
-                        </p>
-                    </div>
+            <PageHero className="text-white">
+                <div className="max-w-4xl mx-auto text-center">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">اتصل بنا</h1>
+                    <p className="text-xl text-gray-200 leading-relaxed font-light">
+                        نحن هنا للإجابة على أسئلتك ومساعدتك في تحويل عملك القانوني
+                    </p>
                 </div>
-            </section>
+            </PageHero>
 
             {/* Contact Information & Form */}
             <section className="py-20 bg-white">

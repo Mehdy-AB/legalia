@@ -1,3 +1,4 @@
+import PageHero from '@/components/PageHero'
 import Link from 'next/link'
 import { Brain, FileText, Image as ImageIcon, Video, Shield } from 'lucide-react'
 
@@ -48,16 +49,14 @@ export default function ServicesPage() {
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-blue-600 to-blue-500 text-white py-20">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">خدماتنا</h1>
-                        <p className="text-xl text-blue-50 leading-relaxed">
-                            اكتشف مجموعة شاملة من الخدمات القانونية المدعومة بالذكاء الاصطناعي
-                        </p>
-                    </div>
+            <PageHero className="text-white">
+                <div className="max-w-4xl mx-auto text-center">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">خدماتنا</h1>
+                    <p className="text-xl text-gray-200 leading-relaxed font-light">
+                        اكتشف مجموعة شاملة من الخدمات القانونية المدعومة بالذكاء الاصطناعي
+                    </p>
                 </div>
-            </section>
+            </PageHero>
 
             {/* Services Grid */}
             <section className="py-20 bg-white">

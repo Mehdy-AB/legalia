@@ -9,7 +9,7 @@ interface ServiceDetailLayoutProps {
     extendedDescription?: string
     imageSrc?: string
     imageAlt?: string
-    themeColor?: 'blue' | 'purple' | 'green' | 'orange' | 'gray'
+    themeColor?: 'blue' | 'purple' | 'green' | 'orange' | 'gray' | 'gold'
     howItWorks: {
         title: string
         steps: string[]
@@ -75,6 +75,17 @@ const themeStyles = {
         benefitIcon: 'text-green-500',
         button: 'bg-gray-700 hover:bg-gray-800',
         ctaGradient: 'from-gray-800 to-gray-700'
+    },
+    gold: {
+        gradient: 'from-amber-600 via-amber-500 to-amber-400',
+        lightGradient: 'from-amber-50 to-white',
+        border: 'border-amber-500',
+        text: 'text-amber-700',
+        bg: 'bg-amber-500',
+        icon: 'text-amber-500',
+        benefitIcon: 'text-amber-600',
+        button: 'bg-amber-600 hover:bg-amber-700',
+        ctaGradient: 'from-slate-800 to-slate-900'
     }
 }
 

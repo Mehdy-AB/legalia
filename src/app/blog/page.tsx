@@ -1,101 +1,65 @@
-import { FileText, Calendar, User } from 'lucide-react'
+import PageHero from '@/components/PageHero'
+import { FileText, Calendar, User, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import { blogPosts } from '@/data/blogPosts'
 
 export default function BlogPage() {
-    // Placeholder blog posts
-    const posts = [
-        {
-            id: 1,
-            title: 'مستقبل الذكاء الاصطناعي في المجال القانوني',
-            excerpt: 'كيف يغير الذكاء الاصطناعي طريقة عمل المحامين والمهنيين القانونيين...',
-            date: 'قريباً',
-            author: 'فريق Legal AI',
-            category: 'التكنولوجيا القانونية'
-        },
-        {
-            id: 2,
-            title: 'أهمية حماية البيانات في العمل القانوني',
-            excerpt: 'دليل شامل لحماية خصوصية البيانات القانونية الحساسة...',
-            date: 'قريباً',
-            author: 'فريق Legal AI',
-            category: 'الأمن السيبراني'
-        },
-        {
-            id: 3,
-            title: 'كيفية تحسين كفاءة البحث القانوني',
-            excerpt: 'نصائح وتقنيات لتسريع عملية البحث والتحليل القانوني...',
-            date: 'قريباً',
-            author: 'فريق Legal AI',
-            category: 'الإنتاجية'
-        }
-    ]
-
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-blue-600 to-blue-500 text-white py-20">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">المدونة</h1>
-                        <p className="text-xl text-blue-50 leading-relaxed">
-                            أحدث المقالات والرؤى حول التكنولوجيا القانونية والذكاء الاصطناعي
-                        </p>
-                    </div>
+            <PageHero className="text-white">
+                <div className="max-w-4xl mx-auto text-center">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">المدونة</h1>
+                    <p className="text-xl text-gray-200 leading-relaxed font-light">
+                        أحدث المقالات والرؤى حول التكنولوجيا القانونية والذكاء الاصطناعي
+                    </p>
                 </div>
-            </section>
+            </PageHero>
 
             {/* Blog Posts */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-5xl mx-auto">
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {posts.map((post) => (
-                                <div
-                                    key={post.id}
-                                    className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300"
-                                >
-                                    {/* Image Placeholder */}
-                                    <div className="bg-gradient-to-br from-blue-50 to-gray-100 h-48 flex items-center justify-center border-b border-gray-200">
-                                        <FileText className="w-12 h-12 text-gray-400" />
+                    {/* Posts Grid */}
+                    <div className="grid md:grid-cols-3 gap-8 mb-16">
+                        {blogPosts.map((post) => (
+                            <Link href={`/blog/${post.slug}`} key={post.id} className="group block h-full">
+                                <article className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                                    <div className={`h-48 bg-gradient-to-br ${post.imageGradient} flex items-center justify-center relative overflow-hidden`}>
+                                        <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors duration-300" />
+                                        <FileText className="w-16 h-16 text-gray-400/50 group-hover:scale-110 transition-transform duration-300" />
                                     </div>
-
-                                    <div className="p-6">
-                                        <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                                            <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-medium">
-                                                {post.category}
+                                    <div className="p-6 flex flex-col flex-grow">
+                                        <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                                            <span className="flex items-center gap-1">
+                                                <Calendar className="w-4 h-4" />
+                                                {post.date}
+                                            </span>
+                                            <span className="flex items-center gap-1">
+                                                <User className="w-4 h-4" />
+                                                {post.author}
                                             </span>
                                         </div>
-
-                                        <h3 className="text-xl font-bold text-gray-900 mb-3">
+                                        <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
                                             {post.title}
-                                        </h3>
-
-                                        <p className="text-gray-600 mb-4 leading-relaxed">
+                                        </h2>
+                                        <p className="text-gray-600 mb-4 line-clamp-3 flex-grow">
                                             {post.excerpt}
                                         </p>
-
-                                        <div className="flex items-center justify-between text-sm text-gray-500">
-                                            <div className="flex items-center gap-2">
-                                                <User className="w-4 h-4" />
-                                                <span>{post.author}</span>
-                                            </div>
-                                            <div className="flex items-center gap-2">
-                                                <Calendar className="w-4 h-4" />
-                                                <span>{post.date}</span>
-                                            </div>
+                                        <div className="flex items-center gap-2 text-blue-600 font-medium mt-auto group-hover:gap-3 transition-all">
+                                            اقرأ المزيد <ArrowLeft className="w-4 h-4" />
                                         </div>
                                     </div>
-                                </div>
-                            ))}
-                        </div>
+                                </article>
+                            </Link>
+                        ))}
+                    </div>
 
-                        {/* Coming Soon Message */}
-                        <div className="mt-16 text-center bg-gradient-to-br from-blue-50 to-white p-12 rounded-2xl border border-blue-100">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-4">قريباً</h2>
-                            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                                نعمل على إنشاء محتوى قيّم وإضافة مقالات متخصصة في مجال التكنولوجيا القانونية والذكاء الاصطناعي
-                            </p>
-                        </div>
+                    {/* Coming Soon Message */}
+                    <div className="text-center bg-gradient-to-br from-blue-50 to-white p-12 rounded-2xl border border-blue-100">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4">قريباً</h2>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            نعمل على إنشاء محتوى قيّم وإضافة مقالات متخصصة في مجال التكنولوجيا القانونية والذكاء الاصطناعي
+                        </p>
                     </div>
                 </div>
             </section>
