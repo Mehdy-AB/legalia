@@ -56,20 +56,16 @@ export default function ContactPage() {
                                         <div className="space-y-2 text-gray-600">
                                             <p>🇪🇪 Tallinn, Estonia</p>
                                             <p className="text-sm">Harju maakond, Tallinn, Kesklinna linnaosa, Pärnu mnt 139b, 11317</p>
-                                            <p className="mt-3">🇩🇿 Sétif, Algeria / ⴰⵙⴷⵉⴼ</p>
-                                            <p className="text-sm">Blair, Sétif</p>
+                                            <p className="mt-3">ⴰⵙⴷⵉⴼ</p>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Map Placeholder */}
-                            <div className="mt-8 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl border-2 border-dashed border-gray-300 h-64 flex items-center justify-center">
-                                <div className="text-center">
-                                    <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-3" />
-                                    <p className="text-gray-500 font-medium">خريطة الموقع</p>
-                                    <p className="text-sm text-gray-400 mt-1">سيتم إضافتها لاحقاً</p>
-                                </div>
+                            <div className="mt-8 p-4 ">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.9834866434435!2d24.736513900000002!3d59.40848510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294c1134ed73f%3A0x15fcabd9c58e4752!2sP%C3%A4rnu%20mnt.%20139b%2C%2011317%20Tallinn%2C%20Estonia!5e1!3m2!1sen!2sdz!4v1767820230256!5m2!1sen!2sdz" width="100%" height="450"   loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
 

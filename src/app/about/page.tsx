@@ -102,8 +102,13 @@ export default function AboutPage() {
                         </div>
                         <div className="md:w-1/2">
                             {/* Placeholder for Vision Image */}
-                            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl h-80 flex items-center justify-center border-2 border-dashed border-gray-200">
-                                <span className="text-gray-400 font-medium">صورة توضيحية للرؤية</span>
+                            {/* Vision Image */}
+                            <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50 transform hover:scale-[1.02] transition-transform duration-500">
+                                <img
+                                    src="/images/about/رؤيتناabout--p.jpg"
+                                    alt="Vision"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
                     </div>
@@ -123,43 +128,51 @@ export default function AboutPage() {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-blue-500">
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="p-3 bg-blue-100 rounded-lg">
-                                    <Scale className="w-6 h-6 text-blue-600" />
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-900">القانون والممارسة القانونية</h3>
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-blue-500 text-center">
+                            <div className="w-48 h-48 mx-auto mb-6 rounded-2xl overflow-hidden shadow-md">
+                                <img
+                                    src="/images/about/القانون والممارسة about pالقانونية.png"
+                                    alt="Law and Practice"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">القانون والممارسة القانونية</h3>
                             <p className="text-gray-600">خبراء متمرسون في العمل القانوني والتشريعات.</p>
                         </div>
 
-                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-purple-500">
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="p-3 bg-purple-100 rounded-lg">
-                                    <Code className="w-6 h-6 text-purple-600" />
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-900">هندسة البرمجيات والأنظمة</h3>
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-purple-500 text-center">
+                            <div className="w-48 h-48 mx-auto mb-6 rounded-2xl overflow-hidden shadow-md">
+                                <img
+                                    src="/images/about/هندسة البرمجيات about pوالأنظمة.png"
+                                    alt="Software Engineering"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">هندسة البرمجيات والأنظمة</h3>
                             <p className="text-gray-600">مهندسون محترفون لبناء بنية تحتية قوية.</p>
                         </div>
 
-                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-green-500">
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="p-3 bg-green-100 rounded-lg">
-                                    <Database className="w-6 h-6 text-green-600" />
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-900">الذكاء الاصطناعي ومعالجة البيانات</h3>
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-green-500 text-center">
+                            <div className="w-48 h-48 mx-auto mb-6 rounded-2xl overflow-hidden shadow-md">
+                                <img
+                                    src="/images/about/الذكاء الاصطناعي ومعالجة البيانات about p.png"
+                                    alt="AI and Data Processing"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">الذكاء الاصطناعي ومعالجة البيانات</h3>
                             <p className="text-gray-600">علماء بيانات لضمان دقة النماذج وكفاءتها.</p>
                         </div>
 
-                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-orange-500">
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="p-3 bg-orange-100 rounded-lg">
-                                    <Lock className="w-6 h-6 text-orange-600" />
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-900">أمن المعلومات وحماية الخصوصية</h3>
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all border-r-4 border-orange-500 text-center">
+                            <div className="w-48 h-48 mx-auto mb-6 rounded-2xl overflow-hidden shadow-md">
+                                <img
+                                    src="/images/about/أمن المعلومات about pوحماية الخصوصية.bmp"
+                                    alt="Security and Privacy"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">أمن المعلومات وحماية الخصوصية</h3>
                             <p className="text-gray-600">ضمان أمان البيانات وخصوصية المستخدمين.</p>
                         </div>
                     </div>
@@ -196,7 +209,17 @@ export default function AboutPage() {
             {/* Commitment Section */}
             <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
                 <div className="container mx-auto px-4 text-center">
-                    <Heart className="w-16 h-16 mx-auto mb-6 text-red-500 animate-pulse" />
+                    <div className="max-w-3xl mx-auto mb-8 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full"
+                        >
+                            <source src="/images/about/التزامنا-about-p.mp4" type="video/mp4" />
+                        </video>
+                    </div>
                     <h2 className="text-4xl font-bold mb-6">التزامنا</h2>
                     <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
                         LegalAI كيان تقني مستقل، لا يقدم استشارات قانونية ملزمة، ولا يتدخل في اتخاذ القرار القضائي أو المهني.

@@ -19,7 +19,8 @@ export default function Home() {
       features: ['التوجيه الذكي للنماذج', 'تحسين جودة الإجابة', 'تصفية البيانات الحساسة'],
       gradient: 'from-amber-500 to-amber-600',
       bgGradient: 'from-amber-50 to-amber-100',
-      borderColor: 'border-amber-200'
+      borderColor: 'border-amber-200',
+      video: '/images/ai-chat.mp4'
     },
     {
       id: 'legal-model',
@@ -29,7 +30,8 @@ export default function Home() {
       features: ['تحليل الوقائع القانونية', 'صياغة الوثائق', 'قاعدة معرفية واسعة'],
       gradient: 'from-amber-500 to-amber-600',
       bgGradient: 'from-amber-50 to-amber-100',
-      borderColor: 'border-amber-200'
+      borderColor: 'border-amber-200',
+      video: '/images/legal-model.mp4'
     },
     {
       id: 'document-analysis',
@@ -39,7 +41,8 @@ export default function Home() {
       features: ['تحليل PDF وWord', 'معالجة الصور', 'مقارنة المستندات'],
       gradient: 'from-amber-500 to-amber-600',
       bgGradient: 'from-amber-50 to-amber-100',
-      borderColor: 'border-amber-200'
+      borderColor: 'border-amber-200',
+      video: '/images/document-analysis.mp4'
     },
     {
       id: 'visual-facts',
@@ -49,7 +52,19 @@ export default function Home() {
       features: ['محاكاة الأحداث', 'اختبار السيناريوهات', 'تعزيز الدليل البصري'],
       gradient: 'from-amber-500 to-amber-600',
       bgGradient: 'from-amber-50 to-amber-100',
-      borderColor: 'border-amber-200'
+      borderColor: 'border-amber-200',
+      video: '/images/visual-facts.mp4'
+    },
+    {
+      id: 'security',
+      icon: Shield,
+      title: 'الأمن والخصوصية الرقمية',
+      description: 'تولي LegalAI أهمية قصوى لحماية البيانات وسرية المعلومات، وتوفر لمستخدميها خدمات رقمية آمنة ، وتشمل:',
+      features: ['بريدًا إلكترونيًا مشفرًا ', 'خدمة VPN لحماية الهوية الرقمية ومنع التتبع', 'تخزينًا سحابيًا مشفرًا لحفظ القضايا والملفات الحساسة'],
+      gradient: 'from-amber-500 to-amber-600',
+      bgGradient: 'from-amber-50 to-amber-100',
+      borderColor: 'border-amber-200',
+      video: '/images/security-home.mp4'
     }
   ]
   return (
@@ -59,22 +74,15 @@ export default function Home() {
       />
 
       {/* Overview Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
-        {/* Decorative Elements */}
-        <div className="absolute top-10 left-10 w-72 h-72 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
-        <div className="absolute top-10 right-10 w-72 h-72 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              نُحوِّل النصوص والبيانات غير المنظمة إلى فهم واضح
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              نُحوّل النصوص والبيانات غير المنظمة إلى فهم واضح، مستندات احترافية، ومحاكاة بصرية تجعل الحقيقة مرئية، مع توفير أعلى معايير الخصوصية والأمن الرقمي عبر خدمات مشفّرة للبريد الإلكتروني، الاتصال، والتخزين السحابي.
-            </p>
-          </div>
-        </div>
-      </section>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-4xl h-auto mx-auto mt-10 object-cover transform transition-transform duration-700 hover:scale-105"
+      >
+        <source src="/images/home-2.mp4" type="video/mp4" />
+      </video>
 
       {/* Mission Section */}
       <section className="py-24 bg-white relative overflow-hidden">
@@ -142,16 +150,20 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Image Content */}
+              {/* Video Content */}
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-slate-900/20 rounded-[2.5rem] transform rotate-3 scale-105 blur-2xl"></div>
-                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/50">
-                  <img
-                    src="/images/mission.png"
-                    alt="LegalAI Team Collaboration"
+                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/50 h-[500px]">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-full object-cover transform transition-transform duration-700 hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                  >
+                    <source src="/images/Who-home-page.mp4" type="video/mp4" />
+                  </video>
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent pointer-events-none flex items-end p-8">
                     <p className="text-white font-medium">Collaborating to shape the future of law.</p>
                   </div>
                 </div>
@@ -169,9 +181,16 @@ export default function Home() {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
               خدماتنا الرئيسية
             </h2>
+            <div className="flex justify-center mb-6">
+              <img
+                src="/images/خدماتنا الرئيسية.jpg"
+                alt="خدماتنا الرئيسية"
+                className="w-64 md:w-80 h-auto object-contain"
+              />
+            </div>
             <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6 rounded-full" />
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               اكتشف مجموعة شاملة من الخدمات القانونية المدعومة بالذكاء الاصطناعي
@@ -185,18 +204,19 @@ export default function Home() {
                 className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''
                   }`}
               >
-                {/* Image Placeholder */}
+                {/* Video Content */}
                 <div className={`order-${index % 2 === 0 ? '1' : '2'}`}>
-                  <div className={`bg-white rounded-2xl border border-gray-100 shadow-xl min-h-[350px] flex items-center justify-center relative overflow-hidden group hover:border-amber-400/30 transition-colors duration-500`}>
-                    {/* Luxe Glow Effect */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-amber-100 to-transparent opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500"></div>
-
-                    <div className="text-center z-10">
-                      <div className="w-20 h-20 bg-amber-50 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <service.icon className="w-8 h-8 text-amber-600" />
-                      </div>
-                      <p className="text-gray-500 font-medium">صورة توضيحية للخدمة</p>
-                    </div>
+                  <div className={`bg-white rounded-2xl border border-gray-100 shadow-xl h-[300px] md:h-[350px] relative overflow-hidden group hover:border-amber-400/30 transition-colors duration-500`}>
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                    >
+                      <source src={service.video} type="video/mp4" />
+                    </video>
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent opacity-60"></div>
                   </div>
                 </div>
 
@@ -233,146 +253,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Security Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto space-y-24">
-            {/* Email Service */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="w-16 h-16 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
-                  <Mail className="w-8 h-8 text-slate-700" />
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 border-r-4 border-amber-500 pr-4">
-                  البريد الإلكتروني المشفّر
-                </h2>
-                <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  نظام مراسلات قانونية مؤمن بأعلى معايير التشفير (End-to-End Encryption)، يضمن سرية التواصل بين المحامي والموكل، ويحمي الوثائق المرفقة من أي اختراق أو اعتراض.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700 font-medium">تشفير عسكري للمراسلات (AES-256)</span>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-100 p-8 shadow-lg relative overflow-hidden group">
-                <div className="absolute top-0 left-0 w-32 h-32 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
-                <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[300px]">
-                  <Mail className="w-16 h-16 text-slate-400 mb-4" />
-                  <span className="text-slate-500">Secure Email Visualization</span>
-                </div>
-              </div>
-            </div>
 
-            {/* VPN Service */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1 bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-100 p-8 shadow-lg relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
-                <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[300px]">
-                  <Globe className="w-16 h-16 text-slate-400 mb-4" />
-                  <span className="text-slate-500">VPN Network Visualization</span>
-                </div>
-              </div>
-              <div className="order-1 md:order-2">
-                <div className="w-16 h-16 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
-                  <Globe className="w-8 h-8 text-slate-700" />
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 border-r-4 border-amber-500 pr-4">
-                  شبكة افتراضية خاصة (VPN)
-                </h2>
-                <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  تصفح آمن ومنع كامل للتتبع الرقمي، مما يتيح للمحامين العمل على القضايا الحساسة من أي مكان في العالم دون المخاطرة بكشف الهوية أو الموقع الجغرافي.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700 font-medium">إخفاء عنوان IP وتشفير الاتصال</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Cloud Storage */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="w-16 h-16 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
-                  <Cloud className="w-8 h-8 text-slate-700" />
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 border-r-4 border-amber-500 pr-4">
-                  التخزين السحابي القانوني
-                </h2>
-                <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  مساحة تخزين سحابية معزولة ومحمية، تتيح أرشفة ملفات القضايا وتنظيمها ومشاركتها مع الموكلين أو الزملاء ضمن بيئة رقمية محصنة ضد الفقدان أو التسريب.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700 font-medium">نسخ احتياطي تلقائي مشفّر</span>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl border border-slate-100 p-8 shadow-lg relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
-                <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[300px]">
-                  <Cloud className="w-16 h-16 text-slate-400 mb-4" />
-                  <span className="text-slate-500">Secure Cloud Visualization</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Principles */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
-              مبادئ الحوكمة والخصوصية
-            </h2>
-            <div className="w-24 h-1 bg-amber-500 mx-auto mb-12" />
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm border-r-4 border-amber-400">
-                <h4 className="text-lg font-bold text-gray-900 mb-2">
-                  السيطرة الكاملة على البيانات
-                </h4>
-                <p className="text-gray-600">
-                  المستخدم يحتفظ بالسيطرة الكاملة على بياناته
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border-r-4 border-slate-700">
-                <h4 className="text-lg font-bold text-gray-900 mb-2">
-                  عدم استخدام البيانات للتدريب
-                </h4>
-                <p className="text-gray-600">
-                  لا يتم استخدام البيانات في تدريب نماذج الذكاء الاصطناعي
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border-r-4 border-amber-400">
-                <h4 className="text-lg font-bold text-gray-900 mb-2">
-                  عدم المشاركة مع أطراف ثالثة
-                </h4>
-                <p className="text-gray-600">
-                  لا تتم مشاركة المعلومات مع أطراف ثالثة
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border-r-4 border-slate-700">
-                <h4 className="text-lg font-bold text-gray-900 mb-2">
-                  احترام المعايير التنظيمية
-                </h4>
-                <p className="text-gray-600">
-                  احترام صارم لمتطلبات السرية والامتثال
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Quotes Section */}
       <QuotesSection />
@@ -402,9 +283,16 @@ export default function Home() {
                 href={`/blog/${post.slug}`}
                 className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-amber-400 transition-all duration-300 hover:shadow-xl block h-full"
               >
-                <div className={`h-48 bg-gray-100 flex items-center justify-center relative`}>
-                  {/* Fallback pattern if no image, or showing simple icon style */}
-                  <FileText className="w-16 h-16 text-gray-300 group-hover:text-amber-500 transition-colors duration-500" />
+                <div className={`h-48 bg-gray-100 flex items-center justify-center relative overflow-hidden`}>
+                  {post.image ? (
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  ) : (
+                    <FileText className="w-16 h-16 text-gray-300 group-hover:text-amber-500 transition-colors duration-500" />
+                  )}
                 </div>
                 <div className="p-6">
                   <span className="inline-block px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-xs font-semibold mb-3 border border-amber-100">

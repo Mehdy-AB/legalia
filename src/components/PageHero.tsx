@@ -3,9 +3,10 @@ import React from 'react'
 interface PageHeroProps {
     children: React.ReactNode
     className?: string
+    videoSrc?: string
 }
 
-export default function PageHero({ children, className = "" }: PageHeroProps) {
+export default function PageHero({ children, className = "", videoSrc = "/home.mp4" }: PageHeroProps) {
     return (
         <section className={`relative py-24 overflow-hidden ${className}`}>
             {/* Video Background */}
@@ -17,7 +18,7 @@ export default function PageHero({ children, className = "" }: PageHeroProps) {
                     playsInline
                     className="w-full h-full object-cover transform scale-105"
                 >
-                    <source src="/home.mp4" type="video/mp4" />
+                    <source src={videoSrc} type="video/mp4" />
                 </video>
                 {/* Modern Overlay - Gradient for better text readability */}
                 <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />

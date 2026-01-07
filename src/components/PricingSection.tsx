@@ -3,13 +3,30 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 
+type Currency = 'usd' | 'eur' | 'dzd'
+
+interface CurrencyInfo {
+  code: Currency
+  symbol: string
+  name: string
+  flag: string
+  rate: number // Rate relative to USD
+}
+
+const currencies: CurrencyInfo[] = [
+  { code: 'usd', symbol: '$', name: 'USD', flag: '/Flag_of_the_United_States.svg', rate: 1 },
+  { code: 'eur', symbol: '€', name: 'EUR', flag: '/Flag_of_Europe.svg', rate: 0.92 },
+  { code: 'dzd', symbol: 'د.ج', name: 'DZD', flag: '/Flag_of_Algeria.svg', rate: 135 },
+]
+
 export default function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly')
+  const [currency, setCurrency] = useState<Currency>('usd')
 
   const plans = [
     {
       name: "Basic",
-      price: { monthly: 10, yearly: 100 },
+      priceUSD: { monthly: 10, yearly: 100 },
       description: "For personal use and individual lawyers",
       features: ["100 Monthly Credits", "Basic AI Chat", "Standard Support"],
       cta: "Start Basic",
@@ -18,7 +35,7 @@ export default function PricingSection() {
     },
     {
       name: "Professional",
-      price: { monthly: 25, yearly: 250 },
+      priceUSD: { monthly: 25, yearly: 250 },
       description: "For legal offices and growing firms",
       features: ["500 Monthly Credits", "Advanced Document Analysis", "Priority Support 24/7", "Analytics Dashboard"],
       cta: "Start Professional",
@@ -27,7 +44,7 @@ export default function PricingSection() {
     },
     {
       name: "Enterprise",
-      price: { monthly: 39, yearly: 390 },
+      priceUSD: { monthly: 39, yearly: 390 },
       description: "For large organizations and agencies",
       features: ["Unlimited Credits", "Custom AI Models", "Dedicated Account Manager", "API Access"],
       cta: "Start Enterprise",
@@ -35,6 +52,21 @@ export default function PricingSection() {
       gradient: "bg-white border-2 border-slate-100 hover:border-slate-800"
     }
   ]
+
+  const currentCurrency = currencies.find(c => c.code === currency)!
+
+  const getPrice = (priceUSD: { monthly: number; yearly: number }) => {
+    const basePrice = billingCycle === 'monthly' ? priceUSD.monthly : priceUSD.yearly
+    const convertedPrice = basePrice * currentCurrency.rate
+    return currency === 'dzd' ? Math.round(convertedPrice) : Math.round(convertedPrice * 100) / 100
+  }
+
+  const formatPrice = (price: number) => {
+    if (currency === 'dzd') {
+      return `${price.toLocaleString()} ${currentCurrency.symbol}`
+    }
+    return `${currentCurrency.symbol}${price.toLocaleString()}`
+  }
 
   return (
     <section className="py-20 bg-slate-50">
@@ -50,20 +82,52 @@ export default function PricingSection() {
             Choose the plan that fits your practice. Switch to annual billing to save 20%.
           </p>
 
-          {/* Toggle */}
-          <div className="flex items-center justify-center gap-4 mb-10">
-            <span className={`text-lg font-medium ${billingCycle === 'monthly' ? 'text-gray-900' : 'text-gray-500'}`}>Monthly</span>
-            <button
-              onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
-              className="relative w-16 h-8 bg-amber-500 rounded-full p-1 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2"
-            >
-              <div
-                className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${billingCycle === 'yearly' ? 'translate-x-8' : 'translate-x-0'}`}
-              />
-            </button>
-            <span className={`text-lg font-medium ${billingCycle === 'yearly' ? 'text-gray-900' : 'text-gray-500'}`}>
-              Yearly <span className="text-sm text-green-600 font-bold ml-1">(Save 20%)</span>
-            </span>
+          {/* Combined Currency & Billing Toggle Row */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 mb-10">
+
+            {/* Currency Selector with Flags */}
+            <div className="flex items-center gap-2 bg-white rounded-full shadow-md border border-gray-200 p-1.5">
+              {currencies.map((curr) => (
+                <button
+                  key={curr.code}
+                  onClick={() => setCurrency(curr.code)}
+                  className={`relative flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-300 ${currency === curr.code
+                      ? 'bg-amber-500 text-white shadow-md scale-105'
+                      : 'hover:bg-gray-100 text-gray-600'
+                    }`}
+                >
+                  {/* Flag Image */}
+                  <div className={`w-6 h-4 rounded overflow-hidden shadow-sm ${currency === curr.code ? 'ring-2 ring-white/50' : ''}`}>
+                    <img
+                      src={curr.flag}
+                      alt={`${curr.name} flag`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  {/* Currency Code */}
+                  <span className="font-semibold text-sm">{curr.name}</span>
+                </button>
+              ))}
+            </div>
+
+            {/* Divider */}
+            <div className="hidden sm:block w-px h-8 bg-gray-300"></div>
+
+            {/* Billing Cycle Toggle */}
+            <div className="flex items-center gap-4">
+              <span className={`text-lg font-medium ${billingCycle === 'monthly' ? 'text-gray-900' : 'text-gray-500'}`}>Monthly</span>
+              <button
+                onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
+                className="relative w-16 h-8 bg-amber-500 rounded-full p-1 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2"
+              >
+                <div
+                  className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${billingCycle === 'yearly' ? 'translate-x-8' : 'translate-x-0'}`}
+                />
+              </button>
+              <span className={`text-lg font-medium ${billingCycle === 'yearly' ? 'text-gray-900' : 'text-gray-500'}`}>
+                Yearly <span className="text-sm text-green-600 font-bold ml-1">(Save 20%)</span>
+              </span>
+            </div>
           </div>
         </div>
 
@@ -84,8 +148,8 @@ export default function PricingSection() {
                   {plan.name}
                 </h3>
                 <div className="mb-6 flex items-baseline justify-center gap-1">
-                  <span className={`text-5xl font-bold ${plan.popular ? 'text-white' : 'text-gray-900'}`}>
-                    ${billingCycle === 'monthly' ? plan.price.monthly : plan.price.yearly}
+                  <span className={`text-4xl md:text-5xl font-bold ${plan.popular ? 'text-white' : 'text-gray-900'}`}>
+                    {formatPrice(getPrice(plan.priceUSD))}
                   </span>
                   <span className={`text-lg ${plan.popular ? 'text-amber-100' : 'text-gray-500'}`}>
                     /{billingCycle === 'monthly' ? 'mo' : 'yr'}

@@ -46,7 +46,7 @@ export default function VideoHero() {
                     playsInline
                     className="h-full w-full object-cover"
                 >
-                    <source src="/home.mp4" type="video/mp4" />
+                    <source src="/images/home.mp4" type="video/mp4" />
                 </video>
                 {/* Gradient Overlay for better text readability */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
