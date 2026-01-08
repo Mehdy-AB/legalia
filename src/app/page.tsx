@@ -201,11 +201,10 @@ export default function Home() {
             {services.map((service, index) => (
               <div
                 key={service.id}
-                className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''
-                  }`}
+                className="grid md:grid-cols-2 gap-12 items-center"
               >
                 {/* Video Content */}
-                <div className={`order-${index % 2 === 0 ? '1' : '2'}`}>
+                <div className={index % 2 === 0 ? 'md:order-1' : 'md:order-2'}>
                   <div className={`bg-white rounded-2xl border border-gray-100 shadow-xl h-[300px] md:h-[350px] relative overflow-hidden group hover:border-amber-400/30 transition-colors duration-500`}>
                     <video
                       autoPlay
@@ -221,7 +220,7 @@ export default function Home() {
                 </div>
 
                 {/* Content */}
-                <div className={`order-${index % 2 === 0 ? '2' : '1'}`}>
+                <div className={index % 2 === 0 ? 'md:order-2' : 'md:order-1'}>
                   <div className={`w-14 h-14 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-amber-500/20`}>
                     <service.icon className="w-7 h-7 text-white" />
                   </div>

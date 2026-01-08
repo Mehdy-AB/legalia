@@ -71,14 +71,16 @@ export default function LegalModelPage() {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-gradient-to-br from-amber-50 to-blue-50 rounded-2xl p-8 md:p-12 border border-amber-100 shadow-lg">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-6 border-r-4 border-amber-500 pr-4 flex items-center gap-4">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6 border-r-4 border-amber-500 pr-4">
+                                دردشة بنموذج Legal AI الخاص (تحليل – صياغة – إنشاء)
+                            </h2>
+                            <div className="flex justify-center mb-8">
                                 <img
                                     src="/images/الدردشة القانونية بنموذج Legal AI        الخاص.jpg"
                                     alt="Legal AI Model"
-                                    className="w-16 h-16 object-contain"
+                                    className="w-full max-w-2xl h-auto object-cover rounded-xl shadow-md"
                                 />
-                                دردشة بنموذج Legal AI الخاص (تحليل – صياغة – إنشاء)
-                            </h2>
+                            </div>
                             <p className="text-lg text-gray-700 leading-loose mb-6">
                                 خانة دردشة قانونية تعتمد على نموذج ذكاء اصطناعي قانوني مملوك للمنصة، تم تطويره خصيصًا لدعم التحليل والصياغة القانونية وفق منطق مهني منضبط.
                             </p>

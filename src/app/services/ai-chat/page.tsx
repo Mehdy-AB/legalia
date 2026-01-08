@@ -64,14 +64,16 @@ export default function AiChatPage() {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-gradient-to-br from-amber-50 to-blue-50 rounded-2xl p-8 md:p-12 border border-amber-100 shadow-lg">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-6 border-r-4 border-amber-500 pr-4 flex items-center gap-4">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6 border-r-4 border-amber-500 pr-4">
+                                دردشة قانونية وسيطة بين نماذج ذكاء اصطناعي متعددة
+                            </h2>
+                            <div className="flex justify-center mb-8">
                                 <img
                                     src="/images/الدردشة الذكية متعددة النماذج   .jpg"
                                     alt="Multi-Model Chat"
-                                    className="w-16 h-16 object-contain"
+                                    className="w-full max-w-2xl h-auto object-cover rounded-xl shadow-md"
                                 />
-                                دردشة قانونية وسيطة بين نماذج ذكاء اصطناعي متعددة
-                            </h2>
+                            </div>
                             <p className="text-lg text-gray-700 leading-loose mb-6">
                                 توفر Legal AI نظام دردشة قانونية متقدم يعمل عبر نموذج وسيط خاص بالمنصة، يقوم بالربط الذكي بين عدة نماذج ذكاء اصطناعي عامة ومتخصصة، ويختار النموذج الأنسب تلقائيًا حسب طبيعة السؤال أو المهمة.
                             </p>
