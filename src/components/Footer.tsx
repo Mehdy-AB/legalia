@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Brain } from 'lucide-react'
 import Link from 'next/link'
+import NewsletterForm from './NewsletterForm'
 
 export default function Footer() {
   return (
@@ -20,6 +21,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               منصة قانونية ذكية تجمع بين التحليل القانوني المتقدم، الصياغة الدقيقة، والتمثيل البصري للوقائع
             </p>
+            <NewsletterForm />
           </div>
 
           <div>
@@ -64,8 +66,6 @@ export default function Footer() {
                 <div>
                   <p className="font-medium text-white mb-1">🇪🇪 Tallinn, Estonia</p>
                   <p className="text-xs">Pärnu mnt 139b, 11317</p>
-                  <p className="font-medium text-white mt-2 mb-1">🇩🇿 Sétif, Algeria</p>
-                  <p className="text-xs">Blair, Sétif / ⴰⵙⴷⵉⴼ</p>
                 </div>
               </div>
             </div>

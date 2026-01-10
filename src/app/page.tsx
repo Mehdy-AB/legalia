@@ -184,17 +184,17 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
               خدماتنا الرئيسية
             </h2>
-            <div className="flex justify-center mb-6">
-              <img
-                src="/images/خدماتنا الرئيسية.jpg"
-                alt="خدماتنا الرئيسية"
-                className="w-64 md:w-80 h-auto object-contain"
-              />
-            </div>
             <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6 rounded-full" />
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               اكتشف مجموعة شاملة من الخدمات القانونية المدعومة بالذكاء الاصطناعي
             </p>
+            <div className="flex justify-center mb-6">
+              <img
+                src="/images/خدماتنا الرئيسية.jpg"
+                alt="خدماتنا الرئيسية"
+                className="w-64 md:w-96 h-auto object-contain"
+              />
+            </div>
           </div>
 
           <div className="max-w-6xl mx-auto space-y-16">

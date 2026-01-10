@@ -10,44 +10,44 @@ export default function LegalModelPage() {
     ]
 
     const coreFunctions = [
-        { icon: Brain, title: "تحليل الوقائع القانونية", description: "تفكيكها منطقيًا" },
-        { icon: PenTool, title: "صياغة النصوص والوثائق", description: "بأسلوب مهني" },
-        { icon: FileText, title: "إنشاء النماذج القانونية", description: "العرائض والمذكرات" },
-        { icon: RefreshCw, title: "إعادة الصياغة القانونية", description: "الدقيقة وتحسين الأسلوب" },
+        { icon: Brain, title: "تحليل الوقائع القانونية", description: "وتفكيكها منطقيًا" },
+        { icon: PenTool, title: "صياغة النصوص والوثائق القانونية", description: "بأسلوب مهني" },
+        { icon: FileText, title: "إنشاء النماذج القانونية", description: "والعرائض والمذكرات" },
+        { icon: RefreshCw, title: "إعادة الصياغة القانونية الدقيقة", description: "وتحسين الأسلوب" },
         { icon: BookOpen, title: "دعم البحث القانوني", description: "والتحليل الأكاديمي" },
-        { icon: Scale, title: "ربط الوقائع بالسياق", description: "القانوني والتشريعي المناسب" }
+        { icon: Scale, title: "ربط الوقائع بالسياق القانوني", description: "والتشريعي المناسب" }
     ]
 
     const features = [
         {
             icon: Sparkles,
             title: "نموذج قانوني متخصص",
-            description: "مصمم خصيصًا للاستخدام القانوني، وليس نموذجًا عامًا"
+            description: "مصمم خصيصًا للاستخدام القانوني، وليس نموذجًا عامًا."
         },
         {
             icon: Database,
             title: "قاعدة معرفية قانونية واسعة",
-            description: "تشمل القوانين، المراجع الأكاديمية، والدراسات الفقهية المتخصصة"
+            description: "تشمل القوانين، المراجع الأكاديمية، والدراسات الفقهية المتخصصة."
         },
         {
             icon: PenTool,
             title: "دقة في البنية والصياغة",
-            description: "تركيز على المنطق القانوني، التسلسل، والأسلوب المهني"
+            description: "تركيز على المنطق القانوني، التسلسل، والأسلوب المهني."
         },
         {
             icon: RefreshCw,
             title: "تحديث مستمر",
-            description: "مواكبة أحدث التعديلات التشريعية والاتجاهات الفقهية"
+            description: ",مواكبة أحدث التعديلات التشريعية والاتجاهات الفقهية."
         },
         {
             icon: GraduationCap,
             title: "دعم مهني وأكاديمي",
-            description: "مناسب للممارسين القانونيين، الباحثين، الأكاديميين، وطلبة القانون"
+            description: "مناسب الممارسين القانونيين، الباحثين، الأكاديميين، وطلبة القانون."
         },
         {
             icon: Clock,
             title: "توفير الوقت والجهد",
-            description: "تقليل الزمن المستغرق في التحليل والصياغة مع الحفاظ على الجودة"
+            description: "تقليل الزمن المستغرق في التحليل والصياغة مع الحفاظ على الجودة."
         }
     ]
 
@@ -72,7 +72,7 @@ export default function LegalModelPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-gradient-to-br from-amber-50 to-blue-50 rounded-2xl p-8 md:p-12 border border-amber-100 shadow-lg">
                             <h2 className="text-2xl font-bold text-gray-900 mb-6 border-r-4 border-amber-500 pr-4">
-                                دردشة بنموذج Legal AI الخاص (تحليل – صياغة – إنشاء)
+                                2) دردشة بنموذج Legal AI الخاص (تحليل – صياغة – إنشاء)
                             </h2>
                             <div className="flex justify-center mb-8">
                                 <img
@@ -83,12 +83,6 @@ export default function LegalModelPage() {
                             </div>
                             <p className="text-lg text-gray-700 leading-loose mb-6">
                                 خانة دردشة قانونية تعتمد على نموذج ذكاء اصطناعي قانوني مملوك للمنصة، تم تطويره خصيصًا لدعم التحليل والصياغة القانونية وفق منطق مهني منضبط.
-                            </p>
-                            <p className="text-lg text-gray-700 leading-loose mb-6">
-                                تجمع الخدمة بين قوة الذكاء الاصطناعي وقاعدة معرفية قانونية واسعة. تعتمد على قاعدة بيانات شاملة للقوانين والمراجع الأكاديمية والدراسات المتخصصة.
-                            </p>
-                            <p className="text-lg text-gray-700 leading-loose">
-                                يركّز هذا النموذج على البنية القانونية، المنطق التحليلي، ودقة الصياغة، بما يخدم الاستخدام المهني والأكاديمي. بفضل تحديثها المستمر، تضمن الخدمة مواكبتها لأحدث التعديلات التشريعية والاتجاهات الفقهية، مما يجعلها أداة فعالة.
                             </p>
                         </div>
                     </div>

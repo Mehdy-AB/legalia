@@ -6,7 +6,7 @@ export default function AboutPage() {
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
-            <PageHero className="text-white">
+            <PageHero videoSrc="/images/Who-home-page.mp4" className="text-white">
                 <div className="max-w-4xl mx-auto text-center">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">من نحن</h1>
                     <p className="text-xl text-gray-200 leading-relaxed font-light">

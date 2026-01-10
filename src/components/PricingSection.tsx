@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react'
 import Link from 'next/link'
-import { CheckCircle } from 'lucide-react'
+import { CheckCircle, Plus } from 'lucide-react'
 
 type Currency = 'usd' | 'eur' | 'dzd'
 
@@ -10,7 +10,7 @@ interface CurrencyInfo {
   symbol: string
   name: string
   flag: string
-  rate: number // Rate relative to USD
+  rate: number
 }
 
 const currencies: CurrencyInfo[] = [
@@ -21,100 +21,156 @@ const currencies: CurrencyInfo[] = [
 
 export default function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly')
-  const [currency, setCurrency] = useState<Currency>('usd')
+  const [currency, setCurrency] = useState<Currency>('dzd')
+  // State to track which plans have the security add-on selected. Key is plan index.
+  const [selectedAddons, setSelectedAddons] = useState<{ [key: number]: boolean }>({})
+
+  const toggleAddon = (index: number) => {
+    setSelectedAddons(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }))
+  }
+
+  // Security Add-on Prices
+  const getSecurityPrice = (planName: string, curr: Currency) => {
+    if (planName.includes("Professional")) {
+      if (curr === 'dzd') return 1500
+      if (curr === 'eur') return 7
+      return 8 // USD approx
+    }
+    if (planName.includes("Advanced")) {
+      if (curr === 'dzd') return 2700
+      if (curr === 'eur') return 15
+      return 16 // USD approx
+    }
+    return 0
+  }
 
   const plans = [
     {
-      name: "Basic",
-      priceUSD: { monthly: 10, yearly: 100 },
-      description: "For personal use and individual lawyers",
-      features: ["100 Monthly Credits", "Basic AI Chat", "Standard Support"],
-      cta: "Start Basic",
-      popular: false,
-      gradient: "bg-white border-2 border-slate-100 hover:border-amber-400"
+      name: "باقة البداية | Starter",
+      price: { dzd: 1500, eur: 15, usd: 16 },
+      features: [
+        "50 رصيد / شهر",
+        "10 طلبات / يوم",
+        "دردشة قانونية (أساسية)",
+        "دعم فني عادي",
+        "لا يدعم تحليل الملفات"
+      ],
+      description: "للأفراد والمبتدئين",
+      cta: "اشترك الآن",
+      highlight: false,
+      color: "slate",
+      hasSecurityAddon: false
     },
     {
-      name: "Professional",
-      priceUSD: { monthly: 25, yearly: 250 },
-      description: "For legal offices and growing firms",
-      features: ["500 Monthly Credits", "Advanced Document Analysis", "Priority Support 24/7", "Analytics Dashboard"],
-      cta: "Start Professional",
-      popular: true,
-      gradient: "bg-gradient-to-br from-amber-500 to-amber-600 text-white"
+      name: "باقة المحترف | Professional",
+      price: { dzd: 4500, eur: 49, usd: 54 },
+      features: [
+        "200 رصيد / شهر",
+        "40 طلب / يوم",
+        "دردشة قانونية غير محدودة",
+        "تحليل معمق (20/شهر)",
+        "صياغة وثائق (15/شهر)",
+        "تحليل صور ومستندات",
+        "دعم فني 24/7"
+      ],
+      description: "للمحامين والمكاتب الصغيرة",
+      cta: "اشترك الآن",
+      highlight: true,
+      color: "blue",
+      hasSecurityAddon: true
     },
     {
-      name: "Enterprise",
-      priceUSD: { monthly: 39, yearly: 390 },
-      description: "For large organizations and agencies",
-      features: ["Unlimited Credits", "Custom AI Models", "Dedicated Account Manager", "API Access"],
-      cta: "Start Enterprise",
-      popular: false,
-      gradient: "bg-white border-2 border-slate-100 hover:border-slate-800"
+      name: "باقة المكاتب | Advanced",
+      price: { dzd: 9000, eur: 99, usd: 109 },
+      features: [
+        "500 رصيد / شهر",
+        "120 طلب / يوم",
+        "جميع المميزات غير محدودة*",
+        "صياغة وثائق (50/شهر)",
+        "إعادة تمثيل وقائع (23/شهر)",
+        "تقارير منهجية",
+        "دعم فني 24/7",
+        "تدريب الفريق"
+      ],
+      description: "للمكاتب الكبرى والمؤسسات",
+      cta: "اشترك الآن",
+      highlight: false,
+      color: "gold",
+      hasSecurityAddon: true
     }
+  ]
+
+  const calculateFinalPrice = (plan: typeof plans[0], index: number) => {
+    let base = 0
+    // Get base price for currency
+    if (currency === 'dzd') base = plan.price.dzd
+    else if (currency === 'eur') base = plan.price.eur
+    else base = plan.price.usd
+
+    // Apply billing cycle discount (20% for yearly)
+    if (billingCycle === 'yearly') {
+      base = base * 0.8
+    }
+
+    // Add security add-on if selected
+    if (selectedAddons[index]) {
+      base += getSecurityPrice(plan.name, currency)
+    }
+
+    return Math.round(base).toLocaleString()
+  }
+
+  const extraCredits = [
+    { credits: 50, price: { dzd: 1000, eur: 10, usd: 11 } },
+    { credits: 100, price: { dzd: 1800, eur: 18, usd: 20 } },
+    { credits: 300, price: { dzd: 4500, eur: 45, usd: 50 } },
   ]
 
   const currentCurrency = currencies.find(c => c.code === currency)!
 
-  const getPrice = (priceUSD: { monthly: number; yearly: number }) => {
-    const basePrice = billingCycle === 'monthly' ? priceUSD.monthly : priceUSD.yearly
-    const convertedPrice = basePrice * currentCurrency.rate
-    return currency === 'dzd' ? Math.round(convertedPrice) : Math.round(convertedPrice * 100) / 100
-  }
-
-  const formatPrice = (price: number) => {
-    if (currency === 'dzd') {
-      return `${price.toLocaleString()} ${currentCurrency.symbol}`
-    }
-    return `${currentCurrency.symbol}${price.toLocaleString()}`
-  }
-
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-slate-50" dir="rtl">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-amber-50 text-amber-700 rounded-full text-sm font-semibold mb-4 border border-amber-200">
-            Pricing
+            الأسعار
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Flexible Plans for Every Need
+            خطط أسعار مرنة تناسب الجميع
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-            Choose the plan that fits your practice. Switch to annual billing to save 20%.
+            اختر الباقة التي تناسب احتياجاتك. وفر 20% عند الدفع السنوي.
           </p>
 
-          {/* Combined Currency & Billing Toggle Row */}
+          {/* Combined Controls Row */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 mb-10">
 
-            {/* Currency Selector with Flags */}
-            <div className="flex items-center gap-2 bg-white rounded-full shadow-md border border-gray-200 p-1.5">
+            {/* Currency Selector */}
+            <div className="flex items-center gap-2 bg-white rounded-full shadow-md border border-gray-200 p-1.5 direction-ltr" dir="ltr">
               {currencies.map((curr) => (
                 <button
                   key={curr.code}
                   onClick={() => setCurrency(curr.code)}
                   className={`relative flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-300 ${currency === curr.code
-                      ? 'bg-amber-500 text-white shadow-md scale-105'
-                      : 'hover:bg-gray-100 text-gray-600'
+                    ? 'bg-amber-500 text-white shadow-md scale-105'
+                    : 'hover:bg-gray-100 text-gray-600'
                     }`}
                 >
-                  {/* Flag Image */}
                   <div className={`w-6 h-4 rounded overflow-hidden shadow-sm ${currency === curr.code ? 'ring-2 ring-white/50' : ''}`}>
-                    <img
-                      src={curr.flag}
-                      alt={`${curr.name} flag`}
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={curr.flag} alt={curr.name} className="w-full h-full object-cover" />
                   </div>
-                  {/* Currency Code */}
                   <span className="font-semibold text-sm">{curr.name}</span>
                 </button>
               ))}
             </div>
 
-            {/* Divider */}
             <div className="hidden sm:block w-px h-8 bg-gray-300"></div>
 
             {/* Billing Cycle Toggle */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4" dir="ltr">
               <span className={`text-lg font-medium ${billingCycle === 'monthly' ? 'text-gray-900' : 'text-gray-500'}`}>Monthly</span>
               <button
                 onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
@@ -125,65 +181,120 @@ export default function PricingSection() {
                 />
               </button>
               <span className={`text-lg font-medium ${billingCycle === 'yearly' ? 'text-gray-900' : 'text-gray-500'}`}>
-                Yearly <span className="text-sm text-green-600 font-bold ml-1">(Save 20%)</span>
+                Yearly <span className="text-xs text-green-600 font-bold ml-1">(-20%)</span>
               </span>
             </div>
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${plan.gradient}`}
-            >
-              {plan.popular && (
-                <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-bold shadow-sm">
-                  Most Popular
-                </div>
-              )}
+        {/* Plans Grid - Reversed for Visual Order: Advanced (Right/First) -> Pro -> Starter */}
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 mb-20">
+          {[...plans].reverse().map((plan, indexReal) => {
+            const originalIndex = plans.length - 1 - indexReal
 
-              <div className="text-center relative z-10">
-                <h3 className={`text-2xl font-bold mb-2 ${plan.popular ? 'text-white' : 'text-gray-900'}`}>
-                  {plan.name}
-                </h3>
-                <div className="mb-6 flex items-baseline justify-center gap-1">
-                  <span className={`text-4xl md:text-5xl font-bold ${plan.popular ? 'text-white' : 'text-gray-900'}`}>
-                    {formatPrice(getPrice(plan.priceUSD))}
-                  </span>
-                  <span className={`text-lg ${plan.popular ? 'text-amber-100' : 'text-gray-500'}`}>
-                    /{billingCycle === 'monthly' ? 'mo' : 'yr'}
-                  </span>
-                </div>
-                <p className={`mb-8 ${plan.popular ? 'text-amber-50' : 'text-gray-600'}`}>
-                  {plan.description}
-                </p>
+            return (
+              <div
+                key={plan.name}
+                className={`flex flex-col relative rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 border-2 ${plan.highlight
+                    ? 'bg-white border-blue-500 shadow-xl z-10 transform md:scale-105'
+                    : 'bg-white border-transparent shadow-lg hover:border-gray-200'
+                  }`}
+              >
+                {plan.highlight && (
+                  <div className="absolute top-0 right-0 left-0 bg-blue-600 text-white text-center py-1 text-sm font-bold rounded-t-[1.3rem]">
+                    الأكثر طلباً
+                  </div>
+                )}
 
-                <ul className={`space-y-4 mb-8 text-left ${plan.popular ? 'text-white' : 'text-gray-700'}`}>
+                <div className={`text-center mb-6 pt-4`}>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+                  <div className="flex items-center justify-center gap-1 mb-2">
+                    <span className="text-4xl font-extrabold text-gray-900">{calculateFinalPrice(plan, originalIndex)}</span>
+                    <span className="text-gray-500 text-sm">{currentCurrency.symbol} / شهر</span>
+                  </div>
+                  <p className="text-gray-500 text-sm">{plan.description}</p>
+                </div>
+
+                {/* Features List */}
+                <ul className="space-y-4 mb-8 flex-grow">
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-3">
-                      <CheckCircle className={`w-5 h-5 flex-shrink-0 ${plan.popular ? 'text-amber-200' : 'text-amber-500'}`} />
-                      <span>{feature}</span>
+                    <li key={i} className="flex items-center gap-3 text-gray-700">
+                      <CheckCircle className={`w-5 h-5 flex-shrink-0 ${plan.color === 'slate' ? 'text-slate-400' :
+                          plan.color === 'blue' ? 'text-blue-500' : 'text-amber-500'
+                        }`} />
+                      <span className="text-sm">{feature}</span>
                     </li>
                   ))}
+
+                  {/* Security Add-on Toggle Inside Card */}
+                  {plan.hasSecurityAddon && (
+                    <li className="pt-4 mt-4 border-t border-gray-100">
+                      <label className="flex items-start gap-3 cursor-pointer group select-none">
+                        <div className={`mt-0.5 w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 transition-colors ${selectedAddons[originalIndex] ? 'bg-amber-500 border-amber-500' : 'border-gray-300 group-hover:border-amber-400'
+                          }`}>
+                          {selectedAddons[originalIndex] && <CheckCircle className="w-3.5 h-3.5 text-white" />}
+                          <input
+                            type="checkbox"
+                            className="hidden"
+                            checked={!!selectedAddons[originalIndex]}
+                            onChange={() => toggleAddon(originalIndex)}
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <span className={`text-sm font-bold block transition-colors ${selectedAddons[originalIndex] ? 'text-gray-900' : 'text-gray-600'}`}>
+                            إضافة حزمة الأمان
+                          </span>
+                          <span className="text-xs text-gray-500 block mb-1">
+                            بريد مشفر، VPN، تخزين سحابي
+                          </span>
+                          <span className="text-xs font-bold text-amber-600">
+                            +{getSecurityPrice(plan.name, currency)} {currentCurrency.symbol} / شهر
+                          </span>
+                        </div>
+                      </label>
+                    </li>
+                  )}
                 </ul>
 
-                <button
-                  className={`w-full py-4 rounded-xl font-bold transition-all duration-300 ${plan.popular
-                    ? 'bg-white text-amber-700 hover:bg-amber-50 shadow-lg'
-                    : 'bg-slate-900 text-white hover:bg-slate-800 shadow-md hover:shadow-lg'
-                    }`}
-                >
+                <button className={`w-full py-3 rounded-xl font-bold transition-all ${plan.color === 'slate' ? 'bg-slate-100 text-slate-700 hover:bg-slate-200' :
+                    plan.color === 'blue' ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-200' :
+                      'bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:shadow-amber-500/20 shadow-lg'
+                  }`}>
                   {plan.cta}
                 </button>
               </div>
-            </div>
-          ))}
+            )
+          })}
+        </div>
+
+        {/* Extra Credits Section */}
+        <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg border border-gray-100 p-8">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8 flex items-center justify-center gap-2">
+            <Plus className="w-6 h-6 text-amber-500" />
+            شراء أرصدة إضافية
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {extraCredits.map((item, index) => (
+              <div key={index} className="flex flex-col items-center p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-amber-300 transition-colors">
+                <span className="text-lg font-bold text-gray-700 mb-2">{item.credits} رصيد</span>
+                <span className="text-2xl font-extrabold text-amber-600">
+                  {currency === 'dzd' ? item.price.dzd : currency === 'eur' ? item.price.eur : item.price.usd}
+                  <span className="text-sm text-gray-500 font-normal mr-1">{currentCurrency.symbol}</span>
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-500 text-sm">Prices do not include applicable taxes.</p>
+          <Link
+            href="/pricing"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition-all hover:shadow-lg"
+          >
+            عرض تفاصيل الباقات والخدمات
+          </Link>
         </div>
+
       </div>
     </section>
   )

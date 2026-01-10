@@ -1,7 +1,42 @@
+'use client'
+
 import PageHero from '@/components/PageHero'
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
 
+import { useState } from 'react'
+import { submitToGoogleSheet } from '@/lib/googleSheets'
+
 export default function ContactPage() {
+    const [loading, setLoading] = useState(false)
+    const [status, setStatus] = useState<{ type: 'success' | 'error' | null, message: string }>({ type: null, message: '' })
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        setLoading(true)
+        setStatus({ type: null, message: '' })
+
+        const formData = new FormData(e.currentTarget)
+        const data = {
+            type: 'contact' as const,
+            name: formData.get('name') as string,
+            email: formData.get('email') as string,
+            phone: formData.get('phone') as string,
+            subject: formData.get('subject') as string,
+            message: formData.get('message') as string,
+        }
+
+        try {
+            await submitToGoogleSheet(data)
+            setStatus({ type: 'success', message: 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.' })
+            e.currentTarget.reset()
+        } catch (error) {
+            console.error('Submission error:', error)
+            setStatus({ type: 'error', message: 'حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى لاحقاً.' })
+        } finally {
+            setLoading(false)
+        }
+    }
+
     return (
         <main className="min-h-screen">
             {/* Hero Section */}
@@ -56,7 +91,6 @@ export default function ContactPage() {
                                         <div className="space-y-2 text-gray-600">
                                             <p>🇪🇪 Tallinn, Estonia</p>
                                             <p className="text-sm">Harju maakond, Tallinn, Kesklinna linnaosa, Pärnu mnt 139b, 11317</p>
-                                            <p className="mt-3">ⴰⵙⴷⵉⴼ</p>
 
                                         </div>
                                     </div>
@@ -65,7 +99,7 @@ export default function ContactPage() {
 
                             {/* Map Placeholder */}
                             <div className="mt-8 p-4 ">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.9834866434435!2d24.736513900000002!3d59.40848510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294c1134ed73f%3A0x15fcabd9c58e4752!2sP%C3%A4rnu%20mnt.%20139b%2C%2011317%20Tallinn%2C%20Estonia!5e1!3m2!1sen!2sdz!4v1767820230256!5m2!1sen!2sdz" width="100%" height="450"   loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.9834866434435!2d24.736513900000002!3d59.40848510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294c1134ed73f%3A0x15fcabd9c58e4752!2sP%C3%A4rnu%20mnt.%20139b%2C%2011317%20Tallinn%2C%20Estonia!5e1!3m2!1sen!2sdz!4v1767820230256!5m2!1sen!2sdz" width="100%" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
 
@@ -73,7 +107,7 @@ export default function ContactPage() {
                         <div>
                             <h2 className="text-3xl font-bold text-gray-900 mb-8">أرسل لنا رسالة</h2>
 
-                            <form className="space-y-6">
+                            <form onSubmit={handleSubmit} className="space-y-6">
                                 <div>
                                     <label className="block text-gray-700 font-medium mb-2" htmlFor="name">
                                         الاسم الكامل
@@ -81,6 +115,8 @@ export default function ContactPage() {
                                     <input
                                         type="text"
                                         id="name"
+                                        name="name"
+                                        required
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                                         placeholder="أدخل اسمك الكامل"
                                         dir="rtl"
@@ -94,6 +130,8 @@ export default function ContactPage() {
                                     <input
                                         type="email"
                                         id="email"
+                                        name="email"
+                                        required
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                                         placeholder="example@email.com"
                                         dir="rtl"
@@ -107,6 +145,7 @@ export default function ContactPage() {
                                     <input
                                         type="tel"
                                         id="phone"
+                                        name="phone"
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                                         placeholder="+213 XXX XXX XXX"
                                         dir="rtl"
@@ -120,6 +159,8 @@ export default function ContactPage() {
                                     <input
                                         type="text"
                                         id="subject"
+                                        name="subject"
+                                        required
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                                         placeholder="موضوع الرسالة"
                                         dir="rtl"
@@ -132,6 +173,8 @@ export default function ContactPage() {
                                     </label>
                                     <textarea
                                         id="message"
+                                        name="message"
+                                        required
                                         rows={6}
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
                                         placeholder="اكتب رسالتك هنا..."
@@ -139,12 +182,19 @@ export default function ContactPage() {
                                     />
                                 </div>
 
+                                {status.message && (
+                                    <div className={`p-4 rounded-lg ${status.type === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'}`}>
+                                        {status.message}
+                                    </div>
+                                )}
+
                                 <button
                                     type="submit"
-                                    className="w-full px-8 py-4 bg-gradient-to-br from-blue-600 to-blue-500 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
+                                    disabled={loading}
+                                    className={`w-full px-8 py-4 bg-gradient-to-br from-blue-600 to-blue-500 text-white rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
                                 >
-                                    <Send className="w-5 h-5" />
-                                    إرسال الرسالة
+                                    <Send className={`w-5 h-5 ${loading ? 'animate-spin' : ''}`} />
+                                    {loading ? 'جاري الإرسال...' : 'إرسال الرسالة'}
                                 </button>
                             </form>
                         </div>

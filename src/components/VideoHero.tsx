@@ -36,7 +36,7 @@ export default function VideoHero() {
     }, [text, isDeleting, loopNum, typingSpeed, words])
 
     return (
-        <section className="relative h-screen w-full overflow-hidden">
+        <section className="relative min-h-[100dvh] w-full overflow-hidden flex items-center">
             {/* Video Background */}
             <div className="absolute inset-0 z-0">
                 <video
@@ -48,33 +48,33 @@ export default function VideoHero() {
                 >
                     <source src="/images/home.mp4" type="video/mp4" />
                 </video>
-                {/* Gradient Overlay for better text readability */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+                {/* Gradient Overlay - adjusted for better mobile readability */}
+                <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/90 via-black/60 to-black/30 md:to-transparent" />
             </div>
 
             {/* Content */}
-            <div className="relative z-10 flex h-full items-center">
+            <div className="relative z-10 w-full py-20">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-3xl">
-                        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                            Legal Artificial Intelligence for <br />
-                            <span className="text-blue-400 min-h-[1.2em] inline-block">
+                    <div className="max-w-4xl mx-auto md:mx-0">
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
+                            Legal Artificial Intelligence for <br className="hidden md:block" />
+                            <span className="text-blue-400 inline-block min-h-[1.2em]">
                                 {text}
                                 <span className="animate-pulse">|</span>
                             </span>
                         </h1>
 
-                        <p className="text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl">
-                            Welcome to the Legal AI platform, the ideal solution for legal practitioners and academics seeking to enhance their efficiency and improve their performance. We offer you a set of advanced tools powered by artificial intelligence to facilitate daily work and improve the quality of legal and academic research.
+                        <p className="text-lg sm:text-xl text-gray-200 mb-8 md:mb-12 leading-relaxed max-w-2xl">
+                            Welcome to the Legal AI platform, the ideal solution for legal practitioners and academics seeking to enhance their efficiency. We offer advanced AI-powered tools to facilitate daily work and improve research quality.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4 mb-20">
+                        <div className="flex flex-col sm:flex-row gap-4 mb-16 md:mb-20">
                             <a
                                 href="/services"
-                                className="px-10 py-5 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 text-lg flex items-center justify-center gap-2"
+                                className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-1 text-lg group"
                             >
                                 Start Now
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                 </svg>
                             </a>
@@ -82,22 +82,22 @@ export default function VideoHero() {
 
                         {/* Trusted By Section */}
                         <div className="border-t border-white/10 pt-8">
-                            <p className="text-gray-400 text-sm font-medium uppercase tracking-wider mb-6">Trusted by organizations worldwide</p>
-                            <div className="flex flex-wrap items-center gap-8 md:gap-12 opacity-70">
-                                <div className="flex items-center gap-2 text-white/80 font-bold text-xl">
-                                    <Globe className="w-8 h-8" />
+                            <p className="text-gray-400 text-xs sm:text-sm font-medium uppercase tracking-wider mb-6">Trusted by organizations worldwide</p>
+                            <div className="flex flex-wrap items-center gap-6 sm:gap-10 md:gap-12 opacity-70">
+                                <div className="flex items-center gap-2 text-white/80 font-bold text-sm sm:text-lg">
+                                    <Globe className="w-6 h-6 sm:w-8 sm:h-8" />
                                     <span>GlobalLaw</span>
                                 </div>
-                                <div className="flex items-center gap-2 text-white/80 font-bold text-xl">
-                                    <Scale className="w-8 h-8" />
+                                <div className="flex items-center gap-2 text-white/80 font-bold text-sm sm:text-lg">
+                                    <Scale className="w-6 h-6 sm:w-8 sm:h-8" />
                                     <span>JusticeNet</span>
                                 </div>
-                                <div className="flex items-center gap-2 text-white/80 font-bold text-xl">
-                                    <Building2 className="w-8 h-8" />
+                                <div className="flex items-center gap-2 text-white/80 font-bold text-sm sm:text-lg">
+                                    <Building2 className="w-6 h-6 sm:w-8 sm:h-8" />
                                     <span>CorpLegis</span>
                                 </div>
-                                <div className="flex items-center gap-2 text-white/80 font-bold text-xl">
-                                    <GraduationCap className="w-8 h-8" />
+                                <div className="flex items-center gap-2 text-white/80 font-bold text-sm sm:text-lg">
+                                    <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8" />
                                     <span>EduLegal</span>
                                 </div>
                             </div>

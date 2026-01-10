@@ -13,40 +13,41 @@ export default function VisualFactsPage() {
         {
             icon: Layers,
             title: "تحويل البيانات غير المنظمة إلى مشهد بصري",
-            description: "من تقارير وشهادات متفرقة إلى سرد بصري متكامل"
+            description: "من تقارير وشهادات متفرقة إلى سرد بصري متكامل."
         },
         {
             icon: Eye,
             title: "فهم أعمق للوقائع",
-            description: "تسهيل استيعاب العلاقات الزمنية والمكانية بين الأحداث"
+            description: "تسهيل استيعاب العلاقات الزمنية والمكانية بين الأحداث."
         },
         {
             icon: TestTube,
             title: "اختبار السيناريوهات",
-            description: "مقارنة فرضيات مختلفة بناءً على نفس المعطيات"
+            description: "مقارنة فرضيات مختلفة بناءً على نفس المعطيات."
         },
         {
             icon: Lightbulb,
             title: "تعزيز قوة الدليل البصري",
-            description: "فالصورة أبلغ من ألف كلمة، خاصة في القضايا المعقّدة"
+            description: "فالصورة أبلغ من ألف كلمة، خاصة في القضايا المعقّدة."
         },
         {
             icon: AlertTriangle,
             title: "كشف التناقضات المحتملة",
-            description: "إبراز التعارضات المنطقية أو الفيزيائية بين الروايات المختلفة"
+            description: "إبراز التعارضات المنطقية أو الفيزيائية بين الروايات المختلفة."
         },
         {
             icon: Users,
-            title: "أداة دعم قانوني",
-            description: "تُستخدم كمساعدة تحليلية وتوضيحية ضمن الإطار المهني، وليست بديلًا عن القرار البشري"
+            title: "أداة دعم قانوني وليست بديلًا عن القرار البشري",
+            description: "تُستخدم كمساعدة تحليلية وتوضيحية ضمن الإطار المهني."
         }
     ]
 
     const useCases = [
-        { icon: Car, title: "حوادث المرور", description: "إعادة بناء مسرح الحادث بصرياً" },
-        { icon: Building, title: "النزاعات العقارية والإنشائية", description: "تصور المخالفات والتجاوزات" },
-        { icon: Clock, title: "التسلسل الزمني المعقد", description: "القضايا التي تعتمد على ترتيب الأحداث" },
-        { icon: GraduationCap, title: "الأغراض التعليمية", description: "التدريب القانوني والمحاكاة الأكاديمية" }
+        { icon: Car, title: "حوادث المرور", description: "" },
+        { icon: Building, title: "النزاعات العقارية والإنشائية", description: "" },
+        { icon: Clock, title: "القضايا التي تعتمد على تسلسل زمني معقّد", description: "" },
+        { icon: GraduationCap, title: "الأغراض التعليمية والتدريب القانوني", description: "" },
+        { icon: Eye, title: "الوقائع بصريا", description: "" }
     ]
 
     return (
@@ -60,6 +61,10 @@ export default function VisualFactsPage() {
                     </h1>
                     <p className="text-xl text-gray-200 leading-relaxed font-light max-w-3xl mx-auto">
                         خدمة متقدمة لتحويل البيانات غير المنظمة والسرديات المعقدة — مثل تقارير الشرطة، شهادات الشهود، الأدلة المادية، الصور، الخرائط، والبيانات المكانية — إلى محاكاة بصرية تحاكي تسلسل الأحداث كما يُفترض حدوثها.
+                        <br />
+                        يعمل الذكاء الاصطناعي في هذه الخدمة كمخرج ومصور وممثل رقمي، مع إمكانية اختبار سيناريوهات مختلفة استنادًا إلى المعطيات المتاحة، مما يساعد على فهم أعمق للديناميكيات الواقعية ويعزز قوة الدليل البصري.
+                        <br />
+                        <span className="block mt-4 text-amber-400 font-semibold">نحن لا نكتفي بعرض الأدلة، بل نجعل الحقيقة مرئية.</span>
                     </p>
                 </div>
             </PageHero>
@@ -72,7 +77,7 @@ export default function VisualFactsPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-gradient-to-br from-amber-50 to-blue-50 rounded-2xl p-8 md:p-12 border border-amber-100 shadow-lg">
                             <h2 className="text-2xl font-bold text-gray-900 mb-6 border-r-4 border-amber-500 pr-4">
-                                محاكاة بصرية للوقائع والأحداث
+                                إعادة تمثيل الوقائع القانونية بصريًا
                             </h2>
                             <div className="flex justify-center mb-8">
                                 <img
@@ -82,16 +87,11 @@ export default function VisualFactsPage() {
                                 />
                             </div>
                             <p className="text-lg text-gray-700 leading-loose mb-6">
-                                يعمل الذكاء الاصطناعي في هذه الخدمة كمخرج ومصور وممثل رقمي، مع إمكانية اختبار سيناريوهات مختلفة استنادًا إلى المعطيات المتاحة، مما يساعد على فهم أعمق للديناميكيات الواقعية ويعزز قوة الدليل البصري.
+                                إعادة تمثيل الوقائع القانونية بصريًا هي خدمة قانونية متقدمة تهدف إلى تحويل البيانات غير المنظمة والسرديات المعقّدة إلى محاكاة بصرية منظمة تحاكي تسلسل الأحداث كما يُفترض وقوعها، استنادًا إلى الوقائع والأدلة المقدّمة.
                             </p>
                             <p className="text-lg text-gray-700 leading-loose mb-6">
                                 تمكّن هذه الخدمة الممارسين القانونيين من الانتقال من الوصف النصي المجرد إلى تصور بصري واضح يساعد على الفهم والتحليل والتفسير القانوني الدقيق.
                             </p>
-                            <div className="text-center pt-4">
-                                <p className="text-2xl font-bold text-amber-700 italic">
-                                    «نحن لا نكتفي بعرض الأدلة، بل نجعل الحقيقة مرئية»
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
