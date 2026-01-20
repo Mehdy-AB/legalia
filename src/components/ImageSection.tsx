@@ -1,10 +1,10 @@
 import { ImageIcon } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 interface ImageSectionProps {
     title: string
     description: string
     imagePosition?: 'left' | 'right'
-    imagePlaceholderText?: string
     children?: React.ReactNode
     className?: string
 }
@@ -13,17 +13,18 @@ export default function ImageSection({
     title,
     description,
     imagePosition = 'right',
-    imagePlaceholderText = 'صورة توضيحية',
     children,
     className = ''
 }: ImageSectionProps) {
+    const t = useTranslations('ImageSection')
+
     const imageContent = (
         <div className="flex items-center justify-center bg-gradient-to-br from-blue-50 to-gray-100 rounded-2xl border-2 border-dashed border-gray-300 min-h-[400px] relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="text-center z-10">
                 <ImageIcon className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-500 font-medium">{imagePlaceholderText}</p>
-                <p className="text-sm text-gray-400 mt-2">سيتم إضافة الصورة لاحقاً</p>
+                <p className="text-gray-500 font-medium">{t('placeholder')}</p>
+                <p className="text-sm text-gray-400 mt-2">{t('pending')}</p>
             </div>
         </div>
     )

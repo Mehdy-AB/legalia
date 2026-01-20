@@ -1,8 +1,13 @@
-import { Mail, Phone, MapPin, Brain } from 'lucide-react'
-import Link from 'next/link'
+"use client"
+import { Mail, Phone, MapPin } from 'lucide-react'
+import { Link } from '@/i18n/navigation'
 import NewsletterForm from './NewsletterForm'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+  const t = useTranslations('Footer')
+  const tHeader = useTranslations('Header')
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -13,41 +18,41 @@ export default function Footer() {
                 <img
                   src="/logo.png"
                   alt="LegalAI Logo"
-                  className="w-full h-full object-contain brightness-0 invert" // Invert to make it white for dark footer
+                  className="w-full h-full object-contain brightness-0 invert"
                 />
               </div>
               <span className="text-xl font-bold">LegalAI</span>
             </div>
             <p className="text-gray-400 text-sm">
-              منصة قانونية ذكية تجمع بين التحليل القانوني المتقدم، الصياغة الدقيقة، والتمثيل البصري للوقائع
+              {t('companyDescription')}
             </p>
             <NewsletterForm />
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">خدماتنا</h3>
+            <h3 className="font-bold text-lg mb-4">{t('services')}</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/services/ai-chat" className="hover:text-blue-400 transition-colors">الدردشة الذكية</Link></li>
-              <li><Link href="/services/legal-model" className="hover:text-blue-400 transition-colors">النموذج القانوني</Link></li>
-              <li><Link href="/services/document-analysis" className="hover:text-blue-400 transition-colors">تحليل المستندات</Link></li>
-              <li><Link href="/services/visual-facts" className="hover:text-blue-400 transition-colors">تمثيل الوقائع</Link></li>
-              <li><Link href="/services/security" className="hover:text-blue-400 transition-colors">الأمن والخصوصية</Link></li>
+              <li><Link href="/services/ai-chat" className="hover:text-blue-400 transition-colors">{t('aiChat')}</Link></li>
+              <li><Link href="/services/legal-model" className="hover:text-blue-400 transition-colors">{t('legalModel')}</Link></li>
+              <li><Link href="/services/document-analysis" className="hover:text-blue-400 transition-colors">{t('documentAnalysis')}</Link></li>
+              <li><Link href="/services/visual-facts" className="hover:text-blue-400 transition-colors">{t('visualFacts')}</Link></li>
+              <li><Link href="/services/security" className="hover:text-blue-400 transition-colors">{t('security')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">روابط سريعة</h3>
+            <h3 className="font-bold text-lg mb-4">{t('quickLinks')}</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/about" className="hover:text-blue-400 transition-colors">من نحن</Link></li>
-              <li><Link href="/faq" className="hover:text-blue-400 transition-colors">الأسئلة الشائعة</Link></li>
-              <li><Link href="/pricing" className="hover:text-blue-400 transition-colors">الأسعار</Link></li>
-              <li><Link href="/blog" className="hover:text-blue-400 transition-colors">المدونة</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-400 transition-colors">اتصل بنا</Link></li>
+              <li><Link href="/about" className="hover:text-blue-400 transition-colors">{tHeader('about')}</Link></li>
+              <li><Link href="/faq" className="hover:text-blue-400 transition-colors">{tHeader('faq')}</Link></li>
+              <li><Link href="/pricing" className="hover:text-blue-400 transition-colors">{tHeader('pricing')}</Link></li>
+              <li><Link href="/blog" className="hover:text-blue-400 transition-colors">{tHeader('blog')}</Link></li>
+              <li><Link href="/contact" className="hover:text-blue-400 transition-colors">{tHeader('contact')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">اتصل بنا</h3>
+            <h3 className="font-bold text-lg mb-4">{t('contact')}</h3>
             <div className="space-y-3 text-gray-400 text-sm">
               <div className="flex items-start gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0 text-blue-400 mt-0.5" />
@@ -73,10 +78,11 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} LegalAI. جميع الحقوق محفوظة.</p>
-          <p className="mt-2">LegalAI كيان تقني مستقل، لا يقدم استشارات قانونية ملزمة، ولا يتدخل في اتخاذ القرار القضائي أو المهني</p>
+          <p>© {new Date().getFullYear()} LegalAI. {t('copyright')}.</p>
+          <p className="mt-2">LegalAI is an independent technology entity that does not provide binding legal advice.</p>
         </div>
       </div>
     </footer>
   )
 }
+

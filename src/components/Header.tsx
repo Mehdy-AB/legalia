@@ -1,11 +1,14 @@
 "use client"
-import { Brain, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const t = useTranslations('Header')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,11 +19,11 @@ export default function Header() {
   }, [])
 
   const navItems = [
-    { label: 'الرئيسية', href: '/' },
-    { label: 'من نحن', href: '/about' },
-    { label: 'خدماتنا', href: '/services' },
-    { label: 'المدونة', href: '/blog' },
-    { label: 'اتصل بنا', href: '/contact' },
+    { label: t('home'), href: '/' },
+    { label: t('about'), href: '/about' },
+    { label: t('services'), href: '/services' },
+    { label: t('blog'), href: '/blog' },
+    { label: t('contact'), href: '/contact' },
   ]
 
   return (
@@ -55,19 +58,23 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
+            <LanguageSwitcher isScrolled={isScrolled} />
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? (
-              <X className={`w-6 h-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
-            ) : (
-              <Menu className={`w-6 h-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
-            )}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher isScrolled={isScrolled} />
+            <button
+              className="p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className={`w-6 h-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
+              ) : (
+                <Menu className={`w-6 h-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

@@ -1,0 +1,445 @@
+{
+    "Header": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact Us",
+        "pricing": "Pricing",
+        "faq": "FAQ"
+    },
+    "Footer": {
+        "companyDescription": "An intelligent legal platform combining advanced legal analysis, precise drafting, and visual representation of facts.",
+        "quickLinks": "Quick Links",
+        "services": "Services",
+        "contact": "Contact",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "copyright": "All rights reserved",
+        "aiChat": "AI Chat",
+        "legalModel": "Legal Model",
+        "documentAnalysis": "Document Analysis",
+        "visualFacts": "Visual Facts",
+        "security": "Security"
+    },
+    "HomePage": {
+        "heroTitle": "Legal Artificial Intelligence for",
+        "heroWords": [
+            "Lawyers",
+            "Education",
+            "Judge",
+            "Legal Practices"
+        ],
+        "heroDescription": "Welcome to the Legal AI platform, the ideal solution for legal practitioners and academics seeking to enhance their efficiency. We offer advanced AI-powered tools to facilitate daily work and improve research quality.",
+        "startNow": "Start Now",
+        "trustedBy": "Trusted by organizations worldwide",
+        "whoWeAre": "Who we are",
+        "acceleratingMastery": "Accelerating Professional",
+        "masteryHighlight": "Mastery",
+        "missionIntro": "By combining deep legal research with cutting-edge innovation, LegalAI is designed to help legal practitioners develop their expertise faster.",
+        "missionDetail": "Our team is committed to understanding your specific needs and strives to transform the legal profession with smart, AI-powered solutions built to serve your professional and academic needs.",
+        "ourMission": "Our Mission",
+        "ourMissionText": "We find that legal work needs to be as dynamic as the world it serves. We leverage the newest AI technologies to turn everyday tasks—research, document management, and drafting—into integrated, intelligent processes. We cut through administrative complexity, uncover profound insights, and concentrate on what really matters: providing outstanding legal services.",
+        "ourApproach": "Our Approach",
+        "ourApproachText": "That's why we take a collaborative approach, working closely with our clients to deliver tailored solutions that align with their goals. With our devotion to accuracy, security, and innovation, we're spearheading a new age of legal excellence.",
+        "clientsServed": "Client Served",
+        "successRate": "Success Rate",
+        "moreAboutUs": "More about us",
+        "collaborating": "Collaborating to shape the future of law.",
+        "mainServices": "Our Main Services",
+        "discoverServices": "Discover a comprehensive range of AI-powered legal services",
+        "discoverMore": "Discover More",
+        "blog": "Blog",
+        "latestArticles": "Latest Articles and Insights",
+        "followNews": "Follow the latest news and developments in legal technology",
+        "viewAllArticles": "View All Articles",
+        "faq": "FAQ",
+        "haveQuestions": "Have questions? We have answers",
+        "commonQuestions": "Most common questions about LegalAI platform",
+        "viewAllQuestions": "View All Questions",
+        "readyToTransform": "Ready to transform your legal work?",
+        "joinHundreds": "Join hundreds of lawyers and legal professionals using LegalAI",
+        "learnMore": "Learn More About Us"
+    },
+    "Services": {
+        "aiChat": {
+            "title": "Multi-Model AI Chat",
+            "description": "An advanced legal chat system powered by a proprietary intermediary model that connects multiple AI models and automatically selects the most suitable one.",
+            "features": [
+                "Smart Model Routing",
+                "Answer Quality Enhancement",
+                "Sensitive Data Filtering"
+            ]
+        },
+        "legalModel": {
+            "title": "Legal AI Model",
+            "description": "A proprietary legal AI model designed specifically for legal analysis, drafting, and document creation.",
+            "features": [
+                "Legal Fact Analysis",
+                "Document Drafting",
+                "Extensive Knowledge Base"
+            ]
+        },
+        "documentAnalysis": {
+            "title": "Document and Image Analysis",
+            "description": "Direct chat with legal documents and visual materials for quick and accurate understanding of complex files.",
+            "features": [
+                "PDF and Word Analysis",
+                "Image Processing",
+                "Document Comparison"
+            ]
+        },
+        "visualFacts": {
+            "title": "Visual Fact Reconstruction",
+            "description": "Transform unstructured data and complex narratives into visual simulations that recreate the sequence of events.",
+            "features": [
+                "Event Simulation",
+                "Scenario Testing",
+                "Visual Evidence Enhancement"
+            ]
+        },
+        "security": {
+            "title": "Digital Security and Privacy",
+            "description": "LegalAI places utmost importance on data protection and information confidentiality, providing secure digital services including:",
+            "features": [
+                "Encrypted Email",
+                "VPN for Identity Protection and Tracking Prevention",
+                "Encrypted Cloud Storage for Cases and Sensitive Files"
+            ]
+        }
+    },
+    "FAQ": {
+        "q1": "What is LegalAI platform?",
+        "a1": "LegalAI is a legal technology platform that relies on artificial intelligence to support legal analysis, document drafting, and document interaction.",
+        "q2": "Does LegalAI replace lawyers?",
+        "a2": "No. LegalAI is an assistive platform designed to support legal professionals with analysis and drafting tools that help them work more efficiently.",
+        "q3": "How is my data protected?",
+        "a3": "We apply the highest encryption and security standards. Your data is not used to train models and is not shared with third parties.",
+        "q4": "Who can use the platform?",
+        "a4": "The platform is designed for legal practitioners, law firms, researchers, academics, and law students."
+    },
+    "Pricing": {
+        "title": "Pricing Plans",
+        "subtitle": "Flexible pricing plans for everyone",
+        "description": "Choose the plan that suits your needs. Save 20% on yearly billing.",
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "save": "Save",
+        "popular": "Most Popular",
+        "perMonth": "/ month",
+        "subscribe": "Subscribe Now",
+        "securityAddon": "Add Security Package",
+        "securityDesc": "Encrypted email, VPN, Cloud storage",
+        "extraCredits": "Buy Extra Credits",
+        "credits": "credits",
+        "viewDetails": "View Full Plan Details",
+        "starter": {
+            "name": "Starter",
+            "description": "For individuals and beginners",
+            "features": [
+                "50 credits / month",
+                "10 requests / day",
+                "Legal Chat (Basic)",
+                "Standard Support",
+                "No File Analysis"
+            ]
+        },
+        "professional": {
+            "name": "Professional",
+            "description": "For lawyers and small firms",
+            "features": [
+                "200 credits / month",
+                "40 requests / day",
+                "Unlimited Legal Chat",
+                "Deep Analysis (20/mo)",
+                "Document Drafting (15/mo)",
+                "Image & Doc Analysis",
+                "24/7 Support"
+            ]
+        },
+        "advanced": {
+            "name": "Advanced",
+            "description": "For large firms and organizations",
+            "features": [
+                "500 credits / month",
+                "120 requests / day",
+                "All Features Unlimited*",
+                "Document Drafting (50/mo)",
+                "Visual Facts (23/mo)",
+                "Methodology Reports",
+                "24/7 Support",
+                "Team Training"
+            ]
+        }
+    },
+    "Quotes": {
+        "title": "Expert Opinions",
+        "subtitle": "What experts say about Legal AI?",
+        "q1": {
+            "quote": "Although AI can analyze and protect data, legal competence and capacity require empathy and human sense that will remain in human hands.",
+            "author": "Eric Schmidt",
+            "role": "Former CEO of Google",
+            "context": "This quote illustrates the current limits of AI in the legal field, where human understanding, empathy, and ethical context remain irreplaceable."
+        },
+        "q2": {
+            "quote": "AI contributes to expanding access to justice by lowering the cost of legal services.",
+            "author": "Karen Pollen",
+            "role": "CEO of Legal.io",
+            "context": "Highlights AI's role in reducing legal service costs, allowing broader access to legal support."
+        },
+        "q3": {
+            "quote": "AI will not replace lawyers, but it will replace many of the tasks and methods they are used to using.",
+            "author": "Richard Susskind",
+            "role": "Professor and Advisor in Legal Tech",
+            "context": "Suggests AI reshapes the profession by automating routine tasks without threatening the existence of lawyers."
+        },
+        "q4": {
+            "quote": "AI in the legal field is not meant to dispense with lawyers, but to enable them to use tools that make them more productive.",
+            "author": "Andrew Arruda",
+            "role": "Founder of ROSS Intelligence",
+            "context": "Emphasizes AI as a support tool for productivity."
+        },
+        "q5": {
+            "quote": "Not using AI might one day be considered legal malpractice! Similar to a late 20th-century lawyer doing everything manually despite computers existing.",
+            "author": "Tom Girardi",
+            "role": "Famous Attorney",
+            "context": "Indicates AI might become an essential professional tool."
+        }
+    },
+    "ServicesSection": {
+        "title": "Our Services",
+        "subtitle": "We offer a comprehensive range of AI-powered legal services",
+        "s1": {
+            "title": "Multi-Model Smart Chat",
+            "description": "Advanced legal chat system working via a proprietary intermediary model",
+            "features": [
+                "Smart routing between models",
+                "Improved accuracy",
+                "Privacy protection"
+            ]
+        },
+        "s2": {
+            "title": "Proprietary Legal Model",
+            "description": "Proprietary legal AI model for analysis and drafting",
+            "features": [
+                "Legal fact analysis",
+                "Professional drafting",
+                "Advanced legal research"
+            ]
+        },
+        "s3": {
+            "title": "Document & Evidence Analysis",
+            "description": "Chat directly with legal documents and visual materials",
+            "features": [
+                "PDF & Word analysis",
+                "Legal data extraction",
+                "Smart summarization"
+            ]
+        },
+        "s4": {
+            "title": "Visual Fact Representation",
+            "description": "Transform data into visual simulations of event sequences",
+            "features": [
+                "Text to scene",
+                "Scenario testing",
+                "Visual evidence enhancement"
+            ]
+        },
+        "s5": {
+            "title": "Security & Privacy",
+            "description": "Secure digital services including encrypted email and cloud storage",
+            "features": [
+                "Encrypted email",
+                "Secure VPN",
+                "Encrypted cloud storage"
+            ]
+        },
+        "s6": {
+            "title": "Outstanding Performance",
+            "description": "Fast processing with priority for urgent work",
+            "features": [
+                "Priority processing",
+                "Advanced models",
+                "Session saving"
+            ]
+        }
+    },
+    "Contact": {
+        "title": "Contact Us",
+        "subtitle": "We're here to help. Reach out to us anytime.",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message",
+        "sending": "Sending...",
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again."
+    },
+    "ImageSection": {
+        "placeholder": "Illustrative Image",
+        "pending": "Image will be added later"
+    },
+    "FAQPage": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Answers to the most common questions about LegalAI",
+        "noAnswer": "Didn't find your answer?",
+        "teamReady": "Our team is ready to help and answer all your questions",
+        "additionalResources": "Additional Resources",
+        "aboutDesc": "Learn about our team, mission, and vision",
+        "servicesDesc": "Discover all the services we offer",
+        "pricingDesc": "Learn about pricing plans and packages",
+        "q1": {
+            "question": "What is LegalAI platform?",
+            "answer": "LegalAI is a legal technology platform that relies on artificial intelligence to support legal analysis, document drafting, document interaction, and visual representation of legal facts, while adhering to professional standards and privacy protection."
+        },
+        "q2": {
+            "question": "Does LegalAI replace lawyers?",
+            "answer": "No. LegalAI is an assistive platform and not a substitute for lawyers or human decision-making. The platform aims to support legal professionals with analysis, drafting, and clarification tools that help them work more efficiently."
+        },
+        "q3": {
+            "question": "What's the difference between the intermediary legal chat and the proprietary legal model?",
+            "answer": "The intermediary chat routes requests between multiple AI models to select the most suitable for each task, while the proprietary legal chat relies on a platform-owned legal model specifically configured for advanced legal analysis and drafting."
+        },
+        "q4": {
+            "question": "What is meant by visual reconstruction of legal facts?",
+            "answer": "It's a service that transforms unstructured data such as reports, testimonies, and evidence into visual simulations that illustrate the sequence of events, aiming to support legal understanding and analysis and enhance visual evidence."
+        },
+        "q5": {
+            "question": "Who can use LegalAI platform?",
+            "answer": "The platform is designed for legal practitioners, law firms, legal researchers, academics, and law students, as well as legal teams within organizations."
+        },
+        "q6": {
+            "question": "Is the platform compliant with European and international privacy standards?",
+            "answer": "The platform was designed according to strict principles of data protection and digital governance, in line with privacy and compliance requirements applicable in the European and international context."
+        },
+        "q7": {
+            "question": "Does the platform require advanced technical expertise?",
+            "answer": "No. LegalAI's interface is designed to be simple and user-friendly, allowing legal professionals to benefit from its capabilities without needing advanced technical knowledge."
+        },
+        "q8": {
+            "question": "How can I start using the platform?",
+            "answer": "You can start by creating an account, then selecting the appropriate service and uploading documents or entering facts, and the platform will begin providing the required analytical and drafting support."
+        },
+        "q9": {
+            "question": "How is my data protected?",
+            "answer": "We apply the highest encryption and security standards to all data. We provide encrypted email services, secure VPN, and protected cloud storage. Your data is not used to train models and is not shared with third parties."
+        },
+        "q10": {
+            "question": "What is the credit system?",
+            "answer": "The credit system is a flexible pricing system that allows you to pay per use. Each service has a specific cost in credits, and you can purchase credits according to your needs."
+        }
+    },
+    "PricingPage": {
+        "heroTitle": "Pricing and Services Details",
+        "heroSubtitle": "Learn about service costs in credits and detailed features of each package",
+        "creditCostsTitle": "Service Credit Cost Table",
+        "customSolutionTitle": "Need a Custom Solution?",
+        "customSolutionDesc": "For large enterprises and government bodies, we offer customized solutions that fit your business scale",
+        "contactSales": "Contact Sales",
+        "categories": {
+            "legalChat": {
+                "title": "Legal Chat",
+                "items": [
+                    {
+                        "name": "Simple legal question",
+                        "cost": "1 credit"
+                    },
+                    {
+                        "name": "Medium legal analysis",
+                        "cost": "2 credits"
+                    },
+                    {
+                        "name": "In-depth consultation",
+                        "cost": "3 credits"
+                    }
+                ]
+            },
+            "docDrafting": {
+                "title": "Document Drafting & Review",
+                "items": [
+                    {
+                        "name": "Create legal document",
+                        "cost": "2 credits"
+                    },
+                    {
+                        "name": "Review document",
+                        "cost": "3 credits"
+                    },
+                    {
+                        "name": "Summarize / Extract points",
+                        "cost": "2 credits"
+                    },
+                    {
+                        "name": "Compare two documents",
+                        "cost": "3 credits"
+                    }
+                ]
+            },
+            "docAnalysis": {
+                "title": "Document & Image Analysis",
+                "items": [
+                    {
+                        "name": "Regular document (PDF)",
+                        "cost": "4 credits"
+                    },
+                    {
+                        "name": "Large case file",
+                        "cost": "7 credits"
+                    },
+                    {
+                        "name": "Image / Evidence analysis",
+                        "cost": "3 credits"
+                    }
+                ]
+            },
+            "visualFacts": {
+                "title": "Visual Fact Reconstruction",
+                "items": [
+                    {
+                        "name": "Fact sequence analysis",
+                        "cost": "7 credits"
+                    },
+                    {
+                        "name": "Visual simulation",
+                        "cost": "15 credits"
+                    },
+                    {
+                        "name": "Advanced simulation",
+                        "cost": "23 credits"
+                    },
+                    {
+                        "name": "Methodology report",
+                        "cost": "+4 credits"
+                    }
+                ]
+            }
+        }
+    },
+    "About": {
+        "title": "About Us",
+        "subtitle": "Learn more about LegalAI and our mission",
+        "ourStory": "Our Story",
+        "ourVision": "Our Vision",
+        "ourTeam": "Our Team"
+    },
+    "Common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "retry": "Retry",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "close": "Close",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "edit": "Edit",
+        "view": "View",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "selectLanguage": "Select Language"
+    }
+}

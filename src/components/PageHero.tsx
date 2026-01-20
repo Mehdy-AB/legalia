@@ -6,7 +6,7 @@ interface PageHeroProps {
     videoSrc?: string
 }
 
-export default function PageHero({ children, className = "", videoSrc = "/home.mp4" }: PageHeroProps) {
+export default function PageHero({ children, className = "", videoSrc = "https://res.cloudinary.com/dywcowkoy/video/upload/v1768749658/home.mp4" }: PageHeroProps) {
     return (
         <section className={`relative py-24 overflow-hidden ${className}`}>
             {/* Video Background */}

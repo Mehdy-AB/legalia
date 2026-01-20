@@ -1,50 +1,38 @@
 "use client"
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useState, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
 
 export default function QuotesSection() {
+  const t = useTranslations('Quotes')
+
   const quotes = [
     {
-      author: "إريك شميت",
-      role: "الرئيس التنفيذي السابق لشركة Google",
-      quote: "رغم أن الذكاء الاصطناعي قادر على تحليل البيانات وحمايتها، فإن الكفاءة والأهلية القانونية تتطلب تعاطفًا وحسًا إنسانيًا سيبقيان بيد البشر.",
-      context: "يوضح هذا القول الحدود الراهنة للذكاء الاصطناعي في المجال القانوني، حيث تظل عناصر الفهم الإنساني، والتعاطف، وتقدير السياق الأخلاقي عوامل لا يمكن للأنظمة الآلية أن تحل محلها.",
+      key: "q1",
       image: "/images/eric-schmidt.png"
     },
     {
-      author: "كارين بولن",
-      role: "الرئيسة التنفيذية لشركة Legal.io",
-      quote: "يُسهم الذكاء الاصطناعي في توسيع الوصول إلى العدالة من خلال خفض تكلفة الخدمات القانونية.",
-      context: "يُبرز هذا القول دور الذكاء الاصطناعي في تقليل تكاليف تقديم الخدمات القانونية، بما يسمح لشريحة أوسع من الأفراد والمؤسسات بالوصول إلى الدعم القانوني الذي كان في السابق مكلفًا أو محدودًا.",
+      key: "q2",
       image: "/images/karen-pollen.png"
     },
     {
-      author: "ريتشارد سوسكيند",
-      role: "أستاذ ومستشار في تقنيات القانون",
-      quote: "الذكاء الاصطناعي لن يحل محل المحامين، لكنه سيحل محل كثير من المهام والأساليب التي اعتادوا استخدامها.",
-      context: "يشير هذا القول إلى أن الذكاء الاصطناعي لا يهدد وجود مهنة المحاماة، بل يعيد تشكيلها من خلال أتمتة المهام الروتينية وتغيير أساليب العمل اليومية.",
+      key: "q3",
       image: "/images/richard-susskind.png"
     },
     {
-      author: "أندرو أرينشتاين",
-      role: "مؤسس ROSS Intelligence",
-      quote: "الذكاء الاصطناعي في المجال القانوني ليس هدفه الاستغناء عن المحامين، بل تمكينهم من استخدام أدوات تجعلهم أكثر إنتاجية.",
-      context: "يؤكد هذا القول أن دور الذكاء الاصطناعي يتمثل في دعم المحامين وتزويدهم بأدوات ذكية تُسهّل إدارة القضايا والمستندات.",
+      key: "q4",
       image: "/images/andrew-arruda.png"
     },
     {
-      author: "توم جيراردي",
-      role: "المحامي الشهير",
-      quote: "قد يعتبر عدم استخدام الذكاء الاصطناعي يوماً سوء تصرف قانوني! وهذا سيكون مشابهاً لمحامي في أواخر القرن العشرين الذي لا يزال يفعل كل شيء يدوياً رغم إمكانية استخدام الكمبيوتر.",
-      context: "يُشير إلى أن الذكاء الاصطناعي قد يتحول مستقبلاً إلى أداة مهنية أساسية، بحيث يُعد تجاهله تقصيراً في أداء الواجب القانوني.",
+      key: "q5",
       image: "/images/tom-girardi.png"
     }
   ]
 
-  return <QuoteCarousel quotes={quotes} />
+  return <QuoteCarousel quotes={quotes} t={t} />
 }
 
-function QuoteCarousel({ quotes }: { quotes: any[] }) {
+function QuoteCarousel({ quotes, t }: { quotes: any[], t: any }) {
   const [index, setIndex] = useState(0)
   const [visibleCount, setVisibleCount] = useState(1)
 
@@ -71,13 +59,13 @@ function QuoteCarousel({ quotes }: { quotes: any[] }) {
   const prev = () => setIndex(prev => (prev - 1 + quotes.length) % quotes.length)
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-amber-50/30 overflow-hidden" dir="rtl">
+    <section className="py-20 bg-gradient-to-br from-slate-50 to-amber-50/30 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-amber-50 text-amber-700 rounded-full text-sm font-semibold mb-4 border border-amber-200">
-            آراء الخبراء
+            {t('title')}
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">ماذا يقول الخبراء عن الذكاء الاصطناعي القانوني؟</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('subtitle')}</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-amber-600 mx-auto rounded-full"></div>
         </div>
 
@@ -105,10 +93,10 @@ function QuoteCarousel({ quotes }: { quotes: any[] }) {
                       <div className="w-full h-full rounded-full border-4 border-white shadow-lg relative z-10 bg-gray-200 overflow-hidden ring-2 ring-amber-200">
                         <img
                           src={quote.image}
-                          alt={quote.author}
+                          alt={t(`${quote.key}.author`)}
                           className="w-full h-full object-cover"
                           onError={(e) => {
-                            (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(quote.author) + '&background=f59e0b&color=fff'
+                            (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(t(`${quote.key}.author`)) + '&background=f59e0b&color=fff'
                           }}
                         />
                       </div>
@@ -116,20 +104,18 @@ function QuoteCarousel({ quotes }: { quotes: any[] }) {
 
                     {/* Quote Text */}
                     <p className="text-gray-700 text-lg leading-relaxed mb-4 font-medium relative z-10 min-h-[6rem]">
-                      «{quote.quote}»
+                      «{t(`${quote.key}.quote`)}»
                     </p>
 
                     {/* Context (smaller text) */}
-                    {quote.context && (
-                      <p className="text-gray-500 text-sm leading-relaxed mb-6 relative z-10 opacity-80">
-                        ({quote.context})
-                      </p>
-                    )}
+                    <p className="text-gray-500 text-sm leading-relaxed mb-6 relative z-10 opacity-80">
+                      ({t(`${quote.key}.context`)})
+                    </p>
 
                     {/* Author Info */}
                     <div className="mt-auto relative z-10 pt-4 border-t border-gray-100 w-full">
-                      <h4 className="font-bold text-gray-900 text-lg">{quote.author}</h4>
-                      <p className="text-amber-600 text-sm font-medium mt-1">{quote.role}</p>
+                      <h4 className="font-bold text-gray-900 text-lg">{t(`${quote.key}.author`)}</h4>
+                      <p className="text-amber-600 text-sm font-medium mt-1">{t(`${quote.key}.role`)}</p>
                     </div>
                   </div>
                 </div>
