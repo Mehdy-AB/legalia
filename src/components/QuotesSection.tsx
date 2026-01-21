@@ -59,13 +59,13 @@ function QuoteCarousel({ quotes, t }: { quotes: any[], t: any }) {
   const prev = () => setIndex(prev => (prev - 1 + quotes.length) % quotes.length)
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-amber-50/30 overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-slate-50 to-amber-50/30 dark:from-gray-900 dark:to-amber-900/10 overflow-hidden transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-amber-50 text-amber-700 rounded-full text-sm font-semibold mb-4 border border-amber-200">
+          <div className="inline-block px-4 py-2 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-sm font-semibold mb-4 border border-amber-200 dark:border-amber-800">
             {t('title')}
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('subtitle')}</h2>
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{t('subtitle')}</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-amber-600 mx-auto rounded-full"></div>
         </div>
 
@@ -81,16 +81,16 @@ function QuoteCarousel({ quotes, t }: { quotes: any[], t: any }) {
                   style={{ flex: `0 0 ${100 / visibleCount}%` }}
                   className="px-3"
                 >
-                  <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center group relative overflow-hidden">
+                  <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center text-center group relative overflow-hidden">
                     {/* Quote Icon Background */}
-                    <div className="absolute top-4 right-4 text-amber-100 opacity-30">
+                    <div className="absolute top-4 right-4 text-amber-100 dark:text-amber-900/20 opacity-30">
                       <Quote className="w-20 h-20" />
                     </div>
 
                     {/* Profile Image */}
                     <div className="relative w-24 h-24 mb-6 flex-shrink-0">
-                      <div className="absolute inset-0 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full animate-pulse-slow"></div>
-                      <div className="w-full h-full rounded-full border-4 border-white shadow-lg relative z-10 bg-gray-200 overflow-hidden ring-2 ring-amber-200">
+                      <div className="absolute inset-0 bg-gradient-to-br from-amber-200 to-amber-100 dark:from-amber-700 dark:to-amber-900/50 rounded-full animate-pulse-slow"></div>
+                      <div className="w-full h-full rounded-full border-4 border-white dark:border-gray-700 shadow-lg relative z-10 bg-gray-200 dark:bg-gray-600 overflow-hidden ring-2 ring-amber-200 dark:ring-amber-800">
                         <img
                           src={quote.image}
                           alt={t(`${quote.key}.author`)}
@@ -103,19 +103,19 @@ function QuoteCarousel({ quotes, t }: { quotes: any[], t: any }) {
                     </div>
 
                     {/* Quote Text */}
-                    <p className="text-gray-700 text-lg leading-relaxed mb-4 font-medium relative z-10 min-h-[6rem]">
+                    <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-4 font-medium relative z-10 min-h-[6rem]">
                       «{t(`${quote.key}.quote`)}»
                     </p>
 
                     {/* Context (smaller text) */}
-                    <p className="text-gray-500 text-sm leading-relaxed mb-6 relative z-10 opacity-80">
+                    <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 relative z-10 opacity-80">
                       ({t(`${quote.key}.context`)})
                     </p>
 
                     {/* Author Info */}
-                    <div className="mt-auto relative z-10 pt-4 border-t border-gray-100 w-full">
-                      <h4 className="font-bold text-gray-900 text-lg">{t(`${quote.key}.author`)}</h4>
-                      <p className="text-amber-600 text-sm font-medium mt-1">{t(`${quote.key}.role`)}</p>
+                    <div className="mt-auto relative z-10 pt-4 border-t border-gray-100 dark:border-gray-700 w-full">
+                      <h4 className="font-bold text-gray-900 dark:text-white text-lg">{t(`${quote.key}.author`)}</h4>
+                      <p className="text-amber-600 dark:text-amber-400 text-sm font-medium mt-1">{t(`${quote.key}.role`)}</p>
                     </div>
                   </div>
                 </div>
@@ -126,14 +126,14 @@ function QuoteCarousel({ quotes, t }: { quotes: any[], t: any }) {
           {/* Navigation Buttons */}
           <button
             onClick={prev}
-            className="absolute top-1/2 -right-2 md:-right-6 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-amber-600 hover:scale-110 transition-all z-20 border border-gray-100"
+            className="absolute top-1/2 -right-2 md:-right-6 -translate-y-1/2 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 hover:scale-110 transition-all z-20 border border-gray-100 dark:border-gray-700"
             aria-label="Previous"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
           <button
             onClick={next}
-            className="absolute top-1/2 -left-2 md:-left-6 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-amber-600 hover:scale-110 transition-all z-20 border border-gray-100"
+            className="absolute top-1/2 -left-2 md:-left-6 -translate-y-1/2 w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 hover:scale-110 transition-all z-20 border border-gray-100 dark:border-gray-700"
             aria-label="Next"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -145,7 +145,7 @@ function QuoteCarousel({ quotes, t }: { quotes: any[], t: any }) {
               <button
                 key={i}
                 onClick={() => setIndex(i)}
-                className={`h-2 rounded-full transition-all duration-300 ${i === index ? 'bg-amber-500 w-8' : 'bg-gray-300 w-2 hover:bg-amber-400'
+                className={`h-2 rounded-full transition-all duration-300 ${i === index ? 'bg-amber-500 w-8' : 'bg-gray-300 dark:bg-gray-600 w-2 hover:bg-amber-400'
                   }`}
                 aria-label={`Go to slide ${i + 1}`}
               />

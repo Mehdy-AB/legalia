@@ -35,7 +35,7 @@ export default function FAQSection() {
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
               <button
-                className="w-full p-6 text-right flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                className="w-full p-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <span className="font-bold text-gray-900 text-lg">{faq.question}</span>
@@ -45,7 +45,7 @@ export default function FAQSection() {
                   <ChevronDown className="w-5 h-5 text-gray-400" />
                 )}
               </button>
-              
+
               {openIndex === index && (
                 <div className="px-6 pb-6">
                   <p className="text-gray-600 leading-relaxed">{faq.answer}</p>

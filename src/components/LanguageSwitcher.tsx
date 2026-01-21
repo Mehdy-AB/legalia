@@ -2,8 +2,8 @@
 import { Globe, ChevronDown } from 'lucide-react'
 import { useState, useRef, useEffect } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
-import { usePathname, useRouter } from '@/i18n/navigation'
-import { routing } from '@/i18n/routing'
+import { usePathname } from '@/i18n/navigation'
+import { routing, isRtlLocale } from '@/i18n/routing'
 
 const languageNames: Record<string, string> = {
     en: 'English',
@@ -32,7 +32,6 @@ export default function LanguageSwitcher({ isScrolled = false }: LanguageSwitche
     const [isOpen, setIsOpen] = useState(false)
     const dropdownRef = useRef<HTMLDivElement>(null)
     const locale = useLocale()
-    const router = useRouter()
     const pathname = usePathname()
     const t = useTranslations('Common')
 
@@ -47,8 +46,17 @@ export default function LanguageSwitcher({ isScrolled = false }: LanguageSwitche
     }, [])
 
     const handleLocaleChange = (newLocale: string) => {
-        // replace current locale with new locale
-        router.replace(pathname, { locale: newLocale })
+        // Set the NEXT_LOCALE cookie
+        document.cookie = `NEXT_LOCALE=${newLocale};path=/;max-age=31536000`
+
+        // Update the dir attribute on the html element immediately for visual feedback
+        const newDir = isRtlLocale(newLocale) ? 'rtl' : 'ltr'
+        document.documentElement.setAttribute('dir', newDir)
+        document.documentElement.setAttribute('lang', newLocale)
+
+        // Force a full page reload to ensure server-side rendering with new locale
+        window.location.reload()
+
         setIsOpen(false)
     }
 
@@ -68,7 +76,7 @@ export default function LanguageSwitcher({ isScrolled = false }: LanguageSwitche
             </button>
 
             {isOpen && (
-                <div className="absolute top-full mt-2 right-0 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[160px] max-h-[300px] overflow-y-auto z-50">
+                <div className="absolute top-full mt-2 end-0 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[160px] max-h-[300px] overflow-y-auto z-50">
                     {routing.locales.map((loc) => (
                         <button
                             key={loc}

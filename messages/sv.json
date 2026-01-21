@@ -1,0 +1,892 @@
+{
+    "Header": {
+        "home": "Hem",
+        "about": "Om oss",
+        "services": "Tjänster",
+        "blog": "Blogg",
+        "contact": "Kontakt",
+        "pricing": "Priser",
+        "faq": "FAQ"
+    },
+    "Footer": {
+        "companyDescription": "En intelligent juridisk plattform som kombinerar avancerad juridisk analys, precis dokumentutformning och visuell representation av fakta.",
+        "quickLinks": "Snabblänkar",
+        "services": "Tjänster",
+        "contact": "Kontakt",
+        "email": "E-post",
+        "phone": "Telefon",
+        "location": "Plats",
+        "copyright": "Alla rättigheter förbehållna",
+        "aiChat": "AI-chatt",
+        "legalModel": "Juridisk modell",
+        "documentAnalysis": "Dokumentanalys",
+        "visualFacts": "Visuella fakta",
+        "security": "Säkerhet",
+        "disclaimer": "LegalAI är en oberoende teknisk enhet som inte ger bindande juridisk rådgivning.",
+        "newsletterTitle": "Prenumerera på vårt nyhetsbrev",
+        "emailPlaceholder": "Din e-post",
+        "subscribeSuccess": "Prenumeration lyckades!",
+        "subscribeError": "Ett fel uppstod. Försök igen."
+    },
+    "HomePage": {
+        "heroTitle": "Juridisk Artificiell Intelligens för",
+        "heroWords": [
+            "Advokater",
+            "Utbildning",
+            "Domare",
+            "Juridisk Praxis"
+        ],
+        "heroDescription": "Välkommen till Legal AI-plattformen, den ideala lösningen för jurister och akademiker som vill öka sin effektivitet. Vi erbjuder avancerade AI-drivna verktyg för att underlätta det dagliga arbetet och förbättra forskningskvaliteten.",
+        "startNow": "Börja Nu",
+        "trustedBy": "Betrodd av organisationer världen över",
+        "whoWeAre": "Vilka vi är",
+        "acceleratingMastery": "Påskynda Professionell",
+        "masteryHighlight": "Expertis",
+        "missionIntro": "Genom att kombinera djup juridisk forskning med banbrytande innovation är LegalAI utformat för att hjälpa jurister att snabbare utveckla sin expertis.",
+        "missionDetail": "Vårt team är engagerat i att förstå dina specifika behov och strävar efter att transformera den juridiska branschen med smarta, AI-drivna lösningar byggda för att tjäna dina professionella och akademiska behov.",
+        "ourMission": "Vår Mission",
+        "ourMissionText": "Vi tror att juridiskt arbete måste vara lika dynamiskt som den värld det tjänar. Vi utnyttjar de senaste AI-teknologierna för att omvandla vardagliga uppgifter—forskning, dokumenthantering och utformning—till integrerade, intelligenta processer. Vi skär igenom administrativ komplexitet, avslöjar djupa insikter och koncentrerar oss på det som verkligen betyder något: att leverera enastående juridiska tjänster.",
+        "ourApproach": "Vårt Tillvägagångssätt",
+        "ourApproachText": "Därför antar vi ett samarbetsinriktat tillvägagångssätt och arbetar nära våra kunder för att leverera skräddarsydda lösningar som är i linje med deras mål. Med vårt engagemang för precision, säkerhet och innovation leder vi en ny era av juridisk excellens.",
+        "clientsServed": "Betjänade Kunder",
+        "successRate": "Framgångsgrad",
+        "moreAboutUs": "Mer om oss",
+        "collaborating": "Samarbete för att forma lagens framtid.",
+        "mainServices": "Våra Huvudtjänster",
+        "discoverServices": "Upptäck ett omfattande utbud av AI-drivna juridiska tjänster",
+        "discoverMore": "Upptäck Mer",
+        "blog": "Blogg",
+        "latestArticles": "Senaste Artiklar och Insikter",
+        "followNews": "Följ de senaste nyheterna och utvecklingarna inom juridisk teknologi",
+        "viewAllArticles": "Visa Alla Artiklar",
+        "faq": "FAQ",
+        "haveQuestions": "Har du frågor? Vi har svar",
+        "commonQuestions": "Vanligaste frågorna om LegalAI-plattformen",
+        "viewAllQuestions": "Visa Alla Frågor",
+        "readyToTransform": "Redo att transformera ditt juridiska arbete?",
+        "joinHundreds": "Gå med i hundratals advokater och juridiska experter som använder LegalAI",
+        "learnMore": "Lär Dig Mer Om Oss"
+    },
+    "Services": {
+        "aiChat": {
+            "title": "Multi-Modell AI-chatt",
+            "description": "Ett avancerat juridiskt chattsystem drivet av en egen mellanhandsmodell som ansluter flera AI-modeller och automatiskt väljer den mest lämpliga.",
+            "features": [
+                "Intelligent Modellruttning",
+                "Förbättring av Svarskvalitet",
+                "Filtrering av Känsliga Data"
+            ]
+        },
+        "legalModel": {
+            "title": "Juridisk AI-Modell",
+            "description": "En egen juridisk AI-modell speciellt utformad för juridisk analys, utformning och dokumentskapande.",
+            "features": [
+                "Juridisk Faktaanalys",
+                "Dokumentutformning",
+                "Omfattande Kunskapsbas"
+            ]
+        },
+        "documentAnalysis": {
+            "title": "Dokument- och Bildanalys",
+            "description": "Direkt chatt med juridiska dokument och visuella material för snabb och exakt förståelse av komplexa filer.",
+            "features": [
+                "PDF- och Word-analys",
+                "Bildbehandling",
+                "Dokumentjämförelse"
+            ]
+        },
+        "visualFacts": {
+            "title": "Visuell Faktarekonstruktion",
+            "description": "Omvandla ostrukturerad data och komplexa berättelser till visuella simuleringar som återskapar händelseförloppet.",
+            "features": [
+                "Händelsesimulering",
+                "Scenariotestning",
+                "Visuell Bevisförbättring"
+            ]
+        },
+        "security": {
+            "title": "Digital Säkerhet och Integritet",
+            "description": "LegalAI fäster största vikt vid dataskydd och informationssekretess och tillhandahåller säkra digitala tjänster, inklusive:",
+            "features": [
+                "Krypterad E-post",
+                "VPN för Identitetsskydd och Spårningsförebyggande",
+                "Krypterad Molnlagring för Ärenden och Känsliga Filer"
+            ]
+        }
+    },
+    "FAQ": {
+        "q1": "Vad är LegalAI-plattformen?",
+        "a1": "LegalAI är en juridisk teknologiplattform som förlitar sig på artificiell intelligens för att stödja juridisk analys, dokumentutformning och dokumentinteraktion.",
+        "q2": "Ersätter LegalAI advokater?",
+        "a2": "Nej. LegalAI är en stödjande plattform utformad för att hjälpa juridiska yrkesverksamma med analys- och utformningsverktyg som hjälper dem att arbeta mer effektivt.",
+        "q3": "Hur skyddas mina data?",
+        "a3": "Vi tillämpar de högsta krypterings- och säkerhetsstandarderna. Dina data används inte för att träna modeller och delas inte med tredje part.",
+        "q4": "Vem kan använda plattformen?",
+        "a4": "Plattformen är utformad för jurister, advokatbyråer, forskare, akademiker och juriststudenter."
+    },
+    "Pricing": {
+        "title": "Prisplaner",
+        "subtitle": "Flexibla prisplaner för alla",
+        "description": "Välj planen som passar dina behov. Spara 20% vid årsdebitering.",
+        "monthly": "Månatlig",
+        "yearly": "Årlig",
+        "save": "Spara",
+        "popular": "Mest Populär",
+        "perMonth": "/ månad",
+        "subscribe": "Prenumerera Nu",
+        "securityAddon": "Lägg till Säkerhetspaket",
+        "securityDesc": "Krypterad e-post, VPN, Molnlagring",
+        "extraCredits": "Köp Extra Krediter",
+        "credits": "krediter",
+        "viewDetails": "Visa Fullständiga Plandetaljer",
+        "starter": {
+            "name": "Nybörjare",
+            "description": "För individer och nybörjare",
+            "features": [
+                "50 krediter / månad",
+                "10 förfrågningar / dag",
+                "Juridisk Chatt (Grundläggande)",
+                "Standardsupport",
+                "Ingen Filanalys"
+            ]
+        },
+        "professional": {
+            "name": "Professionell",
+            "description": "För advokater och små byråer",
+            "features": [
+                "200 krediter / månad",
+                "40 förfrågningar / dag",
+                "Obegränsad Juridisk Chatt",
+                "Djupanalys (20/månad)",
+                "Dokumentutformning (15/månad)",
+                "Bild- och Dokumentanalys",
+                "24/7 Support"
+            ]
+        },
+        "advanced": {
+            "name": "Avancerad",
+            "description": "För stora byråer och organisationer",
+            "features": [
+                "500 krediter / månad",
+                "120 förfrågningar / dag",
+                "Alla Funktioner Obegränsade*",
+                "Dokumentutformning (50/månad)",
+                "Visuella Fakta (23/månad)",
+                "Metodologirapporter",
+                "24/7 Support",
+                "Teamutbildning"
+            ]
+        }
+    },
+    "Quotes": {
+        "title": "Expertutlåtanden",
+        "subtitle": "Vad säger experter om Legal AI?",
+        "q1": {
+            "quote": "Även om AI kan analysera och skydda data, kräver juridisk kompetens och kapacitet empati och mänskligt sinne som kommer att förbli i mänskliga händer.",
+            "author": "Eric Schmidt",
+            "role": "Tidigare VD för Google",
+            "context": "Detta citat illustrerar de nuvarande gränserna för AI inom det juridiska området, där mänsklig förståelse, empati och etiskt sammanhang förblir oersättliga."
+        },
+        "q2": {
+            "quote": "AI bidrar till att utöka tillgången till rättvisa genom att sänka kostnaden för juridiska tjänster.",
+            "author": "Karen Pollen",
+            "role": "VD för Legal.io",
+            "context": "Belyser AI:s roll i att minska kostnaderna för juridiska tjänster, vilket möjliggör bredare tillgång till juridiskt stöd."
+        },
+        "q3": {
+            "quote": "AI kommer inte att ersätta advokater, men det kommer att ersätta många av de uppgifter och metoder de är vana vid att använda.",
+            "author": "Richard Susskind",
+            "role": "Professor och rådgivare inom Legal Tech",
+            "context": "Föreslår att AI omformar yrket genom att automatisera rutinuppgifter utan att hota advokaters existens."
+        },
+        "q4": {
+            "quote": "AI inom det juridiska området är inte menat att göra sig av med advokater, utan att göra det möjligt för dem att använda verktyg som gör dem mer produktiva.",
+            "author": "Andrew Arruda",
+            "role": "Grundare av ROSS Intelligence",
+            "context": "Betonar AI som ett stödverktyg för produktivitet."
+        },
+        "q5": {
+            "quote": "Att inte använda AI kan en dag betraktas som juridiskt tjänstefel! Liknande en advokat i slutet av 1900-talet som gör allt manuellt trots att datorer existerar.",
+            "author": "Tom Girardi",
+            "role": "Känd Advokat",
+            "context": "Indikerar att AI kan bli ett viktigt professionellt verktyg."
+        }
+    },
+    "ServicesSection": {
+        "title": "Våra Tjänster",
+        "subtitle": "Vi erbjuder ett heltäckande utbud av AI-drivna juridiska tjänster",
+        "s1": {
+            "title": "Multi-Modell Smart Chatt",
+            "description": "Avancerat juridiskt chattsystem som fungerar via en egenutvecklad mellanmodell",
+            "features": [
+                "Smart routing mellan modeller",
+                "Förbättrad noggrannhet",
+                "Integritetsskydd"
+            ]
+        },
+        "s2": {
+            "title": "Egenutvecklad Juridisk Modell",
+            "description": "Egenutvecklad juridisk AI-modell för analys och utformning",
+            "features": [
+                "Analys av juridiska fakta",
+                "Professionell utformning",
+                "Avancerad juridisk forskning"
+            ]
+        },
+        "s3": {
+            "title": "Dokument- & Bevisanalys",
+            "description": "Chatta direkt med juridiska dokument och visuella material",
+            "features": [
+                "PDF- & Word-analys",
+                "Utvinning av juridiska data",
+                "Smart sammanfattning"
+            ]
+        },
+        "s4": {
+            "title": "Visuell Faktarepresentation",
+            "description": "Omvandla data till visuella simuleringar av händelseförlopp",
+            "features": [
+                "Text till scen",
+                "Scenariotestning",
+                "Förbättring av visuella bevis"
+            ]
+        },
+        "s5": {
+            "title": "Säkerhet & Integritet",
+            "description": "Säkra digitala tjänster inklusive krypterad e-post och molnlagring",
+            "features": [
+                "Krypterad e-post",
+                "Säker VPN",
+                "Krypterad molnlagring"
+            ]
+        },
+        "s6": {
+            "title": "Enastående Prestanda",
+            "description": "Snabb bearbetning med prioritet för brådskande arbeten",
+            "features": [
+                "Prioriterad bearbetning",
+                "Avancerade modeller",
+                "Sessionsparande"
+            ]
+        }
+    },
+    "Contact": {
+        "title": "Kontakta Oss",
+        "subtitle": "Vi är här för att hjälpa till. Kontakta oss när som helst.",
+        "name": "Namn",
+        "email": "E-post",
+        "subject": "Ämne",
+        "message": "Meddelande",
+        "send": "Skicka Meddelande",
+        "sending": "Skickar...",
+        "success": "Meddelande skickat!",
+        "error": "Misslyckades med att skicka meddelande. Försök igen."
+    },
+    "ImageSection": {
+        "placeholder": "Illustrativ Bild",
+        "pending": "Bild kommer att läggas till senare"
+    },
+    "FAQPage": {
+        "title": "Vanliga frågor",
+        "subtitle": "Svar på de vanligaste frågorna om LegalAI",
+        "noAnswer": "Hittade du inte ditt svar?",
+        "teamReady": "Vårt team är redo att hjälpa till och svara på alla dina frågor",
+        "additionalResources": "Ytterligare Resurser",
+        "aboutDesc": "Lär dig om vårt team, uppdrag och vision",
+        "servicesDesc": "Upptäck alla tjänster vi erbjuder",
+        "pricingDesc": "Lär dig om prissättningsplaner och paket",
+        "q1": {
+            "question": "Vad är LegalAI-plattformen?",
+            "answer": "LegalAI är en juridisk teknikplattform som förlitar sig på artificiell intelligens för att stödja juridisk analys, dokumentutformning, dokumentinteraktion och visuell representation av juridiska fakta, samtidigt som professionella standarder och integritetsskydd följs."
+        },
+        "q2": {
+            "question": "Ersätter LegalAI advokater?",
+            "answer": "Nej. LegalAI är en hjälpande plattform och inte en ersättning för advokater eller mänskligt beslutsfattande. Plattformen syftar till att stödja jurister med analys-, utformnings- och förtydligandeverktyg som hjälper dem att arbeta mer effektivt."
+        },
+        "q3": {
+            "question": "Vad är skillnaden mellan den mellanliggande juridiska chatten och den egenutvecklade juridiska modellen?",
+            "answer": "Den mellanliggande chatten dirigerar förfrågningar mellan flera AI-modeller för att välja den mest lämpliga för varje uppgift, medan den egenutvecklade juridiska chatten förlitar sig på en plattformsägd juridisk modell specifikt konfigurerad för avancerad juridisk analys och utformning."
+        },
+        "q4": {
+            "question": "Vad menas med visuell rekonstruktion av juridiska fakta?",
+            "answer": "Det är en tjänst som omvandlar ostrukturerad data som rapporter, vittnesmål och bevis till visuella simuleringar som illustrerar händelseförloppet, i syfte att stödja juridisk förståelse och analys och förbättra visuella bevis."
+        },
+        "q5": {
+            "question": "Vem kan använda LegalAI-plattformen?",
+            "answer": "Plattformen är utformad för jurister, advokatbyråer, juridiska forskare, akademiker och juriststudenter samt juridiska team inom organisationer."
+        },
+        "q6": {
+            "question": "Följer plattformen europeiska och internationella integritetsstandarder?",
+            "answer": "Plattformen designades enligt strikta principer för dataskydd och digital styrning, i linje med integritets- och efterlevnadskrav som gäller i europeiska och internationella sammanhang."
+        },
+        "q7": {
+            "question": "Kräver plattformen avancerad teknisk expertis?",
+            "answer": "Nej. LegalAI:s gränssnitt är utformat för att vara enkelt och användarvänligt, så att jurister kan dra nytta av dess kapacitet utan att behöva avancerad teknisk kunskap."
+        },
+        "q8": {
+            "question": "Hur kan jag börja använda plattformen?",
+            "answer": "Du kan börja med att skapa ett konto, sedan välja lämplig tjänst och ladda upp dokument eller ange fakta, så börjar plattformen tillhandahålla det analytiska och utformningsstöd som krävs."
+        },
+        "q9": {
+            "question": "Hur skyddas mina data?",
+            "answer": "Vi tillämpar de högsta krypterings- och säkerhetsstandarderna på all data. Vi tillhandahåller krypterade e-posttjänster, säker VPN och skyddad molnlagring. Dina data används inte för att träna modeller och delas inte med tredje part."
+        },
+        "q10": {
+            "question": "Vad är kreditsystemet?",
+            "answer": "Kreditsystemet är ett flexibelt prissättningssystem som låter dig betala per användning. Varje tjänst har en specifik kostnad i krediter och du kan köpa krediter efter dina behov."
+        }
+    },
+    "PricingPage": {
+        "heroTitle": "Prissättning och tjänstdetaljer",
+        "heroSubtitle": "Läs mer om tjänstekostnader i krediter och detaljerade funktioner för varje paket",
+        "creditCostsTitle": "Tjänstekreditskostnadstabell",
+        "customSolutionTitle": "Behöver du en anpassad lösning?",
+        "customSolutionDesc": "För stora företag och myndigheter erbjuder vi skräddarsydda lösningar som passar din affärsskala",
+        "contactSales": "Kontakta säljare",
+        "categories": {
+            "legalChat": {
+                "title": "Juridisk Chatt",
+                "items": [
+                    {
+                        "name": "Enkel juridisk fråga",
+                        "cost": "1 kredit"
+                    },
+                    {
+                        "name": "Medelstor juridisk analys",
+                        "cost": "2 krediter"
+                    },
+                    {
+                        "name": "Djupgående konsultation",
+                        "cost": "3 krediter"
+                    }
+                ]
+            },
+            "docDrafting": {
+                "title": "Dokumentutformning och Granskning",
+                "items": [
+                    {
+                        "name": "Skapa juridiskt dokument",
+                        "cost": "2 krediter"
+                    },
+                    {
+                        "name": "Granska dokument",
+                        "cost": "3 krediter"
+                    },
+                    {
+                        "name": "Sammanfatta / Extrahera punkter",
+                        "cost": "2 krediter"
+                    },
+                    {
+                        "name": "Jämför två dokument",
+                        "cost": "3 krediter"
+                    }
+                ]
+            },
+            "docAnalysis": {
+                "title": "Dokument- och Bildanalys",
+                "items": [
+                    {
+                        "name": "Vanligt dokument (PDF)",
+                        "cost": "4 krediter"
+                    },
+                    {
+                        "name": "Stor aktfil",
+                        "cost": "7 krediter"
+                    },
+                    {
+                        "name": "Bild- / Bevisanalys",
+                        "cost": "3 krediter"
+                    }
+                ]
+            },
+            "visualFacts": {
+                "title": "Visuell Fakta-rekonstruktion",
+                "items": [
+                    {
+                        "name": "Faktaföljdsanalys",
+                        "cost": "7 krediter"
+                    },
+                    {
+                        "name": "Visuell simulering",
+                        "cost": "15 krediter"
+                    },
+                    {
+                        "name": "Avancerad simulering",
+                        "cost": "23 krediter"
+                    },
+                    {
+                        "name": "Metodikrapport",
+                        "cost": "+4 krediter"
+                    }
+                ]
+            }
+        }
+    },
+    "AboutPage": {
+        "title": "Om oss",
+        "heroSubtitle": "LegalAI grundades för att möta det växande behovet av smarta verktyg som hjälper till att hantera komplexiteten i modernt juridiskt arbete. Vi strävar efter att förbättra effektiviteten i juridiskt arbete och förbättra kvaliteten på analys och förståelse, utan att kompromissa med den väsentliga rollen för mänsklig juridisk expertis eller professionellt beslutsfattande oberoende.",
+        "transformTitle": "Förvandla ditt arbete med AI baserat på pålitligt innehåll",
+        "transformDesc1": "Underhålls av experter fokuserade på att minska felaktigheter och algoritmiska fördomar. Plattformen utvecklades av ett tvärvetenskapligt team av experter inom juridik, digital teknik och artificiell intelligens, vilket säkerställer anpassning av tekniska lösningar till juridisk logik, yrkesetik och regelefterlevnadskrav.",
+        "transformDesc2": "Arbeta med förtroende med vetskapen om att dina känsliga uppgifter är säkra, privata och inte används för att träna AI-modeller.",
+        "transformQuote": "Vi arbetar i skärningspunkten mellan juridik och teknik, där djup juridisk förståelse möter avancerad teknisk expertis, med syftet att bidra till att utveckla en mer effektiv, tydlig och hållbar digital juridisk miljö.",
+        "methodologyTitle": "Vår Metodik",
+        "methodologySubtitle": "LegalAI:s arbete baseras på ett ansvarsfullt tillvägagångssätt byggt på solida principer",
+        "methodologyBelief": "Vi tror att teknik ska tjäna juridisk förståelse, inte ersätta den.",
+        "principles": {
+            "respect": {
+                "title": "Mänsklig Respekt",
+                "desc": "Respekt för rollen för människor och juridisk expertis som grunden för arbetet."
+            },
+            "neutrality": {
+                "title": "Neutralitet och Transparens",
+                "desc": "Åtagande om neutralitet, noggrannhet och transparens i alla processer."
+            },
+            "ethics": {
+                "title": "Etisk Efterlevnad",
+                "desc": "Strikt efterlevnad av regelverk och etiska standarder."
+            },
+            "accountability": {
+                "title": "Ansvarsutkrävande",
+                "desc": "Bygga förklarbara och ansvariga teknologier."
+            }
+        },
+        "visionTitle": "Vår Vision",
+        "visionDesc1": "Vi strävar efter att bidra till att bygga ett modernt digitalt juridiskt system, där AI är ett stöd- och analysverktyg, inte en ersättning för advokater eller rättsliga organ.",
+        "visionDesc2": "Vår vision fokuserar på att ge jurister möjlighet att arbeta i en säker, tydlig digital miljö som uppfyller europeiska och internationella standarder.",
+        "teamTitle": "Vårt Team",
+        "teamSubtitle": "LegalAI-teamet består av erfarna juridiska och tekniska specialister, förenade av en gemensam förståelse för de utmaningar som juridisk praxis står inför i den digitala tidsåldern.",
+        "teamQuote": "Denna kunskapsmångfald möjliggör utveckling av genomtänkta lösningar som kombinerar juridisk precision och teknisk disciplin.",
+        "teamRoles": {
+            "legal": {
+                "title": "Lag och Juridisk Praxis",
+                "desc": "Experter erfarna inom juridiskt arbete och lagstiftning."
+            },
+            "software": {
+                "title": "Mjukvaruteknik",
+                "desc": "Professionella ingenjörer som bygger robust infrastruktur."
+            },
+            "ai": {
+                "title": "AI och Databehandling",
+                "desc": "Datavetare som säkerställer modellnoggrannhet och effektivitet."
+            },
+            "security": {
+                "title": "Informationssäkerhet",
+                "desc": "Säkerställa datasäkerhet och användarintegritet."
+            }
+        },
+        "valuesTitle": "Våra Värderingar",
+        "values": [
+            "Respektera juridisk yrkesetik",
+            "Utveckla teknologier som respekterar deras juridiska och sociala påverkan",
+            "Dataskydd som en prioritet, inte ett alternativ",
+            "Stödja mänskligt beslutsfattande, inte ersätta det"
+        ],
+        "commitmentTitle": "Vårt Åtagande",
+        "commitmentDesc": "LegalAI är en oberoende teknisk enhet som inte tillhandahåller bindande juridisk rådgivning och inte ingriper i rättsligt eller professionellt beslutsfattande. Vår roll är begränsad till forskning, utveckling och att bygga hjälpverktyg som förbättrar kvaliteten på juridiskt arbete inom en ansvarsfull institutionell ram."
+    },
+    "ServicesPage": {
+        "title": "Våra Tjänster",
+        "subtitle": "Upptäck ett omfattande utbud av AI-drivna juridiska tjänster",
+        "discoverMore": "Upptäck Mer",
+        "ctaTitle": "Redo att börja?",
+        "ctaSubtitle": "Kontakta oss idag och upptäck hur våra tjänster kan förvandla ditt juridiska arbete",
+        "ctaButton": "Kontakta Oss"
+    },
+    "BlogPage": {
+        "title": "Blogg",
+        "subtitle": "Senaste artiklar och insikter om juridisk teknik och AI",
+        "readMore": "Läs Mer",
+        "comingSoon": "Kommer Snart",
+        "comingSoonDesc": "Vi arbetar med att skapa värdefullt innehåll och lägga till specialiserade artiklar inom området juridisk teknik och artificiell intelligens",
+        "newsletterTitle": "Prenumerera på Nyhetsbrev",
+        "newsletterSubtitle": "Få de senaste uppdateringarna och artiklarna direkt i din e-post",
+        "emailPlaceholder": "Din e-post",
+        "subscribeNow": "Prenumerera Nu"
+    },
+    "ContactPage": {
+        "title": "Kontakta Oss",
+        "subtitle": "Vi är här för att svara på dina frågor och hjälpa till att förvandla ditt juridiska arbete",
+        "contactInfo": "Kontaktinformation",
+        "email": "E-post",
+        "phone": "Telefon",
+        "offices": "Kontor",
+        "sendMessage": "Skicka ett meddelande",
+        "fullName": "Fullständigt Namn",
+        "fullNamePlaceholder": "Ange ditt fullständiga namn",
+        "emailPlaceholder": "exempel@email.com",
+        "phoneOptional": "Telefonnummer (valfritt)",
+        "subject": "Ämne",
+        "subjectPlaceholder": "Meddelandeämne",
+        "message": "Meddelande",
+        "messagePlaceholder": "Skriv ditt meddelande här...",
+        "sending": "Skickar...",
+        "sendButton": "Skicka Meddelande",
+        "successMessage": "Ditt meddelande har skickats! Vi kontaktar dig snart.",
+        "errorMessage": "Ett fel inträffade vid sändning. Försök igen senare.",
+        "ctaTitle": "Redo att börja?",
+        "ctaSubtitle": "Låt oss hjälpa dig att förvandla ditt juridiska arbete med kraften av AI"
+    },
+    "AiChatPage": {
+        "title": "Multi-Modell AI-chatt",
+        "subtitle": "Plattformen tillhandahåller ett avancerat juridiskt chattsystem baserat på en proprietär mellanvaruarkitektur som systematiskt länkar flera AI-modeller, och dirigerar varje fråga eller uppgift till den mest lämpliga modellen. Detta tillvägagångssätt syftar till att förbättra resultatsäkerheten, minska fel och säkerställa mer konsekventa och tillförlitliga juridiska svar samtidigt som känslig och personlig information skyddas som filtreras av mellanvarumodellen.",
+        "mainDesc": "Legal AI tillhandahåller ett avancerat juridiskt chattsystem som fungerar genom en proprietär mellanvarumodell, som intelligent länkar flera allmänna och specialiserade AI-modeller, och automatiskt väljer den mest lämpliga modellen baserat på frågans eller uppgiftens art.",
+        "mainDescTitle": "Mellanliggande juridisk chatt mellan flera AI-modeller",
+        "coreFunctions": "Kärnfunktioner",
+        "howItWorks": "Hur fungerar det?",
+        "howItWorksSteps": [
+            "Mellanvarumodellen analyserar den juridiska frågan eller begärans natur, och dirigerar sedan bearbetningen till den mest lämpliga modellen när det gäller sammanhang och noggrannhet, och samordnar resultaten till ett sammanhängande och konsekvent svar.",
+            "Den fungerar som ett isolerings- och säkerhetslager mellan användaren och externa AI-modeller."
+        ],
+        "benefits": "Fördelar / Vad ingår",
+        "functions": {
+            "routing": {
+                "title": "Intelligent Dirigering",
+                "desc": "Till de bästa och mest exakta och effektiva modellerna"
+            },
+            "quality": {
+                "title": "Kvalitetssäkring",
+                "desc": "Säkerställa svarskvalitet och minska fel från att förlita sig på en enda modell"
+            },
+            "crossCheck": {
+                "title": "Korsverifiering",
+                "desc": "Förbättra svarskvaliteten genom jämförelse och korsverifiering"
+            },
+            "privacy": {
+                "title": "Integritetsskydd",
+                "desc": "Tillämpar filtrering, anonymiseringspolicyer och upprätthåller dataoberoende"
+            }
+        },
+        "benefitsList": {
+            "multiModel": {
+                "title": "Smart Multi-Modell länkning",
+                "desc": "Intelligent länkning mellan flera AI-modeller"
+            },
+            "accuracy": {
+                "title": "Förbättrad Noggrannhet och Resultat av Högre Kvalitet",
+                "desc": "Förbättrad noggrannhet och resultat av högre kvalitet"
+            },
+            "review": {
+                "title": "Granska och Förbättra Resultat",
+                "desc": "Granska och förbättra resultat innan de visas för användaren"
+            },
+            "security": {
+                "title": "Datasäkerhet och Integritet",
+                "desc": "Filtrera känsliga data och skydda integritet"
+            },
+            "experience": {
+                "title": "Professionell Användarupplevelse",
+                "desc": "Professionell och pålitlig användarupplevelse"
+            }
+        },
+        "ctaTitle": "Få Mer Exakta och Säkra Svar",
+        "ctaSubtitle": "Prova mellanvaruchattsystemet som kombinerar intelligensen hos flera modeller med datasäkerhet",
+        "startChat": "Starta Chatt",
+        "browseServices": "Bläddra Bland Andra Tjänster"
+    },
+    "BlogSlugPage": {
+        "backToBlog": "Tillbaka till Blogg",
+        "shareArticle": "Dela Artikel"
+    },
+    "BlogPosts": {
+        "post1": {
+            "slug": "future-of-ai-legal",
+            "title": "Framtiden för AI inom det Juridiska Området",
+            "excerpt": "Hur artificiell intelligens förändrar hur advokater och juridiska experter arbetar, och vilka möjligheter och utmaningar som ligger framför oss i denna snabbväxande digitala tidsålder.",
+            "date": "1 Januari 2025",
+            "author": "LegalAI Team",
+            "category": "Juridisk Teknik",
+            "readTime": "8 minuter",
+            "imageGradient": "from-blue-100 to-blue-200",
+            "image": "/images/blog/ai-legal.png",
+            "content": "<h2>Inledning: En Digital Revolution i Rättssalen</h2><p>Den juridiska världen genomgår en omvandling utan motstycke. Artificiell intelligens (AI) är inte längre ett futuristiskt koncept från science fiction-filmer, utan en daglig verklighet för advokater, domare och juridiska rådgivare. Denna digitala revolution syftar inte till att ersätta den mänskliga faktorn, utan att förbättra dess kapacitet och möjliggöra oöverträffade nivåer av effektivitet och noggrannhet.</p><p>I den här artikeln kommer vi att fördjupa oss i hur AI formar framtiden för advokatyrket, utforska de tillgängliga verktygen, praktiska fördelar och etiska utmaningar vi måste möta.</p><h2>Smart Automatisering: Farväl till Rutinuppgifter</h2><p>En av de vanligaste och mest effektfulla AI-tillämpningarna är att automatisera rutinmässiga och repetitiva uppgifter. Traditionellt tillbringade biträdande jurister timmar, kanske dagar, med att manuellt granska kontrakt, söka efter kryphål eller korrekturläsa juridiska texter. Idag kan avancerade AI-system utföra dessa uppgifter på några minuter.</p><ul><li><strong>Kontraktsgranskning:</strong> Maskininlärningsalgoritmer analyserar tusentals sidor med kontrakt, identifierar standardklausuler och lyfter fram ovanliga villkor eller potentiella risker med ibland övermänsklig noggrannhet.</li><li><strong>E-Discovery Klassificering:</strong> I stora fall som involverar miljontals dokument och e-postmeddelanden kan AI skanna och klassificera relevant bevisning med enorm hastighet, vilket sparar enorm tid och ansträngning för försvars- och åklagarteam.</li></ul><h2>Prediktiv Analys: Förutsäga Framtiden</h2><p>Kanske den mest spännande AI-utvecklingen är förmågan att \"förutsäga\" fallbanor. Genom att analysera data från tusentals tidigare fall, domstolsavgöranden och domares beteende kan intelligenta system ge sannolikhetsbedömningar för nya fallresultat.</p><blockquote>\"AI berättar inte bara vad som hände tidigare, det ger dig en sannolikhetskarta över vad som kan hända imorgon, vilket gör att advokater kan bygga försvars- eller förhandlingsstrategier baserade på solida data snarare än ren intuition.\"</blockquote><h2>Etiska och Regulatoriska Utmaningar</h2><p>Trots de enorma fördelarna väcker integrationen av AI i juridiken djupa etiska frågor:</p><ol><li><strong>Rättvisa och Partiskhet:</strong> AI-algoritmer lär sig av historiska data. Om dessa data innehåller fördomar (ras, klass eller kön) kan systemet reproducera dessa fördomar i sina rekommendationer.</li><li><strong>Professionellt Ansvar:</strong> Om ett AI-system gör fel i analysen av ett fall och orsakar en kundförlust, vem bär ansvaret?</li><li><strong>Integritet:</strong> Hantering av massiva mängder känsliga juridiska data kräver strikta säkerhetsrutiner.</li></ol><h2>Slutsats: Den Förstärkta Advokaten</h2><p>Framtiden tillhör varken advokaten som fruktar teknik eller maskinen som arbetar ensam. Framtiden tillhör den \"Förstärkta Advokaten\"; advokaten som besitter djup juridisk expertis och mänsklig intuition, men är beväpnad med AI-verktyg som ger övermänskliga förmågor inom forskning och analys.</p>"
+        },
+        "post2": {
+            "slug": "data-protection-legal",
+            "title": "Vikten av Dataskydd i Juridiskt Arbete",
+            "excerpt": "En omfattande guide för att skydda känsliga juridiska data i en tid av cyberattacker, och hur du säkerställer att ditt kontor följer internationella standarder.",
+            "date": "28 December 2024",
+            "author": "Informationssäkerhet",
+            "category": "Cybersäkerhet",
+            "readTime": "7 minuter",
+            "imageGradient": "from-green-100 to-green-200",
+            "image": "/images/blog/data-protection.png",
+            "content": "<h2>Data: Den Nya Valutan i Advokatverksamhet</h2><p>I den digitala tidsåldern är de mest värdefulla tillgångarna för advokatbyråer inte längre lyxiga bibliotek eller fina adresser, utan \"data\". Klientinformation, företagshemligheter, fallstrategier och privat kommunikation utgör alla en skattkista av känslig information. Och där det finns skatter finns det tjuvar.</p><p>Advokatbyråer har blivit främsta mål för cyberattacker eftersom de anses vara \"bakdörrar\" för att komma åt data från stora företag och viktiga personer. Ett enda intrång kan inte bara kosta byrån ekonomiska förluster utan kan förstöra dess rykte för alltid.</p><h2>Nuvarande Hotbild</h2><p>Hackermetoder utvecklas ständigt, vilket gör försvar till en kontinuerlig utmaning. Viktiga hot mot den juridiska sektorn inkluderar:</p><ul><li><strong>Ransomware:</strong> Angripare krypterar alla byråns filer och kräver en lösensumma (vanligtvis i kryptovaluta) för dekryptering. Att vägra betala kan innebära att data går förlorade för alltid eller läcks ut offentligt.</li><li><strong>Phishing:</strong> E-postmeddelanden som verkar legitima syftar till att lura advokater att avslöja lösenord eller ladda ner skadlig programvara.</li><li><strong>Supply Chain Attacks:</strong> Att rikta in sig på byrån genom att bryta sig in hos teknikleverantörer som byrån arbetar med.</li></ul><h2>Försvars- och Skyddsstrategier</h2><p>Skydd handlar inte bara om att installera antivirusprogram. Det är ett integrerat system av teknik och policyer:</p><h3>1. End-to-End-kryptering</h3><p>All data måste krypteras, oavsett om den lagras på servrar (At Rest) eller under överföring över internet (In Transit). Att använda krypterad e-post och säkra meddelandeappar är inte en lyx utan en nödvändighet.</p><h3>2. Flerfaktorsautentisering (MFA)</h3><p>Lösenord ensamma räcker inte längre. Att aktivera tvåfaktorsautentisering (2FA) lägger till ett avgörande skyddslager.</p><h3>3. Säkerhetskopior</h3><p>Den sista försvarslinjen mot ransomware är att ha färska och isolerade (Offline) säkerhetskopior av byråns data.</p><h2>Cybersäkerhetskultur</h2><p>Världens starkaste brandvägg skyddar dig inte om en anställd öppnar en misstänkt länk. Kontinuerlig utbildning och säkerhetsmedvetenhet för alla anställda på byrån är den viktigaste investeringen.</p>"
+        },
+        "post3": {
+            "slug": "legal-research-efficiency",
+            "title": "Hur man Effektiviserar Juridisk Forskning",
+            "excerpt": "Tips och tekniker för att påskynda juridisk forskning och analys med moderna verktyg, vilket minskar ansträngningen och ökar resultatsäkerheten.",
+            "date": "15 December 2024",
+            "author": "Sara Mahmoud",
+            "category": "Produktivitet",
+            "readTime": "4 minuter",
+            "imageGradient": "from-purple-100 to-purple-200",
+            "image": "/images/blog/legal-research.png",
+            "content": "<h2>Informationsutmaningen i den Moderna Tidsåldern</h2><p>Juridisk forskning är ryggraden i varje framgångsrikt fall. Men mitt i massiv lagstiftningsinflation och ackumulerande rättspraxis dag efter dag har det blivit som att leta efter en nål i en höstack att hitta korrekt information. Traditionella metoder som förlitar sig på manuella sökningar i pappersvolymer eller till och med enkla nyckelordssökningar räcker inte längre för att hänga med i fallaccelerationen.</p><p>Effektivitet i forskning betyder inte bara hastighet, utan också omfattning och noggrannhet. Hur kan den moderna advokaten säkerställa att de inte har missat ett nyligen inträffat prejudikat som kan tippa vågskålen i deras fall?</p><h2>Smarta Sökverktyg: Bortom Nyckelord</h2><p>Den nya generationen av juridiska sökmotorer använder Natural Language Processing (NLP) för att förstå \"mening\" inte bara matcha ord.</p><ul><li><strong>Konceptuell Sökning:</strong> Du kan söka efter ett juridiskt begrepp som \"ond tro i kommersiella kontrakt\" och systemet hämtar relaterade fall även om de inte uttryckligen nämner \"ond tro\" utan använde synonymtermer eller beskrev situationen.</li><li><strong>Smarta Citat:</strong> Verktyg som omedelbart visar hur denna lagbestämmelse hanterades i tidigare domar, och om den fortfarande är i kraft eller har upphävts eller ändrats.</li></ul><h2>Effektiv Forskningsmetodik: 5 Praktiska Steg</h2><ol><li><strong>Börja med Sekundära Källor:</strong> Innan du dyker ner i primära texter, börja med rättsvetenskapliga artiklar och juridiska sammanfattningar för att bilda dig en omfattande förståelse.</li><li><strong>Formulera din Sökfråga Noga:</strong> Använd booleska operatorer som AND, OR, NOT för att begränsa sökfånget och filtrera irrelevanta resultat.</li><li><strong>Använd Filter Klokt:</strong> Slösa inte tid på att läsa mycket gamla domar eller de från domstolar utan jurisdiktion. Filtrera resultat efter datum, domstol och ämne.</li><li><strong>Följ Domstolsbanan:</strong> Använd \"Shepardizing\"-verktyg eller liknande för att säkerställa att domen du citerar fortfarande är \"Good Law\".</li><li><strong>Organisera dina Resultat Omedelbart:</strong> Lita inte på ditt minne. Använd referenshanteringsverktyg för att spara och organisera texter och anteckningar med direktlänkar till källor.</li></ol><h2>Slutsats</h2><p>Att förbättra effektiviteten i juridisk forskning är en förvärvad färdighet som kräver en blandning av att behärska moderna tekniska verktyg och att anta en disciplinerad forskningsmetodik. Tiden du sparar på rutinforskning är tid du kan investera i strategiskt tänkande och att utforma argument.</p>"
+        }
+    },
+    "LegalModelPage": {
+        "title": "Juridisk Chatt med LegalAI:s Proprietära Modell",
+        "subtitle": "Plattformen inkluderar en separat chattflik som drivs av en juridisk modell som ägs av LegalAI, specifikt utformad för faktanalys, textutformning och skapande av juridiska mallar och dokument.",
+        "mainDescTitle": "Chatta med LegalAI:s Proprietära Modell (Analys – Utformning – Skapande)",
+        "mainDesc": "En juridisk chattflik som drivs av en proprietär AI-juridisk modell utvecklad specifikt för att stödja juridisk analys och utformning enligt professionell disciplinerad logik.",
+        "howItWorks": "Hur fungerar det?",
+        "howItWorksSteps": [
+            "Modellen börjar med att förstå de juridiska indata som användaren tillhandahåller, oavsett om det är fakta, frågor eller juridiska texter.",
+            "Den analyserar sedan innehållet baserat på dess juridiska struktur och analytiska logik, med hänvisning till en uppdaterad juridisk kunskapsbas.",
+            "Sedan producerar den organiserade, konsekventa och professionellt användbara juridiska utdata, med hänsyn till utformningsprecision och kontextkrav."
+        ],
+        "coreFunctions": "Kärnfunktioner",
+        "functions": {
+            "analysis": {
+                "title": "Juridisk Faktanalys",
+                "desc": "Och logisk uppdelning"
+            },
+            "drafting": {
+                "title": "Utformning av Juridisk Text och Dokument",
+                "desc": "I professionell stil"
+            },
+            "templates": {
+                "title": "Skapande av Juridiska Mallar",
+                "desc": "Framställningar och memorandum"
+            },
+            "rewriting": {
+                "title": "Exakt Juridisk Omskrivning",
+                "desc": "Och stilförbättring"
+            },
+            "research": {
+                "title": "Stöd för Juridisk Forskning",
+                "desc": "Och akademisk analys"
+            },
+            "context": {
+                "title": "Länka Fakta till Juridisk Kontext",
+                "desc": "Och tillämplig lagstiftning"
+            }
+        },
+        "features": "Funktioner / Vad ingår?",
+        "featuresList": {
+            "specialized": {
+                "title": "Specialiserad Juridisk Modell",
+                "desc": "Utformad specifikt för juridiskt bruk, inte en allmän modell."
+            },
+            "knowledge": {
+                "title": "Omfattande Juridisk Kunskapsbas",
+                "desc": "Inkluderar lagar, akademiska referenser och specialiserade rättsvetenskapliga studier."
+            },
+            "precision": {
+                "title": "Struktur och Utformningsprecision",
+                "desc": "Fokus på juridisk logik, sekvens och professionell stil."
+            },
+            "updates": {
+                "title": "Regelbundna Uppdateringar",
+                "desc": "Håller jämna steg med de senaste lagändringarna och rättsvetenskapliga trender."
+            },
+            "support": {
+                "title": "Professionellt och Akademiskt Stöd",
+                "desc": "Lämplig för praktiserande jurister, forskare, akademiker och juridikstudenter."
+            },
+            "timeSaving": {
+                "title": "Tid- och Ansträngningsbesparing",
+                "desc": "Minskar tid som spenderas på analys och utformning samtidigt som kvaliteten bibehålls."
+            }
+        },
+        "ctaTitle": "Starta Analys och Utformning Nu",
+        "ctaSubtitle": "Dra nytta av kraften i LegalAI:s specialiserade modell för att stödja ditt juridiska arbete",
+        "tryService": "Prova Tjänsten",
+        "browseServices": "Bläddra Bland Andra Tjänster"
+    },
+    "DocumentAnalysisPage": {
+        "title": "Dokument- och Digital Bevisanalys",
+        "subtitle": "I samma separata chattfönster som drivs av den juridiska modellen kan du chatta direkt med juridiska dokument och visuellt material, inklusive textfiler, bilder och bevis.",
+        "mainDescTitle": "Chatt Dedikerad till Dokument och Bilder",
+        "mainDesc": "En avancerad tjänst som tillåter direkt chatt med juridiska dokument och visuellt material inom en separat chattfönster som drivs av plattformens egenutvecklade juridiska modell. Denna tjänst gör det möjligt för användare att förstå komplexa juridiska filer snabbt och korrekt, utan långdragen manuell granskning, samtidigt som man behåller full kontroll över data och integritet.",
+        "mainDesc2": "Användare kan analysera innehåll, sammanfatta det, jämföra det och extrahera nyckelelement, koppla dokument till den juridiska kontexten i fallet utan långdragen manuell granskning.",
+        "designedFor": "Utformad för Direkt Interaktion med",
+        "legalDocs": "Juridiska Dokument",
+        "legalDocsFormats": "PDF – Word – Skanningar",
+        "visualEvidence": "Bilder och Visuella Bevis",
+        "visualFormats": "Olycksfoton, skannade dokument, kartor",
+        "capabilities": "Funktioner",
+        "capabilitiesList": [
+            "Analysera hela dokument utan manuell läsning",
+            "Sammanfatta, jämföra, extrahera nyckelpunkter",
+            "Ställ direkta frågor om filinnehåll",
+            "Länka bilder och dokument till juridisk text"
+        ],
+        "howItWorks": "Hur Fungerar Tjänsten?",
+        "howItWorksSteps": [
+            "Användaren laddar upp dokument eller visuellt material inom det dedikerade chattfönstret.",
+            "Den juridiska modellen läser och förstår hela innehållet inom dess juridiska kontext, och tillåter sedan användarinteraktion genom naturliga frågor eller specifika kommandon (sammanfatta, jämföra, extrahera element).",
+            "Resultaten presenteras i en organiserad juridisk utformning, med bibehållen datasekretess utan att dela eller använda utanför begärans omfattning, med känslig och personlig information filtrerad av mellanlagringsmodellen."
+        ],
+        "features": "Funktioner / Vad Ingår?",
+        "featuresList": {
+            "directChat": {
+                "title": "Direkt Chatt med Filer",
+                "desc": "Ställ juridiska frågor om själva dokumentet utan att läsa varje sida"
+            },
+            "fastAnalysis": {
+                "title": "Noggrann och Snabb Analys",
+                "desc": "Omedelbar förståelse av komplexa filer, sparar tid och ansträngning"
+            },
+            "smartExtraction": {
+                "title": "Smart Sammanfattning och Extraktion",
+                "desc": "Identifiera fakta, anspråk, parter och viktiga datum"
+            },
+            "visualAnalysis": {
+                "title": "Visuell Bevisanalys",
+                "desc": "Hantering av bilder och visuellt material och koppla dem till juridiska fakta"
+            },
+            "comparison": {
+                "title": "Dokumentjämförelse",
+                "desc": "Markera skillnader och likheter mellan flera versioner eller olika filer"
+            },
+            "dataControl": {
+                "title": "Full Datakontroll",
+                "desc": "Användaren behåller full kontroll över filer, utan att använda dem för utbildning eller dela med tredje part"
+            }
+        },
+        "ctaTitle": "Prata med Dina Dokument",
+        "ctaSubtitle": "Analysera och förstå dina juridiska filer på sekunder",
+        "startNow": "Börja Nu",
+        "browseServices": "Bläddra Bland Andra Tjänster"
+    },
+    "VisualFactsPage": {
+        "title": "Visuell Rekonstruktion av Juridiska Fakta",
+        "subtitle": "En avancerad tjänst för att omvandla ostrukturerad data och komplexa berättelser — såsom polisrapporter, vittnesmål, fysiska bevis, foton, kartor och rumslig data — till visuella simuleringar som replikerar händelseförloppet så som de antas ha inträffat.",
+        "subtitleHighlight": "Vi presenterar inte bara bevis, vi gör sanningen synlig.",
+        "mainDescTitle": "Visuell Rekonstruktion av Juridiska Fakta",
+        "mainDesc": "Visuell rekonstruktion av juridiska fakta är en avancerad juridisk tjänst som syftar till att omvandla ostrukturerad data och komplexa berättelser till organiserade visuella simuleringar som replikerar händelseförloppet så som de antas ha inträffat, baserat på tillhandahållna fakta och bevis.",
+        "mainDesc2": "Denna tjänst gör det möjligt för juridiska utövare att gå från abstrakt textbeskrivning till en tydlig visuell representation som underlättar förståelse, analys och exakt juridisk tolkning.",
+        "howItWorks": "Hur Fungerar Det?",
+        "howItWorksSteps": [
+            "Användaren börjar med att ge systemet tillgänglig falldata, såsom rapporter, vittnesmål, foton, kartor och rumslig data.",
+            "AI analyserar dessa indata och förstår relationer mellan människor, platser, tider och händelser, och fungerar sedan som en digital regissör, filmfotograf och skådespelare för att bygga en sekventiell visuell representation.",
+            "Användaren kan granska den resulterande simuleringen och testa alternativa scenarier genom att ändra hypoteser, vilket möjliggör djupare förståelse av incidenten från olika vinklar."
+        ],
+        "features": "Funktioner / Vad Ingår",
+        "featuresList": {
+            "dataVisual": {
+                "title": "Omvandla Ostrukturerad Data till Visuell Scen",
+                "desc": "Från spridda rapporter och vittnesmål till en integrerad visuell berättelse."
+            },
+            "deepUnderstanding": {
+                "title": "Djupare Förståelse av Fakta",
+                "desc": "Underlätta förståelse av tidsmässiga och rumsliga relationer mellan händelser."
+            },
+            "testScenarios": {
+                "title": "Testa Scenarier",
+                "desc": "Jämföra olika hypoteser baserat på samma data."
+            },
+            "visualEvidence": {
+                "title": "Förbättra Visuell Beviskraft",
+                "desc": "En bild säger mer än tusen ord, särskilt i komplexa fall."
+            },
+            "contradictions": {
+                "title": "Upptäck Potentiella Motsägelser",
+                "desc": "Markera logiska eller fysiska konflikter mellan olika berättelser."
+            },
+            "support": {
+                "title": "Juridiskt Stödverktyg, Inte en Ersättning för Mänskligt Beslut",
+                "desc": "Används som ett analytiskt och illustrativt hjälpmedel inom den professionella ramen."
+            }
+        },
+        "useCases": "Vad Kan Rekonstrueras?",
+        "useCasesList": {
+            "traffic": "Trafikolyckor",
+            "realEstate": "Fastighets- och Byggtvister",
+            "timeline": "Fall Beroende av Komplex Tidslinje",
+            "educational": "Utbildningsändamål och Juridisk Utbildning",
+            "visual": "Fakta Visuellt"
+        },
+        "ctaTitle": "Gör Sanningen Synlig",
+        "ctaSubtitle": "Omvandla dina komplexa fall till tydliga och övertygande visuella simuleringar",
+        "bookConsultation": "Boka Gratis Konsultation",
+        "browseServices": "Bläddra Bland Andra Tjänster"
+    },
+    "SecurityPage": {
+        "title": "Säkerhet och Digital Integritet",
+        "subtitle": "LegalAI lägger största vikt vid dataskydd och informationssekretess, och erkänner känsligheten i juridiskt arbete och kraven på förtroende och efterlevnad.",
+        "overview": "Plattformen erbjuder en omfattande uppsättning säkra digitala tjänster, specifikt utformade för att skydda användarnas kommunikation, filer och digitala identitet, inom ett ramverk som säkerställer full kontroll över data.",
+        "coreFunctions": "Kärnfunktioner",
+        "coreFunctionsList": [
+            "Säkra känslig juridisk kommunikation",
+            "Skydda digital identitet och förhindra spårning",
+            "Säkert lagra juridiska fall och filer",
+            "Säkerställa datasekretess under lagring och överföring",
+            "Möjliggöra för användare att ha full kontroll över sin data och åtkomsträttigheter"
+        ],
+        "howItWorks": "Hur Fungerar Säkerhets- och Integritetssystemet?",
+        "howItWorksDesc": "Säkra digitala verktyg tillhandahålls som fungerar oberoende av AI-modeller, med ett åtagande till principen att data tillhör uteslutande användaren, och inte används för utbildning eller delas med någon tredje part.",
+        "howItWorksDesc2": "Alla operationer hanteras enligt strikta integritets- och åtkomstkontrollpolicyer.",
+        "servicesTitle": "Vad Inkluderar Tjänsten?",
+        "emailService": {
+            "title": "Krypterad E-post",
+            "desc": "Dedikerad e-post för känslig juridisk kommunikation, med full kryptering av korrespondens och bilagor och högt skydd mot spårning eller obehörig åtkomst.",
+            "features": [
+                "Full kryptering av korrespondens och bilagor",
+                "Högt skydd mot spårning eller obehörig åtkomst",
+                "Lämplig för professionell och juridisk kommunikation"
+            ]
+        },
+        "vpnService": {
+            "title": "Säker VPN-tjänst",
+            "desc": "Skydda digital identitet och dölja IP-adress, med full kryptering av internettrafik och förhindrande av spårning och övervakning för att tillhandahålla en säker juridisk arbetsmiljö online.",
+            "features": [
+                "Skydda digital identitet och dölja IP-adress",
+                "Full kryptering av internettrafik",
+                "Förhindrande av spårning och övervakning"
+            ]
+        },
+        "cloudService": {
+            "title": "Krypterad Molnlagring",
+            "desc": "Lagra fall och känsliga filer med full kryptering, med exakt kontroll över åtkomstbehörigheter och förmågan att dela filer säkert vid behov.",
+            "features": [
+                "Lagra fall och känsliga filer med full kryptering",
+                "Exakt kontroll över åtkomstbehörigheter",
+                "Förmåga att dela filer säkert vid behov"
+            ]
+        },
+        "principlesTitle": "Styrning och Integritetsprinciper",
+        "principles": {
+            "dataControl": {
+                "title": "Full Datakontroll",
+                "desc": "Användaren behåller full kontroll över sin data"
+            },
+            "noTraining": {
+                "title": "Data Används Inte för Utbildning",
+                "desc": "Data används inte för att träna AI-modeller"
+            },
+            "noSharing": {
+                "title": "Ingen Delning med Tredje Part",
+                "desc": "Information delas inte med tredje part"
+            },
+            "compliance": {
+                "title": "Respekt för Lagstadgade Standarder",
+                "desc": "Strikt respekt för sekretess- och efterlevnadskrav"
+            }
+        },
+        "ctaTitle": "Skydda Din Juridiska Data",
+        "ctaSubtitle": "Börja arbeta i en helt säker och krypterad miljö",
+        "contactUs": "Kontakta Oss",
+        "backToServices": "Tillbaka till Tjänster"
+    },
+    "Common": {
+        "loading": "Laddar...",
+        "error": "Ett fel uppstod",
+        "retry": "Försök igen",
+        "back": "Tillbaka",
+        "next": "Nästa",
+        "previous": "Föregående",
+        "close": "Stäng",
+        "save": "Spara",
+        "cancel": "Avbryt",
+        "delete": "Ta bort",
+        "edit": "Redigera",
+        "view": "Visa",
+        "search": "Sök",
+        "filter": "Filtrera",
+        "sort": "Sortera",
+        "selectLanguage": "Välj språk"
+    }
+}

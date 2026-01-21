@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center space-x-2 space-x-reverse mb-4">
+            <div className="flex items-center gap-2 mb-4">
               <div className="relative w-10 h-10">
                 <img
                   src="/logo.png"
@@ -79,10 +79,9 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
           <p>© {new Date().getFullYear()} LegalAI. {t('copyright')}.</p>
-          <p className="mt-2">LegalAI is an independent technology entity that does not provide binding legal advice.</p>
+          <p className="mt-2">{t('disclaimer')}</p>
         </div>
       </div>
     </footer>
   )
 }
-

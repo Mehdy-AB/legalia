@@ -1,0 +1,892 @@
+{
+    "Header": {
+        "home": "Home",
+        "about": "Over ons",
+        "services": "Diensten",
+        "blog": "Blog",
+        "contact": "Contact",
+        "pricing": "Prijzen",
+        "faq": "FAQ"
+    },
+    "Footer": {
+        "companyDescription": "Een intelligent juridisch platform dat geavanceerde juridische analyse, nauwkeurige documentopstelling en visuele weergave van feiten combineert.",
+        "quickLinks": "Snelle links",
+        "services": "Diensten",
+        "contact": "Contact",
+        "email": "E-mail",
+        "phone": "Telefoon",
+        "location": "Locatie",
+        "copyright": "Alle rechten voorbehouden",
+        "aiChat": "AI Chat",
+        "legalModel": "Juridisch Model",
+        "documentAnalysis": "Documentanalyse",
+        "visualFacts": "Visuele Feiten",
+        "security": "Beveiliging",
+        "disclaimer": "LegalAI is een onafhankelijke technologische entiteit die geen bindend juridisch advies geeft.",
+        "newsletterTitle": "Abonneer op onze nieuwsbrief",
+        "emailPlaceholder": "Uw e-mail",
+        "subscribeSuccess": "Succesvol geabonneerd!",
+        "subscribeError": "Er is een fout opgetreden. Probeer het opnieuw."
+    },
+    "HomePage": {
+        "heroTitle": "Juridische Kunstmatige Intelligentie voor",
+        "heroWords": [
+            "Advocaten",
+            "Onderwijs",
+            "Rechters",
+            "Juridische Praktijken"
+        ],
+        "heroDescription": "Welkom bij het Legal AI platform, de ideale oplossing voor juristen en academici die hun efficiëntie willen verbeteren. Wij bieden geavanceerde AI-gestuurde tools om het dagelijks werk te vergemakkelijken en de onderzoekskwaliteit te verbeteren.",
+        "startNow": "Nu Beginnen",
+        "trustedBy": "Vertrouwd door organisaties wereldwijd",
+        "whoWeAre": "Wie wij zijn",
+        "acceleratingMastery": "Versnelling van Professionele",
+        "masteryHighlight": "Beheersing",
+        "missionIntro": "Door diepgaand juridisch onderzoek te combineren met innovatie van topniveau, is LegalAI ontworpen om juristen te helpen hun expertise sneller te ontwikkelen.",
+        "missionDetail": "Ons team zet zich in om uw specifieke behoeften te begrijpen en streeft ernaar de juridische beroepsgroep te transformeren met slimme, AI-gestuurde oplossingen die zijn gebouwd om uw professionele en academische behoeften te dienen.",
+        "ourMission": "Onze Missie",
+        "ourMissionText": "Wij geloven dat juridisch werk even dynamisch moet zijn als de wereld die het dient. We benutten de nieuwste AI-technologieën om dagelijkse taken—onderzoek, documentbeheer en opstellen—om te zetten in geïntegreerde, intelligente processen. We doorbreken administratieve complexiteit, ontdekken diepgaande inzichten en concentreren ons op wat echt belangrijk is: uitstekende juridische diensten leveren.",
+        "ourApproach": "Onze Aanpak",
+        "ourApproachText": "Daarom hanteren we een collaboratieve aanpak, waarbij we nauw samenwerken met onze klanten om op maat gemaakte oplossingen te leveren die aansluiten bij hun doelen. Met onze toewijding aan nauwkeurigheid, veiligheid en innovatie leiden we een nieuw tijdperk van juridische excellentie.",
+        "clientsServed": "Bediende Klanten",
+        "successRate": "Succespercentage",
+        "moreAboutUs": "Meer over ons",
+        "collaborating": "Samenwerken om de toekomst van het recht te vormen.",
+        "mainServices": "Onze Hoofddiensten",
+        "discoverServices": "Ontdek een uitgebreid aanbod van AI-gestuurde juridische diensten",
+        "discoverMore": "Ontdek Meer",
+        "blog": "Blog",
+        "latestArticles": "Laatste Artikelen en Inzichten",
+        "followNews": "Volg het laatste nieuws en ontwikkelingen in juridische technologie",
+        "viewAllArticles": "Bekijk Alle Artikelen",
+        "faq": "FAQ",
+        "haveQuestions": "Vragen? Wij hebben antwoorden",
+        "commonQuestions": "Meest gestelde vragen over het LegalAI platform",
+        "viewAllQuestions": "Bekijk Alle Vragen",
+        "readyToTransform": "Klaar om uw juridisch werk te transformeren?",
+        "joinHundreds": "Sluit u aan bij honderden advocaten en juridische professionals die LegalAI gebruiken",
+        "learnMore": "Meer Over Ons"
+    },
+    "Services": {
+        "aiChat": {
+            "title": "Multi-Model AI Chat",
+            "description": "Een geavanceerd juridisch chatsysteem aangedreven door een eigen intermediair model dat meerdere AI-modellen verbindt en automatisch de meest geschikte selecteert.",
+            "features": [
+                "Slimme Modelroutering",
+                "Verbetering van Antwoordkwaliteit",
+                "Filtering van Gevoelige Gegevens"
+            ]
+        },
+        "legalModel": {
+            "title": "Juridisch AI-Model",
+            "description": "Een eigen juridisch AI-model speciaal ontworpen voor juridische analyse, opstelling en documentcreatie.",
+            "features": [
+                "Juridische Feitenanalyse",
+                "Documentopstelling",
+                "Uitgebreide Kennisbasis"
+            ]
+        },
+        "documentAnalysis": {
+            "title": "Document- en Beeldanalyse",
+            "description": "Directe chat met juridische documenten en visuele materialen voor snel en nauwkeurig begrip van complexe bestanden.",
+            "features": [
+                "PDF- en Word-analyse",
+                "Beeldverwerking",
+                "Documentvergelijking"
+            ]
+        },
+        "visualFacts": {
+            "title": "Visuele Feitenreconstructie",
+            "description": "Transformeer ongestructureerde gegevens en complexe verhalen in visuele simulaties die de volgorde van gebeurtenissen nabootsen.",
+            "features": [
+                "Gebeurtenissimulatie",
+                "Scenariotests",
+                "Visuele Bewijsverbetering"
+            ]
+        },
+        "security": {
+            "title": "Digitale Beveiliging en Privacy",
+            "description": "LegalAI hecht het grootste belang aan gegevensbescherming en informatieconfidentialiteit en biedt veilige digitale diensten, waaronder:",
+            "features": [
+                "Versleutelde E-mail",
+                "VPN voor Identiteitsbescherming en Trackingpreventie",
+                "Versleutelde Cloudopslag voor Zaken en Gevoelige Bestanden"
+            ]
+        }
+    },
+    "FAQ": {
+        "q1": "Wat is het LegalAI-platform?",
+        "a1": "LegalAI is een juridisch technologieplatform dat vertrouwt op kunstmatige intelligentie om juridische analyse, documentopstelling en documentinteractie te ondersteunen.",
+        "q2": "Vervangt LegalAI advocaten?",
+        "a2": "Nee. LegalAI is een ondersteunend platform ontworpen om juridische professionals te helpen met analyse- en opstellingstools die hen helpen efficiënter te werken.",
+        "q3": "Hoe worden mijn gegevens beschermd?",
+        "a3": "We passen de hoogste encryptie- en beveiligingsstandaarden toe. Uw gegevens worden niet gebruikt om modellen te trainen en worden niet gedeeld met derden.",
+        "q4": "Wie kan het platform gebruiken?",
+        "a4": "Het platform is ontworpen voor juridische professionals, advocatenkantoren, onderzoekers, academici en rechtenstudenten."
+    },
+    "Pricing": {
+        "title": "Prijsplannen",
+        "subtitle": "Flexibele prijsplannen voor iedereen",
+        "description": "Kies het plan dat bij uw behoeften past. Bespaar 20% bij jaarlijkse facturering.",
+        "monthly": "Maandelijks",
+        "yearly": "Jaarlijks",
+        "save": "Bespaar",
+        "popular": "Meest Populair",
+        "perMonth": "/ maand",
+        "subscribe": "Nu Abonneren",
+        "securityAddon": "Beveiligingspakket Toevoegen",
+        "securityDesc": "Versleutelde e-mail, VPN, Cloudopslag",
+        "extraCredits": "Extra Credits Kopen",
+        "credits": "credits",
+        "viewDetails": "Volledige Plandetails Bekijken",
+        "starter": {
+            "name": "Starter",
+            "description": "Voor individuen en beginners",
+            "features": [
+                "50 credits / maand",
+                "10 verzoeken / dag",
+                "Juridische Chat (Basis)",
+                "Standaard Ondersteuning",
+                "Geen Bestandsanalyse"
+            ]
+        },
+        "professional": {
+            "name": "Professioneel",
+            "description": "Voor advocaten en kleine kantoren",
+            "features": [
+                "200 credits / maand",
+                "40 verzoeken / dag",
+                "Onbeperkte Juridische Chat",
+                "Diepgaande Analyse (20/maand)",
+                "Documentopstelling (15/maand)",
+                "Beeld- en Documentanalyse",
+                "24/7 Ondersteuning"
+            ]
+        },
+        "advanced": {
+            "name": "Geavanceerd",
+            "description": "Voor grote kantoren en organisaties",
+            "features": [
+                "500 credits / maand",
+                "120 verzoeken / dag",
+                "Alle Functies Onbeperkt*",
+                "Documentopstelling (50/maand)",
+                "Visuele Feiten (23/maand)",
+                "Methodologierapporten",
+                "24/7 Ondersteuning",
+                "Teamtraining"
+            ]
+        }
+    },
+    "Quotes": {
+        "title": "Meningen van Deskundigen",
+        "subtitle": "Wat zeggen experts over Juridische AI?",
+        "q1": {
+            "quote": "Hoewel AI gegevens kan analyseren en beschermen, vereisen juridische competentie en capaciteit empathie en menselijk gevoel die in menselijke handen zullen blijven.",
+            "author": "Eric Schmidt",
+            "role": "Voormalig CEO van Google",
+            "context": "Dit citaat illustreert de huidige beperkingen van AI in het juridische veld, waar menselijk begrip, empathie en ethische context onvervangbaar blijven."
+        },
+        "q2": {
+            "quote": "AI draagt bij aan het vergroten van de toegang tot justitie door de kosten van juridische diensten te verlagen.",
+            "author": "Karen Pollen",
+            "role": "CEO van Legal.io",
+            "context": "Benadrukt de rol van AI bij het verlagen van kosten voor juridische diensten, waardoor bredere toegang tot juridische ondersteuning mogelijk wordt."
+        },
+        "q3": {
+            "quote": "AI zal advocaten niet vervangen, maar het zal veel van de taken en methoden vervangen die ze gewend zijn te gebruiken.",
+            "author": "Richard Susskind",
+            "role": "Professor en Adviseur in Legal Tech",
+            "context": "Suggereert dat AI het beroep hervormt door routinetaken te automatiseren zonder het bestaan van advocaten te bedreigen."
+        },
+        "q4": {
+            "quote": "AI in het juridische veld is niet bedoeld om advocaten overbodig te maken, maar om hen in staat te stellen tools te gebruiken die hen productiever maken.",
+            "author": "Andrew Arruda",
+            "role": "Oprichter van ROSS Intelligence",
+            "context": "Benadrukt AI als ondersteunende tool voor productiviteit."
+        },
+        "q5": {
+            "quote": "Geen AI gebruiken zou op een dag als juridisch wangedrag kunnen worden beschouwd! Vergelijkbaar met een advocaat uit de late 20e eeuw die alles handmatig doet ondanks het bestaan van computers.",
+            "author": "Tom Girardi",
+            "role": "Beroemde Advocaat",
+            "context": "Geeft aan dat AI een essentieel professioneel hulpmiddel kan worden."
+        }
+    },
+    "ServicesSection": {
+        "title": "Onze Diensten",
+        "subtitle": "Wij bieden een uitgebreid scala aan AI-gestuurde juridische diensten",
+        "s1": {
+            "title": "Multi-Model Slimme Chat",
+            "description": "Geavanceerd juridisch chatsysteem werkend via een eigen tussenmodel",
+            "features": [
+                "Slimme routing tussen modellen",
+                "Verbeterde nauwkeurigheid",
+                "Privacybescherming"
+            ]
+        },
+        "s2": {
+            "title": "Eigen Juridisch Model",
+            "description": "Eigen juridisch AI-model voor analyse en opstellen",
+            "features": [
+                "Analyse van juridische feiten",
+                "Professioneel opstellen",
+                "Geavanceerd juridisch onderzoek"
+            ]
+        },
+        "s3": {
+            "title": "Document- & Bewijsanalyse",
+            "description": "Chat direct met juridische documenten en visueel materiaal",
+            "features": [
+                "PDF & Word analyse",
+                "Extractie van juridische gegevens",
+                "Slim samenvatten"
+            ]
+        },
+        "s4": {
+            "title": "Visuele Feitenweergave",
+            "description": "Transformeer gegevens in visuele simulaties van gebeurtenissequenties",
+            "features": [
+                "Tekst naar scène",
+                "Scenario testen",
+                "Verbetering van visueel bewijs"
+            ]
+        },
+        "s5": {
+            "title": "Veiligheid & Privacy",
+            "description": "Veilige digitale diensten inclusief versleutelde e-mail en cloudopslag",
+            "features": [
+                "Versleutelde e-mail",
+                "Veilige VPN",
+                "Versleutelde cloudopslag"
+            ]
+        },
+        "s6": {
+            "title": "Uitstekende Prestaties",
+            "description": "Snelle verwerking met voorrang voor dringend werk",
+            "features": [
+                "Voorrangsverwerking",
+                "Geavanceerde modellen",
+                "Sessie opslaan"
+            ]
+        }
+    },
+    "Contact": {
+        "title": "Neem Contact Op",
+        "subtitle": "Wij zijn er om te helpen. Neem op elk moment contact met ons op.",
+        "name": "Naam",
+        "email": "E-mail",
+        "subject": "Onderwerp",
+        "message": "Bericht",
+        "send": "Bericht Verzenden",
+        "sending": "Verzenden...",
+        "success": "Bericht succesvol verzonden!",
+        "error": "Bericht verzenden mislukt. Probeer het opnieuw."
+    },
+    "ImageSection": {
+        "placeholder": "Illustratieve Afbeelding",
+        "pending": "Afbeelding wordt later toegevoegd"
+    },
+    "FAQPage": {
+        "title": "Veelgestelde Vragen",
+        "subtitle": "Antwoorden op de meest voorkomende vragen over LegalAI",
+        "noAnswer": "Heeft u uw antwoord niet gevonden?",
+        "teamReady": "Ons team staat klaar om te helpen en al uw vragen te beantwoorden",
+        "additionalResources": "Aanvullende Bronnen",
+        "aboutDesc": "Leer meer over ons team, missie en visie",
+        "servicesDesc": "Ontdek alle diensten die wij aanbieden",
+        "pricingDesc": "Leer meer over prijsplannen en pakketten",
+        "q1": {
+            "question": "Wat is het LegalAI-platform?",
+            "answer": "LegalAI is een juridisch technologieplatform dat vertrouwt op kunstmatige intelligentie om juridische analyse, documentopstelling, documentinteractie en visuele weergave van juridische feiten te ondersteunen, met inachtneming van professionele normen en privacybescherming."
+        },
+        "q2": {
+            "question": "Vervangt LegalAI advocaten?",
+            "answer": "Nee. LegalAI is een ondersteunend platform en geen vervanging voor advocaten of menselijke besluitvorming. Het platform is bedoeld om juridische professionals te ondersteunen met analyse-, opstel- en verduidelijkingstools die hen helpen efficiënter te werken."
+        },
+        "q3": {
+            "question": "Wat is het verschil tussen de juridische chat via tussenpersonen en het eigen juridische model?",
+            "answer": "De chat via tussenpersonen routeert aanvragen tussen meerdere AI-modellen om de meest geschikte voor elke taak te selecteren, terwijl de eigen juridische chat vertrouwt op een juridisch model van het platform dat specifiek is geconfigureerd voor geavanceerde juridische analyse en opstelling."
+        },
+        "q4": {
+            "question": "Wat wordt bedoeld met visuele reconstructie van juridische feiten?",
+            "answer": "Het is een dienst die ongestructureerde gegevens zoals rapporten, getuigenissen en bewijsmateriaal omzet in visuele simulaties die de volgorde van gebeurtenissen illustreren, met als doel juridisch begrip en analyse te ondersteunen en visueel bewijs te verbeteren."
+        },
+        "q5": {
+            "question": "Wie kan het LegalAI-platform gebruiken?",
+            "answer": "Het platform is ontworpen voor juridische beoefenaars, advocatenkantoren, juridische onderzoekers, academici en rechtenstudenten, evenals juridische teams binnen organisaties."
+        },
+        "q6": {
+            "question": "Voldoet het platform aan Europese en internationale privacynormen?",
+            "answer": "Het platform is ontworpen volgens strikte principes van gegevensbescherming en digitaal bestuur, in overeenstemming met privacy- en nalevingsvereisten die van toepassing zijn in de Europese en internationale context."
+        },
+        "q7": {
+            "question": "Vereist het platform geavanceerde technische expertise?",
+            "answer": "Nee. De interface van LegalAI is ontworpen om eenvoudig en gebruiksvriendelijk te zijn, zodat juridische professionals van de mogelijkheden kunnen profiteren zonder geavanceerde technische kennis."
+        },
+        "q8": {
+            "question": "Hoe kan ik het platform gaan gebruiken?",
+            "answer": "U kunt beginnen door een account aan te maken, vervolgens de juiste dienst te selecteren en documenten te uploaden of feiten in te voeren, en het platform begint de vereiste analytische en opstellingsondersteuning te bieden."
+        },
+        "q9": {
+            "question": "Hoe worden mijn gegevens beschermd?",
+            "answer": "Wij passen de hoogste encryptie- en beveiligingsstandaarden toe op alle gegevens. Wij bieden versleutelde e-maildiensten, veilige VPN en beschermde cloudopslag. Uw gegevens worden niet gebruikt om modellen te trainen en worden niet gedeeld met derden."
+        },
+        "q10": {
+            "question": "Wat is het kredietsysteem?",
+            "answer": "Het kredietsysteem is een flexibel prijssysteem waarmee u per gebruik kunt betalen. Elke dienst heeft een specifieke kostenpost in credits, en u kunt credits kopen op basis van uw behoeften."
+        }
+    },
+    "PricingPage": {
+        "heroTitle": "Prijs- en Servicedetails",
+        "heroSubtitle": "Lees meer over de servicekosten in credits en gedetailleerde functies van elk pakket",
+        "creditCostsTitle": "Tabel Servicekredietkosten",
+        "customSolutionTitle": "Een oplossing op maat nodig?",
+        "customSolutionDesc": "Voor grote ondernemingen en overheidsinstanties bieden wij oplossingen op maat die passen bij uw bedrijfsschaal",
+        "contactSales": "Neem contact op met Sales",
+        "categories": {
+            "legalChat": {
+                "title": "Juridische Chat",
+                "items": [
+                    {
+                        "name": "Eenvoudige juridische vraag",
+                        "cost": "1 credit"
+                    },
+                    {
+                        "name": "Gemiddelde juridische analyse",
+                        "cost": "2 credits"
+                    },
+                    {
+                        "name": "Diepgaand consult",
+                        "cost": "3 credits"
+                    }
+                ]
+            },
+            "docDrafting": {
+                "title": "Document Opstellen & Beoordelen",
+                "items": [
+                    {
+                        "name": "Juridisch document maken",
+                        "cost": "2 credits"
+                    },
+                    {
+                        "name": "Document beoordelen",
+                        "cost": "3 credits"
+                    },
+                    {
+                        "name": "Samenvatten / Punten extraheren",
+                        "cost": "2 credits"
+                    },
+                    {
+                        "name": "Twee documenten vergelijken",
+                        "cost": "3 credits"
+                    }
+                ]
+            },
+            "docAnalysis": {
+                "title": "Document & Beeldanalyse",
+                "items": [
+                    {
+                        "name": "Regulier document (PDF)",
+                        "cost": "4 credits"
+                    },
+                    {
+                        "name": "Groot dossier",
+                        "cost": "7 credits"
+                    },
+                    {
+                        "name": "Afbeelding / Bewijsanalyse",
+                        "cost": "3 credits"
+                    }
+                ]
+            },
+            "visualFacts": {
+                "title": "Visuele Reconstructie van Feiten",
+                "items": [
+                    {
+                        "name": "Analyse van de feitenreeks",
+                        "cost": "7 credits"
+                    },
+                    {
+                        "name": "Visuele simulatie",
+                        "cost": "15 credits"
+                    },
+                    {
+                        "name": "Geavanceerde simulatie",
+                        "cost": "23 credits"
+                    },
+                    {
+                        "name": "Methodologierapport",
+                        "cost": "+4 credits"
+                    }
+                ]
+            }
+        }
+    },
+    "AboutPage": {
+        "title": "Over ons",
+        "heroSubtitle": "LegalAI is opgericht om te voldoen aan de groeiende behoefte aan slimme tools die helpen bij het omgaan met de complexiteit van modern juridisch werk. Wij streven ernaar de efficiëntie van juridisch werk te verbeteren en de kwaliteit van analyse en begrip te verhogen, zonder afbreuk te doen aan de essentiële rol van menselijke juridische expertise of de onafhankelijkheid van professionele besluitvorming.",
+        "transformTitle": "Transformeer uw werk met AI op basis van vertrouwde inhoud",
+        "transformDesc1": "Onderhouden door experts gericht op het verminderen van onnauwkeurigheid en algoritmische bias. Het platform is ontwikkeld door een multidisciplinair team van experts in recht, digitale technologieën en kunstmatige intelligentie, wat zorgt voor afstemming van technische oplossingen met juridische logica, professionele ethiek en wettelijke nalevingsvereisten.",
+        "transformDesc2": "Werk met vertrouwen in de wetenschap dat uw gevoelige gegevens veilig, privé en niet gebruikt worden om AI-modellen te trainen.",
+        "transformQuote": "Wij werken op het snijvlak van recht en technologie, waar diepgaand juridisch begrip geavanceerde technische expertise ontmoet, met als doel bij te dragen aan de ontwikkeling van een efficiënter, duidelijker en duurzamer digitaal juridisch klimaat.",
+        "methodologyTitle": "Onze Methodologie",
+        "methodologySubtitle": "Het werk van LegalAI is gebaseerd op een verantwoorde aanpak gebouwd op solide principes",
+        "methodologyBelief": "Wij geloven dat technologie juridisch begrip moet dienen, niet vervangen.",
+        "principles": {
+            "respect": {
+                "title": "Menselijk Respect",
+                "desc": "Respect voor de rol van mensen en juridische expertise als basis van het werk."
+            },
+            "neutrality": {
+                "title": "Neutraliteit en Transparantie",
+                "desc": "Toewijding aan neutraliteit, nauwkeurigheid en transparantie in alle processen."
+            },
+            "ethics": {
+                "title": "Ethische Naleving",
+                "desc": "Strikte naleving van regelgevende kaders en ethische normen."
+            },
+            "accountability": {
+                "title": "Verantwoording",
+                "desc": "Het bouwen van uitlegbare en verantwoordelijke technologieën."
+            }
+        },
+        "visionTitle": "Onze Visie",
+        "visionDesc1": "Wij streven ernaar bij te dragen aan het bouwen van een modern digitaal juridisch systeem, waar AI een ondersteunings- en analysetool is, geen vervanging voor advocaten of gerechtelijke instanties.",
+        "visionDesc2": "Onze visie richt zich op het in staat stellen van juridische professionals om te werken in een veilige, duidelijke digitale omgeving die voldoet aan Europese en internationale normen.",
+        "teamTitle": "Ons Team",
+        "teamSubtitle": "Het LegalAI-team bestaat uit ervaren juridische en technische specialisten, verenigd door een gedeeld begrip van de uitdagingen waarmee de juridische praktijk in het digitale tijdperk wordt geconfronteerd.",
+        "teamQuote": "Deze kennisdiversiteit maakt de ontwikkeling mogelijk van doordachte oplossingen die juridische precisie en technische discipline combineren.",
+        "teamRoles": {
+            "legal": {
+                "title": "Recht en Juridische Praktijk",
+                "desc": "Experts ervaren in juridisch werk en wetgeving."
+            },
+            "software": {
+                "title": "Software Engineering",
+                "desc": "Professionele ingenieurs die robuuste infrastructuur bouwen."
+            },
+            "ai": {
+                "title": "AI en Dataverwerking",
+                "desc": "Datawetenschappers die zorgen voor modelnauwkeurigheid en efficiëntie."
+            },
+            "security": {
+                "title": "Informatiebeveiliging",
+                "desc": "Zorgen voor gegevensbeveiliging en privacy van gebruikers."
+            }
+        },
+        "valuesTitle": "Onze Waarden",
+        "values": [
+            "Respecteren van ethiek van het juridische beroep",
+            "Ontwikkelen van technologieën die hun juridische en sociale impact respecteren",
+            "Gegevensbescherming als prioriteit, geen optie",
+            "Ondersteunen van menselijke besluitvorming, niet vervangen"
+        ],
+        "commitmentTitle": "Onze Betrokkenheid",
+        "commitmentDesc": "LegalAI is een onafhankelijke technologie-entiteit die geen bindend juridisch advies geeft en zich niet mengt in gerechtelijke of professionele besluitvorming. Onze rol beperkt zich tot onderzoek, ontwikkeling en het bouwen van ondersteunende tools die de kwaliteit van juridisch werk verbeteren binnen een verantwoord institutioneel kader."
+    },
+    "ServicesPage": {
+        "title": "Onze Diensten",
+        "subtitle": "Ontdek een uitgebreid scala aan AI-aangedreven juridische diensten",
+        "discoverMore": "Ontdek Meer",
+        "ctaTitle": "Klaar om te beginnen?",
+        "ctaSubtitle": "Neem vandaag nog contact met ons op en ontdek hoe onze diensten uw juridische werk kunnen transformeren",
+        "ctaButton": "Neem Contact Op"
+    },
+    "BlogPage": {
+        "title": "Blog",
+        "subtitle": "Laatste artikelen en inzichten over juridische technologie en AI",
+        "readMore": "Lees Meer",
+        "comingSoon": "Binnenkort Beschikbaar",
+        "comingSoonDesc": "We werken aan het creëren van waardevolle inhoud en het toevoegen van gespecialiseerde artikelen op het gebied van juridische technologie en kunstmatige intelligentie",
+        "newsletterTitle": "Abonneer op Nieuwsbrief",
+        "newsletterSubtitle": "Ontvang de laatste updates en artikelen direct in uw e-mail",
+        "emailPlaceholder": "Uw e-mail",
+        "subscribeNow": "Nu Abonneren"
+    },
+    "ContactPage": {
+        "title": "Neem Contact Op",
+        "subtitle": "We zijn hier om uw vragen te beantwoorden en te helpen uw juridische werk te transformeren",
+        "contactInfo": "Contactinformatie",
+        "email": "E-mail",
+        "phone": "Telefoon",
+        "offices": "Kantoren",
+        "sendMessage": "Stuur ons een bericht",
+        "fullName": "Volledige Naam",
+        "fullNamePlaceholder": "Vul uw volledige naam in",
+        "emailPlaceholder": "voorbeeld@email.com",
+        "phoneOptional": "Telefoonnummer (optioneel)",
+        "subject": "Onderwerp",
+        "subjectPlaceholder": "Onderwerp van bericht",
+        "message": "Bericht",
+        "messagePlaceholder": "Schrijf hier uw bericht...",
+        "sending": "Verzenden...",
+        "sendButton": "Bericht Verzenden",
+        "successMessage": "Uw bericht is succesvol verzonden! We nemen spoedig contact met u op.",
+        "errorMessage": "Er is een fout opgetreden bij het verzenden. Probeer het later opnieuw.",
+        "ctaTitle": "Klaar om te beginnen?",
+        "ctaSubtitle": "Laat ons u helpen uw juridische werk te transformeren met de kracht van AI"
+    },
+    "AiChatPage": {
+        "title": "Multi-Model AI Chat",
+        "subtitle": "Het platform biedt een geavanceerd juridisch chatsysteem gebaseerd op een eigen middleware-architectuur die systematisch meerdere AI-modellen koppelt en elke vraag of taak naar het meest geschikte model stuurt. Deze aanpak heeft tot doel de nauwkeurigheid van resultaten te verbeteren, fouten te verminderen en consistentere en betrouwbaardere juridische antwoorden te garanderen, terwijl gevoelige en persoonlijke informatie wordt beschermd die door het middleware-model wordt gefilterd.",
+        "mainDesc": "Legal AI biedt een geavanceerd juridisch chatsysteem dat werkt via een eigen middleware-model, dat intelligent meerdere algemene en gespecialiseerde AI-modellen koppelt en automatisch het meest geschikte model selecteert op basis van de aard van de vraag of taak.",
+        "mainDescTitle": "Tussenliggende juridische chat tussen meerdere AI-modellen",
+        "coreFunctions": "Kernfuncties",
+        "howItWorks": "Hoe werkt het?",
+        "howItWorksSteps": [
+            "Het middleware-model analyseert de aard van de juridische vraag of het verzoek en stuurt de verwerking vervolgens naar het meest geschikte model qua context en nauwkeurigheid, waarbij de resultaten worden gecoördineerd tot een samenhangend en consistent antwoord.",
+            "Het fungeert als een isolatie- en beveiligingslaag tussen de gebruiker en externe AI-modellen."
+        ],
+        "benefits": "Voordelen / Wat is inbegrepen",
+        "functions": {
+            "routing": {
+                "title": "Intelligente Routering",
+                "desc": "Naar de beste en meest nauwkeurige en efficiënte modellen"
+            },
+            "quality": {
+                "title": "Kwaliteitsborging",
+                "desc": "Zorgen voor antwoordkwaliteit en verminderen van fouten door te vertrouwen op één enkel model"
+            },
+            "crossCheck": {
+                "title": "Kruisverificatie",
+                "desc": "Verbeteren van antwoordkwaliteit door vergelijking en kruisverificatie"
+            },
+            "privacy": {
+                "title": "Privacybescherming",
+                "desc": "Past filtering, anonimiseringsbeleid toe en handhaaft gegevensonafhankelijkheid"
+            }
+        },
+        "benefitsList": {
+            "multiModel": {
+                "title": "Slimme Multi-Model Koppeling",
+                "desc": "Intelligente koppeling tussen meerdere AI-modellen"
+            },
+            "accuracy": {
+                "title": "Verbeterde Nauwkeurigheid en Resultaten van Hogere Kwaliteit",
+                "desc": "Verbeterde nauwkeurigheid en resultaten van hogere kwaliteit"
+            },
+            "review": {
+                "title": "Beoordelen en Verbeteren van Resultaten",
+                "desc": "Beoordelen en verbeteren van resultaten voordat ze aan de gebruiker worden getoond"
+            },
+            "security": {
+                "title": "Gegevensbeveiliging en Privacy",
+                "desc": "Filteren van gevoelige gegevens en beschermen van privacy"
+            },
+            "experience": {
+                "title": "Professionele Gebruikerservaring",
+                "desc": "Professionele en betrouwbare gebruikerservaring"
+            }
+        },
+        "ctaTitle": "Krijg Nauwkeurigere en Veiligere Antwoorden",
+        "ctaSubtitle": "Probeer het middleware-chatsysteem dat de intelligentie van meerdere modellen combineert met gegevensbeveiliging",
+        "startChat": "Start Chat",
+        "browseServices": "Bekijk Andere Diensten"
+    },
+    "BlogSlugPage": {
+        "backToBlog": "Terug naar Blog",
+        "shareArticle": "Deel Artikel"
+    },
+    "BlogPosts": {
+        "post1": {
+            "slug": "future-of-ai-legal",
+            "title": "De Toekomst van AI in het Juridische Veld",
+            "excerpt": "Hoe kunstmatige intelligentie de manier waarop advocaten en juridische professionals werken verandert, en welke kansen en uitdagingen er in het verschiet liggen in dit snelle digitale tijdperk.",
+            "date": "1 Januari 2025",
+            "author": "LegalAI Team",
+            "category": "Juridische Technologie",
+            "readTime": "8 minuten",
+            "imageGradient": "from-blue-100 to-blue-200",
+            "image": "/images/blog/ai-legal.png",
+            "content": "<h2>Introductie: Een Digitale Revolutie in de Rechtszaal</h2><p>De juridische wereld ondergaat een ongekende transformatie. Kunstmatige intelligentie (AI) is niet langer een futuristisch concept uit sciencefictionfilms, maar een dagelijkse realiteit voor advocaten, rechters en juridisch adviseurs. Deze digitale revolutie heeft niet tot doel het menselijke element te vervangen, maar om zijn capaciteiten te vergroten en ongekende niveaus van efficiëntie en nauwkeurigheid mogelijk te maken.</p><p>In dit artikel duiken we diep in hoe AI de toekomst van de advocatuur vormgeeft, waarbij we de beschikbare tools, praktische voordelen en ethische uitdagingen verkennen die we onder ogen moeten zien.</p><h2>Slimme Automatisering: Vaarwel Routinetaken</h2><p>Een van de meest voorkomende en impactvolle AI-toepassingen is het automatiseren van routine- en repetitieve taken. Traditioneel besteedden junior advocaten uren, misschien dagen, aan het handmatig beoordelen van contracten, het zoeken naar mazen in de wet of het proeflezen van juridische teksten. Tegenwoordig kunnen geavanceerde AI-systemen deze taken in enkele minuten volbrengen.</p><ul><li><strong>Contractbeoordeling:</strong> Machine learning-algoritmen analyseren duizenden pagina's aan contracten, identificeren standaardclausules en markeren ongebruikelijke voorwaarden of potentiële risico's met soms bovenmenselijke nauwkeurigheid.</li><li><strong>E-Discovery Classificatie:</strong> In grote zaken waarbij miljoenen documenten en e-mails betrokken zijn, kan AI relevant bewijs met een enorme snelheid scannen en classificeren, wat enorme tijd en moeite bespaart voor verdedigings- en vervolgingsteams.</li></ul><h2>Voorspellende Analyse: De Toekomst Voorspellen</h2><p>Misschien wel de meest opwindende AI-ontwikkeling is het vermogen om zaaktrajecten te \"voorspellen\". Door gegevens van duizenden eerdere zaken, rechterlijke uitspraken en gedrag van rechters te analyseren, kunnen intelligente systemen probabilistische beoordelingen geven voor nieuwe zaakuitkomsten.</p><blockquote>\"AI vertelt je niet alleen wat er eerder is gebeurd, het geeft je een waarschijnlijkheidskaart van wat er morgen kan gebeuren, waardoor advocaten verdedigings- of onderhandelingsstrategieën kunnen bouwen op basis van solide gegevens in plaats van louter intuïtie.\"</blockquote><h2>Ethische en Regelgevende Uitdagingen</h2><p>Ondanks de enorme voordelen roept de integratie van AI in het recht diepgaande ethische vragen op:</p><ol><li><strong>Rechtvaardigheid en Vooroordelen:</strong> AI-algoritmen leren van historische gegevens. Als deze gegevens vooroordelen bevatten (raciaal, klasse of geslacht), kan het systeem deze vooroordelen reproduceren in zijn aanbevelingen.</li><li><strong>Professionele Verantwoordelijkheid:</strong> Als een AI-systeem een fout maakt bij het analyseren van een zaak en verlies voor een cliënt veroorzaakt, wie draagt dan de verantwoordelijkheid?</li><li><strong>Privacy:</strong> Het omgaan met enorme hoeveelheden gevoelige juridische gegevens vereist strikte beveiligingsprocedures.</li></ol><h2>Conclusie: De Augmented Advocaat</h2><p>De toekomst behoort noch toe aan de advocaat die technologie vreest, noch aan de machine die alleen werkt. De toekomst behoort toe aan de \"Augmented Advocaat\"; de advocaat die diepgaande juridische expertise en menselijke intuïtie bezit, maar gewapend is met AI-tools die bovenmenselijke vermogens verlenen in onderzoek en analyse.</p>"
+        },
+        "post2": {
+            "slug": "data-protection-legal",
+            "title": "Het Belang van Gegevensbescherming in Juridisch Werk",
+            "excerpt": "Een uitgebreide gids voor het beschermen van gevoelige juridische gegevens in het tijdperk van cyberaanvallen, en hoe u ervoor zorgt dat uw kantoor voldoet aan internationale normen.",
+            "date": "28 December 2024",
+            "author": "Informatiebeveiliging",
+            "category": "Cybersecurity",
+            "readTime": "7 minuten",
+            "imageGradient": "from-green-100 to-green-200",
+            "image": "/images/blog/data-protection.png",
+            "content": "<h2>Data: De Nieuwe Valuta van de Advocatuur</h2><p>In het digitale tijdperk zijn de meest waardevolle activa voor advocatenkantoren niet langer luxe bibliotheken of toplocaties, maar \"data\". Cliëntinformatie, bedrijfsgeheimen, zaakstrategieën en privécommunicatie vormen allemaal een schatkamer aan gevoelige informatie. En waar een schat is, zijn dieven.</p><p>Advocatenkantoren zijn belangrijke doelwitten geworden voor cyberaanvallen omdat ze worden beschouwd als \"achterdeurtjes\" om toegang te krijgen tot gegevens van grote bedrijven en belangrijke figuren. Een enkel lek kan het kantoor niet alleen financiële verliezen kosten, maar de reputatie voor altijd vernietigen.</p><h2>Huidig Bedreigingslandschap</h2><p>Hackermethoden evolueren voortdurend, waardoor verdediging een continue uitdaging is. Belangrijke bedreigingen voor de juridische sector zijn:</p><ul><li><strong>Ransomware:</strong> Aanvallers versleutelen alle kantoorbestanden en eisen losgeld (meestal in cryptocurrency) voor ontsleuteling. Weigeren te betalen kan betekenen dat gegevens voor altijd verloren gaan of openbaar worden gemaakt.</li><li><strong>Phishing:</strong> E-mails die legitiem lijken, zijn bedoeld om advocaten te misleiden om wachtwoorden vrij te geven of schadelijke software te downloaden.</li><li><strong>Supply Chain Attacks:</strong> Het kantoor aanvallen door technologische dienstverleners waarmee het kantoor samenwerkt te hacken.</li></ul><h2>Verdedigings- en Beschermingsstrategieën</h2><p>Bescherming gaat niet alleen over het installeren van antivirussoftware. Het is een geïntegreerd systeem van technologieën en beleid:</p><h3>1. End-to-End Encryptie</h3><p>Alle gegevens moeten worden versleuteld, of ze nu op servers zijn opgeslagen (At Rest) of tijdens overdracht via internet (In Transit). Het gebruik van versleutelde e-mail en veilige berichtenapps is geen luxe maar een noodzaak.</p><h3>2. Multi-Factor Authenticatie (MFA)</h3><p>Wachtwoorden alleen zijn niet langer voldoende. Het inschakelen van tweefactorauthenticatie (2FA) voegt een cruciale beschermingslaag toe.</p><h3>3. Back-ups</h3><p>De laatste verdedigingslinie tegen ransomware is het hebben van recente en geïsoleerde (Offline) back-ups van kantoorgegevens.</p><h2>Cybersecurity Cultuur</h2><p>De sterkste firewall ter wereld beschermt u niet als een werknemer een verdachte link opent. Continue training en beveiligingsbewustzijn voor alle kantoormedewerkers is de belangrijkste investering.</p>"
+        },
+        "post3": {
+            "slug": "legal-research-efficiency",
+            "title": "Hoe de Efficiëntie van Juridisch Onderzoek te Verbeteren",
+            "excerpt": "Tips en technieken om juridisch onderzoek en analyse te versnellen met behulp van moderne tools, waardoor de inspanning wordt verminderd en de nauwkeurigheid van resultaten wordt verhoogd.",
+            "date": "15 December 2024",
+            "author": "Sara Mahmoud",
+            "category": "Productiviteit",
+            "readTime": "4 minuten",
+            "imageGradient": "from-purple-100 to-purple-200",
+            "image": "/images/blog/legal-research.png",
+            "content": "<h2>De Informatie-uitdaging in het Moderne Tijdperk</h2><p>Juridisch onderzoek is de ruggengraat van elke succesvolle zaak. Maar te midden van massale wetgevende inflatie en zich dag na dag opstapelende jurisprudentie, is het vinden van nauwkeurige informatie geworden als het zoeken naar een speld in een hooiberg. Traditionele methoden die vertrouwen op handmatige zoekopdrachten door papieren volumes of zelfs eenvoudige trefwoordzoekopdrachten zijn niet langer voldoende om gelijke tred te houden met de versnelling van zaken.</p><p>Efficiëntie in onderzoek betekent niet alleen snelheid, maar ook volledigheid en nauwkeurigheid. Hoe kan de moderne advocaat ervoor zorgen dat hij een recente jurisprudentie niet over het hoofd heeft gezien die de weegschaal van zijn zaak zou kunnen doen doorslaan?</p><h2>Slimme Zoektools: Verder dan Trefwoorden</h2><p>De nieuwe generatie juridische zoekmachines gebruikt Natural Language Processing (NLP) om \"betekenis\" te begrijpen, niet alleen woorden te matchen.</p><ul><li><strong>Conceptueel Zoeken:</strong> U kunt zoeken naar een juridisch concept zoals \"te kwader trouw in commerciële contracten\" en het systeem zal gerelateerde zaken ophalen, zelfs als ze niet expliciet \"te kwader trouw\" noemen maar synonieme termen gebruikten of de situatie beschreven.</li><li><strong>Slimme Citaten:</strong> Tools die u onmiddellijk laten zien hoe deze wettelijke bepaling in eerdere uitspraken werd behandeld, en of deze nog steeds van kracht is of is vernietigd of gewijzigd.</li></ul><h2>Effectieve Onderzoeksmethodologie: 5 Praktische Stappen</h2><ol><li><strong>Begin met Secundaire Bronnen:</strong> Voordat u in primaire teksten duikt, begin met jurisprudentiële artikelen en juridische samenvattingen om een uitgebreid begrip te vormen.</li><li><strong>Formuleer uw Zoekopdracht Nauwkeurig:</strong> Gebruik Booleaanse operatoren zoals AND, OR, NOT om het zoekbereik te verkleinen en irrelevante resultaten te filteren.</li><li><strong>Gebruik Filters Verstandig:</strong> Verspil geen tijd aan het lezen van zeer oude uitspraken of die van rechtbanken zonder jurisdictie. Filter resultaten op datum, rechtbank en onderwerp.</li><li><strong>Volg het Uitspraakpad:</strong> Gebruik \"Shepardizing\" tools of vergelijkbaar om ervoor te zorgen dat de uitspraak die u citeert nog steeds \"Good Law\" is.</li><li><strong>Organiseer uw Resultaten Onmiddellijk:</strong> Vertrouw niet op uw geheugen. Gebruik referentiebeheertools om teksten en notities op te slaan en te organiseren met directe links naar bronnen.</li></ol><h2>Conclusie</h2><p>Het verbeteren van de efficiëntie van juridisch onderzoek is een verworven vaardigheid die een mix vereist van het beheersen van moderne technologische tools en het aannemen van een gedisciplineerde onderzoeksmethodologie. De tijd die u bespaart in routineonderzoek is tijd die u kunt investeren in strategisch denken en het opstellen van argumenten.</p>"
+        }
+    },
+    "LegalModelPage": {
+        "title": "Juridische Chat met LegalAI's Eigen Model",
+        "subtitle": "Het platform bevat een apart chatsysteem aangedreven door een juridisch model dat eigendom is van LegalAI, specifiek ontworpen voor feitenanalyse, tekstopstelling en het creëren van juridische sjablonen en documenten.",
+        "mainDescTitle": "Chat met LegalAI's Eigen Model (Analyse – Opstelling – Creatie)",
+        "mainDesc": "Een juridisch chatsysteem aangedreven door een eigen AI-juridisch model dat specifiek is ontwikkeld om juridische analyse en opstelling te ondersteunen volgens professionele gedisciplineerde logica.",
+        "howItWorks": "Hoe werkt het?",
+        "howItWorksSteps": [
+            "Het model begint met het begrijpen van de juridische invoer die door de gebruiker wordt verstrekt, of het nu feiten, vragen of juridische teksten zijn.",
+            "Het analyseert vervolgens de inhoud op basis van zijn juridische structuur en analytische logica, verwijzend naar een bijgewerkte juridische kennisbank.",
+            "Vervolgens produceert het georganiseerde, consistente en professioneel bruikbare juridische output, rekening houdend met nauwkeurigheid van opstelling en contextvereisten."
+        ],
+        "coreFunctions": "Kernfuncties",
+        "functions": {
+            "analysis": {
+                "title": "Juridische Feitenanalyse",
+                "desc": "En logische ontleding"
+            },
+            "drafting": {
+                "title": "Opstellen van Juridische Tekst en Documenten",
+                "desc": "In professionele stijl"
+            },
+            "templates": {
+                "title": "Creëren van Juridische Sjablonen",
+                "desc": "Verzoekschriften en memoranda"
+            },
+            "rewriting": {
+                "title": "Nauwkeurige Juridische Herschrijving",
+                "desc": "En stijlverbetering"
+            },
+            "research": {
+                "title": "Ondersteuning bij Juridisch Onderzoek",
+                "desc": "En academische analyse"
+            },
+            "context": {
+                "title": "Koppelen van Feiten aan Juridische Context",
+                "desc": "En toepasselijke wetgeving"
+            }
+        },
+        "features": "Kenmerken / Wat is inbegrepen?",
+        "featuresList": {
+            "specialized": {
+                "title": "Gespecialiseerd Juridisch Model",
+                "desc": "Specifiek ontworpen voor juridisch gebruik, geen algemeen model."
+            },
+            "knowledge": {
+                "title": "Uitgebreide Juridische Kennisbank",
+                "desc": "Bevat wetten, academische referenties en gespecialiseerde jurisprudentiële studies."
+            },
+            "precision": {
+                "title": "Structuur en Nauwkeurigheid van Opstelling",
+                "desc": "Focus op juridische logica, volgorde en professionele stijl."
+            },
+            "updates": {
+                "title": "Regelmatige Updates",
+                "desc": "Bijblijven met de laatste wetswijzigingen en jurisprudentiële trends."
+            },
+            "support": {
+                "title": "Professionele en Academische Ondersteuning",
+                "desc": "Geschikt voor juridische beoefenaars, onderzoekers, academici en rechtenstudenten."
+            },
+            "timeSaving": {
+                "title": "Tijd- en Inspanningsbesparing",
+                "desc": "Verminderen van tijd besteed aan analyse en opstelling met behoud van kwaliteit."
+            }
+        },
+        "ctaTitle": "Start Analyse en Opstelling Nu",
+        "ctaSubtitle": "Profiteer van de kracht van LegalAI's gespecialiseerde model om uw juridische werk te ondersteunen",
+        "tryService": "Probeer de Dienst",
+        "browseServices": "Bekijk Andere Diensten"
+    },
+    "DocumentAnalysisPage": {
+        "title": "Analyse van Documenten en Digitaal Bewijs",
+        "subtitle": "In hetzelfde aparte chat-tabblad aangedreven door het juridische model, kunt u direct chatten met juridische documenten en visueel materiaal, inclusief tekstbestanden, afbeeldingen en bewijs.",
+        "mainDescTitle": "Chat Gewijd aan Documenten en Afbeeldingen",
+        "mainDesc": "Een geavanceerde dienst die directe chat met juridische documenten en visueel materiaal mogelijk maakt binnen een apart chat-tabblad aangedreven door het eigen juridische model van het platform. Deze dienst stelt gebruikers in staat om complexe juridische bestanden snel en nauwkeurig te begrijpen, zonder langdurige handmatige beoordeling, met behoud van volledige controle over gegevens en privacy.",
+        "mainDesc2": "Gebruikers kunnen inhoud analyseren, samenvatten, vergelijken en kernelementen extraheren, en documenten koppelen aan de juridische context van de zaak zonder langdurige handmatige beoordeling.",
+        "designedFor": "Ontworpen voor Directe Interactie met",
+        "legalDocs": "Juridische Documenten",
+        "legalDocsFormats": "PDF – Word – Scans",
+        "visualEvidence": "Afbeeldingen en Visueel Bewijs",
+        "visualFormats": "Ongevalfoto's, gescande documenten, kaarten",
+        "capabilities": "Mogelijkheden",
+        "capabilitiesList": [
+            "Analyseer volledig document zonder handmatig lezen",
+            "Samenvatten, vergelijken, extraheren van kernpunten",
+            "Stel directe vragen over bestandsinhoud",
+            "Koppel afbeeldingen en documenten aan juridische tekst"
+        ],
+        "howItWorks": "Hoe Werkt de Dienst?",
+        "howItWorksSteps": [
+            "Gebruiker uploadt documenten of visueel materiaal binnen het speciale chat-tabblad.",
+            "Het juridische model leest en begrijpt de volledige inhoud binnen zijn juridische context, en staat vervolgens gebruikersinteractie toe via natuurlijke vragen of specifieke commando's (samenvatten, vergelijken, elementen extraheren).",
+            "Resultaten worden gepresenteerd in georganiseerde juridische opstelling, met behoud van gegevensvertrouwelijkheid zonder delen of gebruik buiten de reikwijdte van het verzoek, waarbij gevoelige en persoonlijke informatie wordt gefilterd door het middleware-model."
+        ],
+        "features": "Kenmerken / Wat is inbegrepen?",
+        "featuresList": {
+            "directChat": {
+                "title": "Directe Chat met Bestanden",
+                "desc": "Stel juridische vragen over het document zelf zonder elke pagina te lezen"
+            },
+            "fastAnalysis": {
+                "title": "Nauwkeurige en Snelle Analyse",
+                "desc": "Direct begrip van complexe bestanden, bespaart tijd en moeite"
+            },
+            "smartExtraction": {
+                "title": "Slimme Samenvatting en Extractie",
+                "desc": "Identificeren van feiten, claims, partijen en belangrijke data"
+            },
+            "visualAnalysis": {
+                "title": "Visuele Bewijsanalyse",
+                "desc": "Omgaan met afbeeldingen en visueel materiaal en deze koppelen aan juridische feiten"
+            },
+            "comparison": {
+                "title": "Documentvergelijking",
+                "desc": "Markeren van verschillen en overeenkomsten tussen meerdere versies of verschillende bestanden"
+            },
+            "dataControl": {
+                "title": "Volledige Gegevenscontrole",
+                "desc": "Gebruiker behoudt volledige controle over bestanden, zonder gebruik voor training of delen met derden"
+            }
+        },
+        "ctaTitle": "Praat met uw Documenten",
+        "ctaSubtitle": "Analyseer en begrijp uw juridische bestanden in seconden",
+        "startNow": "Start Nu",
+        "browseServices": "Bekijk Andere Diensten"
+    },
+    "VisualFactsPage": {
+        "title": "Visuele Reconstructie van Juridische Feiten",
+        "subtitle": "Een geavanceerde dienst voor het transformeren van ongestructureerde gegevens en complexe verhalen — zoals politierapporten, getuigenverklaringen, fysiek bewijs, foto's, kaarten en ruimtelijke gegevens — in visuele simulaties die de volgorde van gebeurtenissen repliceren zoals ze vermoedelijk hebben plaatsgevonden.",
+        "subtitleHighlight": "We presenteren niet alleen bewijs, we maken de waarheid zichtbaar.",
+        "mainDescTitle": "Visuele Reconstructie van Juridische Feiten",
+        "mainDesc": "Visuele reconstructie van juridische feiten is een geavanceerde juridische dienst gericht op het transformeren van ongestructureerde gegevens en complexe verhalen in georganiseerde visuele simulaties die de volgorde van gebeurtenissen repliceren zoals vermoedelijk plaatsgevonden, gebaseerd op verstrekte feiten en bewijs.",
+        "mainDesc2": "Deze dienst stelt juridische beoefenaars in staat om over te stappen van abstracte tekstuele beschrijving naar een duidelijke visuele weergave die begrip, analyse en nauwkeurige juridische interpretatie ondersteunt.",
+        "howItWorks": "Hoe werkt het?",
+        "howItWorksSteps": [
+            "Gebruiker begint met het verstrekken van beschikbare zaakgegevens aan het systeem, zoals rapporten, getuigenissen, foto's, kaarten en ruimtelijke gegevens.",
+            "AI analyseert deze invoer en begrijpt relaties tussen mensen, plaatsen, tijden en gebeurtenissen, en werkt vervolgens als een digitale regisseur, cinematograaf en acteur om een sequentiële visuele weergave te bouwen.",
+            "Gebruiker kan de resulterende simulatie bekijken en alternatieve scenario's testen door hypotheses te wijzigen, wat een dieper begrip van het incident vanuit verschillende hoeken mogelijk maakt."
+        ],
+        "features": "Kenmerken / Wat is inbegrepen",
+        "featuresList": {
+            "dataVisual": {
+                "title": "Transformeer Ongestructureerde Gegevens naar Visuele Scène",
+                "desc": "Van verspreide rapporten en getuigenissen naar een geïntegreerd visueel verhaal."
+            },
+            "deepUnderstanding": {
+                "title": "Dieper Begrip van Feiten",
+                "desc": "Vergemakkelijken van begrip van temporele en ruimtelijke relaties tussen gebeurtenissen."
+            },
+            "testScenarios": {
+                "title": "Test Scenario's",
+                "desc": "Vergelijken van verschillende hypotheses op basis van dezelfde gegevens."
+            },
+            "visualEvidence": {
+                "title": "Verbeter Visuele Bewijskracht",
+                "desc": "Een beeld zegt meer dan duizend woorden, vooral in complexe zaken."
+            },
+            "contradictions": {
+                "title": "Detecteer Mogelijke Tegenstrijdigheden",
+                "desc": "Markeren van logische of fysieke conflicten tussen verschillende verhalen."
+            },
+            "support": {
+                "title": "Juridisch Ondersteuningsinstrument, Geen Vervanging voor Menselijke Beslissing",
+                "desc": "Gebruikt als een analytisch en illustratief hulpmiddel binnen het professionele kader."
+            }
+        },
+        "useCases": "Wat Kan Worden Gereconstrueerd?",
+        "useCasesList": {
+            "traffic": "Verkeersongelukken",
+            "realEstate": "Vastgoed- en Bouwgeschillen",
+            "timeline": "Zaken Afhankelijk van Complexe Tijdlijn",
+            "educational": "Educatieve Doeleinden en Juridische Training",
+            "visual": "Feiten Visueel"
+        },
+        "ctaTitle": "Maak de Waarheid Zichtbaar",
+        "ctaSubtitle": "Transformeer uw complexe zaken in duidelijke en overtuigende visuele simulaties",
+        "bookConsultation": "Boek Gratis Consult",
+        "browseServices": "Bekijk Andere Diensten"
+    },
+    "SecurityPage": {
+        "title": "Beveiliging en Digitale Privacy",
+        "subtitle": "LegalAI hecht het grootste belang aan gegevensbescherming en informatievertrouwelijkheid, erkennende de gevoeligheid van juridisch werk en de vereisten van vertrouwen en naleving.",
+        "overview": "Het platform biedt een uitgebreide suite van veilige digitale diensten, specifiek ontworpen om de communicatie, bestanden en digitale identiteit van gebruikers te beschermen, binnen een kader dat volledige controle over gegevens garandeert.",
+        "coreFunctions": "Kernfuncties",
+        "coreFunctionsList": [
+            "Beveiligen van gevoelige juridische communicatie",
+            "Beschermen van digitale identiteit en voorkomen van tracking",
+            "Veilig opslaan van juridische zaken en bestanden",
+            "Garanderen van gegevensvertrouwelijkheid tijdens opslag en overdracht",
+            "Gebruikers in staat stellen volledige controle te hebben over hun gegevens en toegangsrechten"
+        ],
+        "howItWorks": "Hoe Werkt het Beveiligings- en Privacysysteem?",
+        "howItWorksDesc": "Veilige digitale tools worden aangeboden die onafhankelijk van AI-modellen werken, met een toewijding aan het principe dat gegevens uitsluitend aan de gebruiker toebehoren, en niet worden gebruikt voor training of gedeeld met derden.",
+        "howItWorksDesc2": "Alle operaties worden beheerd volgens strikte privacy- en toegangscontrolebeleidslijnen.",
+        "servicesTitle": "Wat Omvat de Dienst?",
+        "emailService": {
+            "title": "Versleutelde E-mail",
+            "desc": "Speciale e-mail voor gevoelige juridische communicatie, met volledige versleuteling van correspondentie en bijlagen en hoge bescherming tegen tracking of ongeautoriseerde toegang.",
+            "features": [
+                "Volledige versleuteling van correspondentie en bijlagen",
+                "Hoge bescherming tegen tracking of ongeautoriseerde toegang",
+                "Geschikt voor professionele en juridische communicatie"
+            ]
+        },
+        "vpnService": {
+            "title": "Veilige VPN-dienst",
+            "desc": "Beschermen van digitale identiteit en verbergen van IP-adres, met volledige versleuteling van internetverkeer en preventie van tracking en surveillance om een veilige juridische werkomgeving online te bieden.",
+            "features": [
+                "Beschermen van digitale identiteit en verbergen van IP-adres",
+                "Volledige versleuteling van internetverkeer",
+                "Preventie van tracking en surveillance"
+            ]
+        },
+        "cloudService": {
+            "title": "Versleutelde Cloudopslag",
+            "desc": "Opslaan van zaken en gevoelige bestanden met volledige versleuteling, met nauwkeurige controle over toegangsrechten en de mogelijkheid om bestanden veilig te delen indien nodig.",
+            "features": [
+                "Opslaan van zaken en gevoelige bestanden met volledige versleuteling",
+                "Nauwkeurige controle over toegangsrechten",
+                "Mogelijkheid om bestanden veilig te delen indien nodig"
+            ]
+        },
+        "principlesTitle": "Governance- en Privacyprincipes",
+        "principles": {
+            "dataControl": {
+                "title": "Volledige Gegevenscontrole",
+                "desc": "Gebruiker behoudt volledige controle over zijn gegevens"
+            },
+            "noTraining": {
+                "title": "Gegevens Niet Gebruikt voor Training",
+                "desc": "Gegevens worden niet gebruikt om AI-modellen te trainen"
+            },
+            "noSharing": {
+                "title": "Geen Delen met Derden",
+                "desc": "Informatie wordt niet gedeeld met derden"
+            },
+            "compliance": {
+                "title": "Respect voor Regelgevende Normen",
+                "desc": "Strikte naleving van vertrouwelijkheid en nalevingsvereisten"
+            }
+        },
+        "ctaTitle": "Bescherm Uw Juridische Gegevens",
+        "ctaSubtitle": "Begin met werken in een volledig veilige en versleutelde omgeving",
+        "contactUs": "Neem Contact Op",
+        "backToServices": "Terug naar Diensten"
+    },
+    "Common": {
+        "loading": "Laden...",
+        "error": "Er is een fout opgetreden",
+        "retry": "Opnieuw proberen",
+        "back": "Terug",
+        "next": "Volgende",
+        "previous": "Vorige",
+        "close": "Sluiten",
+        "save": "Opslaan",
+        "cancel": "Annuleren",
+        "delete": "Verwijderen",
+        "edit": "Bewerken",
+        "view": "Bekijken",
+        "search": "Zoeken",
+        "filter": "Filteren",
+        "sort": "Sorteren",
+        "selectLanguage": "Taal selecteren"
+    }
+}

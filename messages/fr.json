@@ -1,0 +1,892 @@
+{
+    "Header": {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact",
+        "pricing": "Tarifs",
+        "faq": "FAQ"
+    },
+    "Footer": {
+        "companyDescription": "Une plateforme juridique intelligente combinant analyse juridique avancée, rédaction précise et représentation visuelle des faits.",
+        "quickLinks": "Liens rapides",
+        "services": "Services",
+        "contact": "Contact",
+        "email": "Email",
+        "phone": "Téléphone",
+        "location": "Adresse",
+        "copyright": "Tous droits réservés",
+        "aiChat": "Chat IA",
+        "legalModel": "Modèle Juridique",
+        "documentAnalysis": "Analyse de Documents",
+        "visualFacts": "Faits Visuels",
+        "security": "Sécurité",
+        "disclaimer": "LegalAI est une entité technologique indépendante qui ne fournit pas de conseils juridiques contraignants.",
+        "newsletterTitle": "Abonnez-vous à notre newsletter",
+        "emailPlaceholder": "Votre email",
+        "subscribeSuccess": "Inscription réussie !",
+        "subscribeError": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "HomePage": {
+        "heroTitle": "Intelligence Artificielle Juridique pour",
+        "heroWords": [
+            "Avocats",
+            "Éducation",
+            "Juges",
+            "Pratiques Juridiques"
+        ],
+        "heroDescription": "Bienvenue sur la plateforme Legal AI, la solution idéale pour les praticiens du droit et les universitaires cherchant à améliorer leur efficacité. Nous proposons des outils avancés alimentés par l'IA pour faciliter le travail quotidien et améliorer la qualité de la recherche.",
+        "startNow": "Commencer maintenant",
+        "trustedBy": "Approuvé par des organisations du monde entier",
+        "whoWeAre": "Qui sommes-nous",
+        "acceleratingMastery": "Accélérer la Maîtrise",
+        "masteryHighlight": "Professionnelle",
+        "missionIntro": "En combinant une recherche juridique approfondie avec une innovation de pointe, LegalAI est conçu pour aider les praticiens du droit à développer leur expertise plus rapidement.",
+        "missionDetail": "Notre équipe s'engage à comprendre vos besoins spécifiques et s'efforce de transformer la profession juridique avec des solutions intelligentes alimentées par l'IA, conçues pour servir vos besoins professionnels et académiques.",
+        "ourMission": "Notre Mission",
+        "ourMissionText": "Nous pensons que le travail juridique doit être aussi dynamique que le monde qu'il dessert. Nous utilisons les technologies IA les plus récentes pour transformer les tâches quotidiennes - recherche, gestion documentaire et rédaction - en processus intelligents et intégrés. Nous simplifions la complexité administrative, découvrons des insights profonds et nous concentrons sur l'essentiel : fournir des services juridiques exceptionnels.",
+        "ourApproach": "Notre Approche",
+        "ourApproachText": "C'est pourquoi nous adoptons une approche collaborative, travaillant étroitement avec nos clients pour fournir des solutions sur mesure alignées sur leurs objectifs. Avec notre dévouement à la précision, la sécurité et l'innovation, nous menons une nouvelle ère d'excellence juridique.",
+        "clientsServed": "Clients Servis",
+        "successRate": "Taux de Réussite",
+        "moreAboutUs": "En savoir plus",
+        "collaborating": "Collaborer pour façonner l'avenir du droit.",
+        "mainServices": "Nos Services Principaux",
+        "discoverServices": "Découvrez une gamme complète de services juridiques alimentés par l'IA",
+        "discoverMore": "Découvrir Plus",
+        "blog": "Blog",
+        "latestArticles": "Derniers Articles et Insights",
+        "followNews": "Suivez les dernières actualités et développements en technologie juridique",
+        "viewAllArticles": "Voir Tous les Articles",
+        "faq": "FAQ",
+        "haveQuestions": "Vous avez des questions ? Nous avons des réponses",
+        "commonQuestions": "Questions les plus fréquentes sur la plateforme LegalAI",
+        "viewAllQuestions": "Voir Toutes les Questions",
+        "readyToTransform": "Prêt à transformer votre travail juridique ?",
+        "joinHundreds": "Rejoignez des centaines d'avocats et professionnels du droit utilisant LegalAI",
+        "learnMore": "En Savoir Plus Sur Nous"
+    },
+    "Services": {
+        "aiChat": {
+            "title": "Chat IA Multi-Modèles",
+            "description": "Un système de chat juridique avancé alimenté par un modèle intermédiaire propriétaire qui connecte plusieurs modèles d'IA et sélectionne automatiquement le plus approprié.",
+            "features": [
+                "Routage Intelligent des Modèles",
+                "Amélioration de la Qualité des Réponses",
+                "Filtrage des Données Sensibles"
+            ]
+        },
+        "legalModel": {
+            "title": "Modèle IA Juridique",
+            "description": "Un modèle d'IA juridique propriétaire conçu spécifiquement pour l'analyse juridique, la rédaction et la création de documents.",
+            "features": [
+                "Analyse des Faits Juridiques",
+                "Rédaction de Documents",
+                "Base de Connaissances Étendue"
+            ]
+        },
+        "documentAnalysis": {
+            "title": "Analyse de Documents et d'Images",
+            "description": "Chat direct avec des documents juridiques et des supports visuels pour une compréhension rapide et précise des fichiers complexes.",
+            "features": [
+                "Analyse PDF et Word",
+                "Traitement d'Images",
+                "Comparaison de Documents"
+            ]
+        },
+        "visualFacts": {
+            "title": "Reconstitution Visuelle des Faits",
+            "description": "Transformez des données non structurées et des récits complexes en simulations visuelles qui recréent la séquence des événements.",
+            "features": [
+                "Simulation d'Événements",
+                "Test de Scénarios",
+                "Amélioration des Preuves Visuelles"
+            ]
+        },
+        "security": {
+            "title": "Sécurité Numérique et Confidentialité",
+            "description": "LegalAI accorde la plus grande importance à la protection des données et à la confidentialité des informations, offrant des services numériques sécurisés comprenant:",
+            "features": [
+                "Email Chiffré",
+                "VPN pour la Protection de l'Identité et la Prévention du Pistage",
+                "Stockage Cloud Chiffré pour les Dossiers et Fichiers Sensibles"
+            ]
+        }
+    },
+    "FAQ": {
+        "q1": "Qu'est-ce que la plateforme LegalAI ?",
+        "a1": "LegalAI est une plateforme de technologie juridique qui s'appuie sur l'intelligence artificielle pour soutenir l'analyse juridique, la rédaction de documents et l'interaction avec les documents.",
+        "q2": "LegalAI remplace-t-il les avocats ?",
+        "a2": "Non. LegalAI est une plateforme d'assistance conçue pour soutenir les professionnels du droit avec des outils d'analyse et de rédaction qui les aident à travailler plus efficacement.",
+        "q3": "Comment mes données sont-elles protégées ?",
+        "a3": "Nous appliquons les normes de cryptage et de sécurité les plus élevées. Vos données ne sont pas utilisées pour entraîner des modèles et ne sont pas partagées avec des tiers.",
+        "q4": "Qui peut utiliser la plateforme ?",
+        "a4": "La plateforme est conçue pour les praticiens du droit, les cabinets d'avocats, les chercheurs, les universitaires et les étudiants en droit."
+    },
+    "Pricing": {
+        "title": "Plans Tarifaires",
+        "subtitle": "Des plans tarifaires flexibles pour tous",
+        "description": "Choisissez le plan qui correspond à vos besoins. Économisez 20% sur la facturation annuelle.",
+        "monthly": "Mensuel",
+        "yearly": "Annuel",
+        "save": "Économisez",
+        "popular": "Le Plus Populaire",
+        "perMonth": "/ mois",
+        "subscribe": "S'abonner Maintenant",
+        "securityAddon": "Ajouter le Pack Sécurité",
+        "securityDesc": "Email chiffré, VPN, Stockage Cloud",
+        "extraCredits": "Acheter des Crédits Supplémentaires",
+        "credits": "crédits",
+        "viewDetails": "Voir les Détails Complets du Plan",
+        "starter": {
+            "name": "Débutant",
+            "description": "Pour les particuliers et débutants",
+            "features": [
+                "50 crédits / mois",
+                "10 requêtes / jour",
+                "Chat Juridique (Basique)",
+                "Support Standard",
+                "Pas d'Analyse de Fichiers"
+            ]
+        },
+        "professional": {
+            "name": "Professionnel",
+            "description": "Pour les avocats et petits cabinets",
+            "features": [
+                "200 crédits / mois",
+                "40 requêtes / jour",
+                "Chat Juridique Illimité",
+                "Analyse Approfondie (20/mois)",
+                "Rédaction de Documents (15/mois)",
+                "Analyse d'Images et Documents",
+                "Support 24/7"
+            ]
+        },
+        "advanced": {
+            "name": "Avancé",
+            "description": "Pour les grands cabinets et organisations",
+            "features": [
+                "500 crédits / mois",
+                "120 requêtes / jour",
+                "Toutes les Fonctionnalités Illimitées*",
+                "Rédaction de Documents (50/mois)",
+                "Faits Visuels (23/mois)",
+                "Rapports Méthodologiques",
+                "Support 24/7",
+                "Formation d'Équipe"
+            ]
+        }
+    },
+    "Quotes": {
+        "title": "Avis d'Experts",
+        "subtitle": "Que disent les experts sur l'IA Juridique ?",
+        "q1": {
+            "quote": "Bien que l'IA puisse analyser et protéger les données, la compétence et la capacité juridiques nécessitent de l'empathie et un sens humain qui resteront entre les mains des humains.",
+            "author": "Eric Schmidt",
+            "role": "Ancien PDG de Google",
+            "context": "Cette citation illustre les limites actuelles de l'IA dans le domaine juridique, où la compréhension humaine, l'empathie et le contexte éthique restent irremplaçables."
+        },
+        "q2": {
+            "quote": "L'IA contribue à élargir l'accès à la justice en réduisant le coût des services juridiques.",
+            "author": "Karen Pollen",
+            "role": "PDG de Legal.io",
+            "context": "Souligne le rôle de l'IA dans la réduction des coûts des services juridiques, permettant un accès plus large au soutien juridique."
+        },
+        "q3": {
+            "quote": "L'IA ne remplacera pas les avocats, mais elle remplacera de nombreuses tâches et méthodes qu'ils utilisent habituellement.",
+            "author": "Richard Susskind",
+            "role": "Professeur et Conseiller en Tech Juridique",
+            "context": "Suggère que l'IA remodèle la profession en automatisant les tâches routinières sans menacer l'existence des avocats."
+        },
+        "q4": {
+            "quote": "L'IA dans le domaine juridique n'est pas destinée à se passer des avocats, mais à leur permettre d'utiliser des outils qui les rendent plus productifs.",
+            "author": "Andrew Arruda",
+            "role": "Fondateur de ROSS Intelligence",
+            "context": "Met l'accent sur l'IA comme outil de soutien à la productivité."
+        },
+        "q5": {
+            "quote": "Ne pas utiliser l'IA pourrait un jour être considéré comme une faute professionnelle juridique ! Similaire à un avocat de la fin du 20e siècle faisant tout manuellement malgré l'existence des ordinateurs.",
+            "author": "Tom Girardi",
+            "role": "Avocat Célèbre",
+            "context": "Indique que l'IA pourrait devenir un outil professionnel essentiel."
+        }
+    },
+    "ServicesSection": {
+        "title": "Nos Services",
+        "subtitle": "Nous offrons une gamme complète de services juridiques alimentés par l'IA",
+        "s1": {
+            "title": "Chat Intelligent Multi-Modèles",
+            "description": "Système de chat juridique avancé fonctionnant via un modèle intermédiaire propriétaire",
+            "features": [
+                "Routage intelligent entre modèles",
+                "Précision améliorée",
+                "Protection de la vie privée"
+            ]
+        },
+        "s2": {
+            "title": "Modèle Juridique Propriétaire",
+            "description": "Modèle d'IA juridique propriétaire pour l'analyse et la rédaction",
+            "features": [
+                "Analyse de faits juridiques",
+                "Rédaction professionnelle",
+                "Recherche juridique avancée"
+            ]
+        },
+        "s3": {
+            "title": "Analyse de Documents et Preuves",
+            "description": "Discutez directement avec des documents juridiques et des supports visuels",
+            "features": [
+                "Analyse PDF et Word",
+                "Extraction de données juridiques",
+                "Résumé intelligent"
+            ]
+        },
+        "s4": {
+            "title": "Représentation Visuelle des Faits",
+            "description": "Transformez les données en simulations visuelles de séquences d'événements",
+            "features": [
+                "Texte vers scène",
+                "Test de scénarios",
+                "Amélioration des preuves visuelles"
+            ]
+        },
+        "s5": {
+            "title": "Sécurité et Confidentialité",
+            "description": "Services numériques sécurisés incluant email crypté et stockage cloud",
+            "features": [
+                "Email crypté",
+                "VPN sécurisé",
+                "Stockage cloud crypté"
+            ]
+        },
+        "s6": {
+            "title": "Performance Exceptionnelle",
+            "description": "Traitement rapide avec priorité pour les travaux urgents",
+            "features": [
+                "Traitement prioritaire",
+                "Modèles avancés",
+                "Sauvegarde de session"
+            ]
+        }
+    },
+    "Contact": {
+        "title": "Contactez-nous",
+        "subtitle": "Nous sommes ici pour aider. Contactez-nous à tout moment.",
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "send": "Envoyer le message",
+        "sending": "Envoi en cours...",
+        "success": "Message envoyé avec succès !",
+        "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "ImageSection": {
+        "placeholder": "Image Illustrative",
+        "pending": "L'image sera ajoutée plus tard"
+    },
+    "FAQPage": {
+        "title": "Questions Fréquemment Posées",
+        "subtitle": "Réponses aux questions les plus courantes sur LegalAI",
+        "noAnswer": "Vous n'avez pas trouvé votre réponse ?",
+        "teamReady": "Notre équipe est prête à vous aider et à répondre à toutes vos questions",
+        "additionalResources": "Ressources Supplémentaires",
+        "aboutDesc": "Découvrez notre équipe, notre mission et notre vision",
+        "servicesDesc": "Découvrez tous les services que nous proposons",
+        "pricingDesc": "En savoir plus sur les plans tarifaires et les forfaits",
+        "q1": {
+            "question": "Qu'est-ce que la plateforme LegalAI ?",
+            "answer": "LegalAI est une plateforme de technologie juridique qui s'appuie sur l'intelligence artificielle pour soutenir l'analyse juridique, la rédaction de documents, l'interaction avec les documents et la représentation visuelle des faits juridiques, tout en respectant les normes professionnelles et la protection de la vie privée."
+        },
+        "q2": {
+            "question": "LegalAI remplace-t-il les avocats ?",
+            "answer": "Non. LegalAI est une plateforme d'assistance et non un substitut aux avocats ou à la prise de décision humaine. La plateforme vise à soutenir les professionnels du droit avec des outils d'analyse, de rédaction et de clarification qui les aident à travailler plus efficacement."
+        },
+        "q3": {
+            "question": "Quelle est la différence entre le chat juridique intermédiaire et le modèle juridique propriétaire ?",
+            "answer": "Le chat intermédiaire achemine les demandes entre plusieurs modèles d'IA pour sélectionner le plus adapté à chaque tâche, tandis que le chat juridique propriétaire s'appuie sur un modèle juridique détenu par la plateforme, spécifiquement configuré pour l'analyse juridique avancée et la rédaction."
+        },
+        "q4": {
+            "question": "Qu'entend-on par reconstruction visuelle des faits juridiques ?",
+            "answer": "C'est un service qui transforme des données non structurées telles que des rapports, des témoignages et des preuves en simulations visuelles qui illustrent la séquence des événements, visant à soutenir la compréhension et l'analyse juridiques et à améliorer les preuves visuelles."
+        },
+        "q5": {
+            "question": "Qui peut utiliser la plateforme LegalAI ?",
+            "answer": "La plateforme est conçue pour les praticiens du droit, les cabinets d'avocats, les chercheurs juridiques, les universitaires et les étudiants en droit, ainsi que les équipes juridiques au sein des organisations."
+        },
+        "q6": {
+            "question": "La plateforme est-elle conforme aux normes de confidentialité européennes et internationales ?",
+            "answer": "La plateforme a été conçue selon des principes stricts de protection des données et de gouvernance numérique, conformément aux exigences de confidentialité et de conformité applicables dans le contexte européen et international."
+        },
+        "q7": {
+            "question": "La plateforme nécessite-t-elle une expertise technique avancée ?",
+            "answer": "Non. L'interface de LegalAI est conçue pour être simple et conviviale, permettant aux professionnels du droit de bénéficier de ses capacités sans avoir besoin de connaissances techniques avancées."
+        },
+        "q8": {
+            "question": "Comment puis-je commencer à utiliser la plateforme ?",
+            "answer": "Vous pouvez commencer par créer un compte, puis sélectionner le service approprié et télécharger des documents ou saisir des faits, et la plateforme commencera à fournir le support analytique et rédactionnel requis."
+        },
+        "q9": {
+            "question": "Comment mes données sont-elles protégées ?",
+            "answer": "Nous appliquons les normes de cryptage et de sécurité les plus élevées à toutes les données. Nous fournissons des services de messagerie cryptée, un VPN sécurisé et un stockage cloud protégé. Vos données ne sont pas utilisées pour entraîner des modèles et ne sont pas partagées avec des tiers."
+        },
+        "q10": {
+            "question": "Qu'est-ce que le système de crédits ?",
+            "answer": "Le système de crédits est un système de tarification flexible qui vous permet de payer par utilisation. Chaque service a un coût spécifique en crédits, et vous pouvez acheter des crédits selon vos besoins."
+        }
+    },
+    "PricingPage": {
+        "heroTitle": "Détails des Prix et Services",
+        "heroSubtitle": "En savoir plus sur les coûts des services en crédits et les fonctionnalités détaillées de chaque forfait",
+        "creditCostsTitle": "Tableau des Coûts de Crédit de Service",
+        "customSolutionTitle": "Besoin d'une Solution Personnalisée ?",
+        "customSolutionDesc": "Pour les grandes entreprises et les organismes gouvernementaux, nous proposons des solutions personnalisées adaptées à votre échelle commerciale",
+        "contactSales": "Contacter les Ventes",
+        "categories": {
+            "legalChat": {
+                "title": "Chat Juridique",
+                "items": [
+                    {
+                        "name": "Question juridique simple",
+                        "cost": "1 crédit"
+                    },
+                    {
+                        "name": "Analyse juridique moyenne",
+                        "cost": "2 crédits"
+                    },
+                    {
+                        "name": "Consultation approfondie",
+                        "cost": "3 crédits"
+                    }
+                ]
+            },
+            "docDrafting": {
+                "title": "Rédaction & Révision de Documents",
+                "items": [
+                    {
+                        "name": "Créer un document juridique",
+                        "cost": "2 crédits"
+                    },
+                    {
+                        "name": "Réviser un document",
+                        "cost": "3 crédits"
+                    },
+                    {
+                        "name": "Résumer / Extraire des points",
+                        "cost": "2 crédits"
+                    },
+                    {
+                        "name": "Comparer deux documents",
+                        "cost": "3 crédits"
+                    }
+                ]
+            },
+            "docAnalysis": {
+                "title": "Analyse de Documents & Images",
+                "items": [
+                    {
+                        "name": "Document régulier (PDF)",
+                        "cost": "4 crédits"
+                    },
+                    {
+                        "name": "Dossier volumineux",
+                        "cost": "7 crédits"
+                    },
+                    {
+                        "name": "Analyse d'image / Preuve",
+                        "cost": "3 crédits"
+                    }
+                ]
+            },
+            "visualFacts": {
+                "title": "Reconstruction Visuelle des Faits",
+                "items": [
+                    {
+                        "name": "Analyse de la séquence des faits",
+                        "cost": "7 crédits"
+                    },
+                    {
+                        "name": "Simulation visuelle",
+                        "cost": "15 crédits"
+                    },
+                    {
+                        "name": "Simulation avancée",
+                        "cost": "23 crédits"
+                    },
+                    {
+                        "name": "Rapport méthodologique",
+                        "cost": "+4 crédits"
+                    }
+                ]
+            }
+        }
+    },
+    "AboutPage": {
+        "title": "À Propos de Nous",
+        "heroSubtitle": "LegalAI a été fondé pour répondre au besoin croissant d'outils intelligents aidant à faire face aux complexités du travail juridique moderne. Nous nous efforçons d'améliorer l'efficacité du travail juridique et la qualité de l'analyse et de la compréhension, sans compromettre le rôle essentiel de l'expertise juridique humaine ou l'indépendance de la prise de décision professionnelle.",
+        "transformTitle": "Transformez votre travail avec une IA basée sur un contenu de confiance",
+        "transformDesc1": "Maintenu par des experts axés sur la réduction de l'inexactitude et des biais algorithmiques. La plateforme a été développée par une équipe multidisciplinaire d'experts en droit, en technologies numériques et en intelligence artificielle, garantissant l'alignement des solutions techniques avec la logique juridique, l'éthique professionnelle et les exigences de conformité réglementaire.",
+        "transformDesc2": "Travaillez en toute confiance en sachant que vos données sensibles sont sécurisées, privées et non utilisées pour entraîner des modèles d'IA.",
+        "transformQuote": "Nous travaillons à l'intersection du droit et de la technologie, où une compréhension juridique approfondie rencontre une expertise technique avancée, visant à contribuer au développement d'un environnement juridique numérique plus efficace, clair et durable.",
+        "methodologyTitle": "Notre Méthodologie",
+        "methodologySubtitle": "Le travail de LegalAI est basé sur une approche responsable bâtie sur des principes solides",
+        "methodologyBelief": "Nous croyons que la technologie doit servir la compréhension juridique, et non la remplacer.",
+        "principles": {
+            "respect": {
+                "title": "Respect Humain",
+                "desc": "Respecter le rôle des humains et de l'expertise juridique comme fondement du travail."
+            },
+            "neutrality": {
+                "title": "Neutralité et Transparence",
+                "desc": "Engagement envers la neutralité, l'exactitude et la transparence dans tous les processus."
+            },
+            "ethics": {
+                "title": "Conformité Éthique",
+                "desc": "Respect strict des cadres réglementaires et des normes éthiques."
+            },
+            "accountability": {
+                "title": "Responsabilité",
+                "desc": "Construire des technologies explicables et responsables."
+            }
+        },
+        "visionTitle": "Notre Vision",
+        "visionDesc1": "Nous nous efforçons de contribuer à la construction d'un système juridique numérique moderne, où l'IA est un outil de soutien et d'analyse, et non un remplacement pour les avocats ou les instances judiciaires.",
+        "visionDesc2": "Notre vision se concentre sur l'autonomisation des professionnels du droit pour travailler dans un environnement numérique sûr et clair, conforme aux normes européennes et internationales.",
+        "teamTitle": "Notre Équipe",
+        "teamSubtitle": "L'équipe LegalAI est composée de spécialistes juridiques et techniques expérimentés, unis par une compréhension commune des défis auxquels la pratique juridique est confrontée à l'ère numérique.",
+        "teamQuote": "Cette diversité de connaissances permet le développement de solutions réfléchies combinant précision juridique et discipline technique.",
+        "teamRoles": {
+            "legal": {
+                "title": "Droit et Pratique Juridique",
+                "desc": "Experts expérimentés dans le travail juridique et la législation."
+            },
+            "software": {
+                "title": "Génie Logiciel",
+                "desc": "Ingénieurs professionnels construisant une infrastructure robuste."
+            },
+            "ai": {
+                "title": "IA et Traitement des Données",
+                "desc": "Scientifiques des données assurant la précision et l'efficacité des modèles."
+            },
+            "security": {
+                "title": "Sécurité de l'Information",
+                "desc": "Assurer la sécurité des données et la confidentialité des utilisateurs."
+            }
+        },
+        "valuesTitle": "Nos Valeurs",
+        "values": [
+            "Respect de l'éthique de la profession juridique",
+            "Développement de technologies respectueuses de leur impact juridique et social",
+            "La protection des données comme priorité, pas une option",
+            "Soutenir la prise de décision humaine, ne pas la remplacer"
+        ],
+        "commitmentTitle": "Notre Engagement",
+        "commitmentDesc": "LegalAI est une entité technologique indépendante qui ne fournit pas de conseils juridiques contraignants et n'intervient pas dans la prise de décision judiciaire ou professionnelle. Notre rôle se limite à la recherche, au développement et à la construction d'outils d'assistance améliorant la qualité du travail juridique dans un cadre institutionnel responsable."
+    },
+    "ServicesPage": {
+        "title": "Nos Services",
+        "subtitle": "Découvrez une gamme complète de services juridiques alimentés par l'IA",
+        "discoverMore": "Découvrir Plus",
+        "ctaTitle": "Prêt à Commencer ?",
+        "ctaSubtitle": "Contactez-nous dès aujourd'hui et découvrez comment nos services peuvent transformer votre travail juridique",
+        "ctaButton": "Contactez-nous"
+    },
+    "BlogPage": {
+        "title": "Blog",
+        "subtitle": "Derniers articles et perspectives sur la technologie juridique et l'IA",
+        "readMore": "Lire la suite",
+        "comingSoon": "Bientôt Disponible",
+        "comingSoonDesc": "Nous travaillons à la création de contenu précieux et à l'ajout d'articles spécialisés dans le domaine de la technologie juridique et de l'intelligence artificielle",
+        "newsletterTitle": "Abonnez-vous à la Newsletter",
+        "newsletterSubtitle": "Recevez les dernières mises à jour et articles directement dans votre email",
+        "emailPlaceholder": "Votre email",
+        "subscribeNow": "S'abonner Maintenant"
+    },
+    "ContactPage": {
+        "title": "Contactez-nous",
+        "subtitle": "Nous sommes là pour répondre à vos questions et vous aider à transformer votre travail juridique",
+        "contactInfo": "Coordonnées",
+        "email": "Email",
+        "phone": "Téléphone",
+        "offices": "Bureaux",
+        "sendMessage": "Envoyez-nous un message",
+        "fullName": "Nom Complet",
+        "fullNamePlaceholder": "Entrez votre nom complet",
+        "emailPlaceholder": "exemple@email.com",
+        "phoneOptional": "Numéro de téléphone (optionnel)",
+        "subject": "Sujet",
+        "subjectPlaceholder": "Sujet du message",
+        "message": "Message",
+        "messagePlaceholder": "Écrivez votre message ici...",
+        "sending": "Envoi en cours...",
+        "sendButton": "Envoyer le Message",
+        "successMessage": "Votre message a été envoyé avec succès ! Nous vous contacterons bientôt.",
+        "errorMessage": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer plus tard.",
+        "ctaTitle": "Prêt à Commencer ?",
+        "ctaSubtitle": "Laissez-nous vous aider à transformer votre travail juridique avec la puissance de l'IA"
+    },
+    "AiChatPage": {
+        "title": "Chat IA Multi-Modèles",
+        "subtitle": "La plateforme fournit un système de chat juridique avancé basé sur une architecture middleware propriétaire qui relie systématiquement plusieurs modèles d'IA, dirigeant chaque requête ou tâche vers le modèle le plus approprié. Cette approche vise à améliorer la précision des résultats, réduire les erreurs et garantir des réponses juridiques plus cohérentes et fiables, tout en protégeant les informations sensibles et personnelles filtrées par le modèle middleware.",
+        "mainDesc": "Legal AI fournit un système de chat juridique avancé fonctionnant via un modèle middleware propriétaire, qui relie intelligemment plusieurs modèles d'IA généraux et spécialisés, sélectionnant automatiquement le modèle le plus approprié en fonction de la nature de la question ou de la tâche.",
+        "mainDescTitle": "Chat juridique intermédiaire entre plusieurs modèles d'IA",
+        "coreFunctions": "Fonctions Principales",
+        "howItWorks": "Comment ça marche ?",
+        "howItWorksSteps": [
+            "Le modèle middleware analyse la nature de la question ou de la demande juridique, puis dirige le traitement vers le modèle le plus approprié en termes de contexte et de précision, coordonnant les résultats en une réponse cohérente et consistante.",
+            "Il agit comme une couche d'isolation et de sécurité entre l'utilisateur et les modèles d'IA externes."
+        ],
+        "benefits": "Avantages / Ce qui est inclus",
+        "functions": {
+            "routing": {
+                "title": "Routage Intelligent",
+                "desc": "Vers les modèles les plus performants, précis et efficaces"
+            },
+            "quality": {
+                "title": "Assurance Qualité",
+                "desc": "Garantir la qualité des réponses et réduire les erreurs liées à l'utilisation d'un seul modèle"
+            },
+            "crossCheck": {
+                "title": "Vérification Croisée",
+                "desc": "Améliorer la qualité des réponses par comparaison et vérification croisée"
+            },
+            "privacy": {
+                "title": "Protection de la Vie Privée",
+                "desc": "Applique des politiques de filtrage, d'anonymisation et maintient l'indépendance des données"
+            }
+        },
+        "benefitsList": {
+            "multiModel": {
+                "title": "Liaison Intelligente Multi-Modèles",
+                "desc": "Liaison intelligente entre plusieurs modèles d'IA"
+            },
+            "accuracy": {
+                "title": "Précision Améliorée et Résultats de Qualité Supérieure",
+                "desc": "Précision améliorée et résultats de qualité supérieure"
+            },
+            "review": {
+                "title": "Révision et Amélioration des Résultats",
+                "desc": "Réviser et améliorer les résultats avant de les afficher à l'utilisateur"
+            },
+            "security": {
+                "title": "Sécurité des Données et Confidentialité",
+                "desc": "Filtrage des données sensibles et protection de la vie privée"
+            },
+            "experience": {
+                "title": "Expérience Utilisateur Professionnelle",
+                "desc": "Expérience utilisateur professionnelle et fiable"
+            }
+        },
+        "ctaTitle": "Obtenez des Réponses Plus Précises et Sécurisées",
+        "ctaSubtitle": "Essayez le système de chat middleware qui combine l'intelligence de plusieurs modèles avec la sécurité des données",
+        "startChat": "Démarrer le Chat",
+        "browseServices": "Parcourir d'Autres Services"
+    },
+    "BlogSlugPage": {
+        "backToBlog": "Retour au Blog",
+        "shareArticle": "Partager l'article"
+    },
+    "BlogPosts": {
+        "post1": {
+            "slug": "future-of-ai-legal",
+            "title": "L'Avenir de l'IA dans le Domaine Juridique",
+            "excerpt": "Comment l'intelligence artificielle transforme la façon dont les avocats et les professionnels du droit travaillent, et quelles opportunités et défis nous attendent dans cette ère numérique rapide.",
+            "date": "1 Janvier 2025",
+            "author": "Équipe LegalAI",
+            "category": "Technologie Juridique",
+            "readTime": "8 minutes",
+            "imageGradient": "from-blue-100 to-blue-200",
+            "image": "/images/blog/ai-legal.png",
+            "content": "<h2>Introduction : Une Révolution Numérique dans les Tribunaux</h2><p>Le monde juridique connaît une transformation sans précédent. L'intelligence artificielle (IA) n'est plus un concept futuriste de science-fiction, mais une réalité quotidienne pour les avocats, les juges et les conseillers juridiques. Cette révolution numérique ne vise pas à remplacer l'élément humain, mais à améliorer ses capacités et permettre des niveaux d'efficacité et de précision sans précédent.</p><p>Dans cet article, nous explorerons en profondeur comment l'IA façonne l'avenir de la profession juridique, en examinant les outils disponibles, les avantages pratiques et les défis éthiques auxquels nous devons faire face.</p><h2>Automatisation Intelligente : Adieu aux Tâches Routinières</h2><p>L'une des applications les plus courantes et impactantes de l'IA est l'automatisation des tâches routinières et répétitives. Traditionnellement, les jeunes avocats passaient des heures, voire des jours, à examiner manuellement des contrats, chercher des failles ou relire des textes juridiques. Aujourd'hui, des systèmes d'IA avancés peuvent accomplir ces tâches en quelques minutes.</p><ul><li><strong>Examen de Contrats :</strong> Les algorithmes d'apprentissage automatique analysent des milliers de pages de contrats, identifient les clauses standard et soulignent les termes inhabituels ou les risques potentiels avec une précision parfois surhumaine.</li><li><strong>Classification E-Discovery :</strong> Dans les grandes affaires impliquant des millions de documents et d'emails, l'IA peut scanner et classer les preuves pertinentes à une vitesse vertigineuse, économisant énormément de temps et d'efforts aux équipes de défense et d'accusation.</li></ul><h2>Analyse Prédictive : Prévoir l'Avenir</h2><p>Peut-être le développement le plus passionnant de l'IA est la capacité de « prédire » les trajectoires des affaires. En analysant les données de milliers d'affaires précédentes, de décisions judiciaires et de comportements des juges, les systèmes intelligents peuvent fournir des évaluations probabilistes pour les résultats des nouvelles affaires.</p><blockquote>« L'IA ne vous dit pas seulement ce qui s'est passé avant, elle vous donne une carte des probabilités de ce qui pourrait arriver demain, permettant aux avocats de construire des stratégies de défense ou de négociation basées sur des données solides plutôt que sur une simple intuition. »</blockquote><h2>Défis Éthiques et Réglementaires</h2><p>Malgré les immenses avantages, l'intégration de l'IA dans le droit soulève de profondes questions éthiques :</p><ol><li><strong>Justice et Biais :</strong> Les algorithmes d'IA apprennent à partir de données historiques. Si ces données contiennent des biais (raciaux, de classe ou de genre), le système peut reproduire ces biais dans ses recommandations.</li><li><strong>Responsabilité Professionnelle :</strong> Si un système d'IA se trompe dans l'analyse d'une affaire et cause une perte au client, qui porte la responsabilité ?</li><li><strong>Confidentialité :</strong> La manipulation de quantités massives de données juridiques sensibles nécessite des procédures de sécurité strictes.</li></ol><h2>Conclusion : L'Avocat Augmenté</h2><p>L'avenir n'appartient ni à l'avocat qui craint la technologie ni à la machine travaillant seule. L'avenir appartient à « l'Avocat Augmenté » ; l'avocat qui possède une expertise juridique approfondie et une intuition humaine, mais qui est armé d'outils d'IA lui conférant des capacités surhumaines en recherche et en analyse.</p>"
+        },
+        "post2": {
+            "slug": "data-protection-legal",
+            "title": "L'Importance de la Protection des Données dans le Travail Juridique",
+            "excerpt": "Un guide complet pour protéger les données juridiques sensibles à l'ère des cyberattaques, et comment assurer la conformité de votre cabinet aux normes internationales.",
+            "date": "28 Décembre 2024",
+            "author": "Sécurité de l'Information",
+            "category": "Cybersécurité",
+            "readTime": "7 minutes",
+            "imageGradient": "from-green-100 to-green-200",
+            "image": "/images/blog/data-protection.png",
+            "content": "<h2>Les Données : La Nouvelle Devise de la Pratique Juridique</h2><p>À l'ère numérique, les actifs les plus précieux des cabinets d'avocats ne sont plus les bibliothèques de luxe ou les emplacements privilégiés, mais les « données ». Les informations clients, les secrets d'entreprise, les stratégies d'affaires et les communications privées forment un trésor d'informations sensibles. Et là où il y a un trésor, il y a des voleurs.</p><p>Les cabinets d'avocats sont devenus des cibles privilégiées pour les cyberattaques car ils sont considérés comme des « portes dérobées » pour accéder aux données des grandes entreprises et des personnalités importantes. Une seule brèche peut non seulement coûter des pertes financières au cabinet mais détruire sa réputation à jamais.</p><h2>Paysage Actuel des Menaces</h2><p>Les méthodes des pirates évoluent constamment, rendant la défense un défi continu. Les principales menaces auxquelles le secteur juridique est confronté incluent :</p><ul><li><strong>Ransomware :</strong> Les attaquants chiffrent tous les fichiers du cabinet et exigent une rançon (généralement en crypto-monnaie) pour le déchiffrement. Refuser de payer peut signifier perdre les données à jamais ou les voir fuiter publiquement.</li><li><strong>Phishing :</strong> Les emails qui semblent légitimes visent à tromper les avocats pour qu'ils révèlent des mots de passe ou téléchargent des logiciels malveillants.</li><li><strong>Attaques de la Chaîne d'Approvisionnement :</strong> Cibler le cabinet en piratant les fournisseurs de services technologiques avec lesquels le cabinet travaille.</li></ul><h2>Stratégies de Défense et de Protection</h2><p>La protection ne consiste pas seulement à installer un logiciel antivirus. C'est un système intégré de technologies et de politiques :</p><h3>1. Chiffrement de Bout en Bout</h3><p>Toutes les données doivent être chiffrées, qu'elles soient stockées sur des serveurs (Au Repos) ou lors de la transmission sur internet (En Transit). L'utilisation d'emails chiffrés et d'applications de messagerie sécurisées n'est pas un luxe mais une nécessité.</p><h3>2. Authentification Multi-Facteurs (MFA)</h3><p>Les mots de passe seuls ne suffisent plus. Activer l'authentification à deux facteurs (2FA) ajoute une couche de protection cruciale.</p><h3>3. Sauvegardes</h3><p>La dernière ligne de défense contre les ransomwares est d'avoir des sauvegardes récentes et isolées (Hors ligne) des données du cabinet.</p><h2>Culture de Cybersécurité</h2><p>Le pare-feu le plus puissant du monde ne vous protégera pas si un employé ouvre un lien suspect. La formation continue et la sensibilisation à la sécurité pour tous les employés du cabinet est l'investissement le plus important.</p>"
+        },
+        "post3": {
+            "slug": "legal-research-efficiency",
+            "title": "Comment Améliorer l'Efficacité de la Recherche Juridique",
+            "excerpt": "Conseils et techniques pour accélérer la recherche et l'analyse juridiques à l'aide d'outils modernes, réduisant l'effort et augmentant la précision des résultats.",
+            "date": "15 Décembre 2024",
+            "author": "Sara Mahmoud",
+            "category": "Productivité",
+            "readTime": "4 minutes",
+            "imageGradient": "from-purple-100 to-purple-200",
+            "image": "/images/blog/legal-research.png",
+            "content": "<h2>Le Défi de l'Information à l'Âge Moderne</h2><p>La recherche juridique est l'épine dorsale de toute affaire réussie. Mais au milieu d'une inflation législative massive et de précédents judiciaires s'accumulant jour après jour, trouver des informations précises est devenu comme chercher une aiguille dans une botte de foin. Les méthodes traditionnelles reposant sur des recherches manuelles dans des volumes papier ou même de simples recherches par mots-clés ne suffisent plus à suivre l'accélération des affaires.</p><p>L'efficacité de la recherche ne signifie pas seulement la rapidité, mais aussi l'exhaustivité et la précision. Comment l'avocat moderne peut-il s'assurer qu'il n'a pas négligé un précédent judiciaire récent qui pourrait faire pencher la balance de son affaire ?</p><h2>Outils de Recherche Intelligents : Au-delà des Mots-Clés</h2><p>La nouvelle génération de moteurs de recherche juridique utilise le Traitement du Langage Naturel (NLP) pour comprendre le « sens » et pas seulement faire correspondre les mots.</p><ul><li><strong>Recherche Conceptuelle :</strong> Vous pouvez rechercher un concept juridique comme « mauvaise foi dans les contrats commerciaux » et le système récupérera les affaires connexes même si elles ne mentionnent pas explicitement « mauvaise foi » mais ont utilisé des termes synonymes ou décrit la situation.</li><li><strong>Citations Intelligentes :</strong> Des outils qui vous montrent immédiatement comment cette disposition juridique a été traitée dans les décisions précédentes, et si elle est toujours en vigueur ou a été annulée ou modifiée.</li></ul><h2>Méthodologie de Recherche Efficace : 5 Étapes Pratiques</h2><ol><li><strong>Commencez par les Sources Secondaires :</strong> Avant de plonger dans les textes primaires, commencez par des articles jurisprudentiels et des résumés juridiques pour former une compréhension globale.</li><li><strong>Formulez Votre Requête de Recherche avec Précision :</strong> Utilisez des opérateurs booléens comme ET, OU, NON pour restreindre la portée de la recherche et filtrer les résultats non pertinents.</li><li><strong>Utilisez les Filtres Sagement :</strong> Ne perdez pas de temps à lire des décisions très anciennes ou provenant de tribunaux sans compétence. Filtrez les résultats par date, tribunal et sujet.</li><li><strong>Suivez le Chemin de la Décision :</strong> Utilisez des outils de « Shepardizing » ou similaires pour vous assurer que la décision que vous citez est toujours « Bonne Loi ».</li><li><strong>Organisez Vos Résultats Immédiatement :</strong> Ne comptez pas sur votre mémoire. Utilisez des outils de gestion de références pour enregistrer et organiser les textes et notes avec des liens directs vers les sources.</li></ol><h2>Conclusion</h2><p>Améliorer l'efficacité de la recherche juridique est une compétence acquise qui nécessite un mélange de maîtrise des outils technologiques modernes et l'adoption d'une méthodologie de recherche disciplinée. Le temps que vous économisez en recherche de routine est du temps que vous pouvez investir dans la réflexion stratégique et l'élaboration d'arguments.</p>"
+        }
+    },
+    "LegalModelPage": {
+        "title": "Chat Juridique avec le Modèle Propriétaire de LegalAI",
+        "subtitle": "La plateforme comprend un onglet de chat séparé propulsé par un modèle juridique détenu par LegalAI, spécifiquement conçu pour l'analyse des faits, la rédaction de textes et la création de modèles et documents juridiques.",
+        "mainDescTitle": "Chat avec le Modèle Propriétaire de LegalAI (Analyse – Rédaction – Création)",
+        "mainDesc": "Un onglet de chat juridique propulsé par un modèle d'IA juridique propriétaire développé spécifiquement pour soutenir l'analyse juridique et la rédaction selon une logique professionnelle disciplinée.",
+        "howItWorks": "Comment ça marche ?",
+        "howItWorksSteps": [
+            "Le modèle commence par comprendre les entrées juridiques fournies par l'utilisateur, qu'il s'agisse de faits, de questions ou de textes juridiques.",
+            "Il analyse ensuite le contenu en fonction de sa structure juridique et de sa logique analytique, en se référant à une base de connaissances juridiques mise à jour.",
+            "Ensuite, il produit des sorties juridiques organisées, cohérentes et professionnellement utilisables, en tenant compte de la précision de la rédaction et des exigences du contexte."
+        ],
+        "coreFunctions": "Fonctions Principales",
+        "functions": {
+            "analysis": {
+                "title": "Analyse des Faits Juridiques",
+                "desc": "Et décomposition logique"
+            },
+            "drafting": {
+                "title": "Rédaction de Textes et Documents Juridiques",
+                "desc": "Dans un style professionnel"
+            },
+            "templates": {
+                "title": "Création de Modèles Juridiques",
+                "desc": "Pétitions et mémorandums"
+            },
+            "rewriting": {
+                "title": "Réécriture Juridique Précise",
+                "desc": "Et amélioration du style"
+            },
+            "research": {
+                "title": "Soutien à la Recherche Juridique",
+                "desc": "Et analyse académique"
+            },
+            "context": {
+                "title": "Lier les Faits au Contexte Juridique",
+                "desc": "Et à la législation appropriée"
+            }
+        },
+        "features": "Fonctionnalités / Ce qui est inclus ?",
+        "featuresList": {
+            "specialized": {
+                "title": "Modèle Juridique Spécialisé",
+                "desc": "Conçu spécifiquement pour un usage juridique, pas un modèle général."
+            },
+            "knowledge": {
+                "title": "Base de Connaissances Juridiques Étendue",
+                "desc": "Comprend des lois, des références académiques et des études jurisprudentielles spécialisées."
+            },
+            "precision": {
+                "title": "Structure et Précision de la Rédaction",
+                "desc": "Concentration sur la logique juridique, la séquence et le style professionnel."
+            },
+            "updates": {
+                "title": "Mises à Jour Régulières",
+                "desc": "Suivre le rythme des derniers amendements législatifs et tendances jurisprudentielles."
+            },
+            "support": {
+                "title": "Soutien Professionnel et Académique",
+                "desc": "Convient aux praticiens du droit, chercheurs, universitaires et étudiants en droit."
+            },
+            "timeSaving": {
+                "title": "Gain de Temps et d'Effort",
+                "desc": "Réduire le temps passé à l'analyse et à la rédaction tout en maintenant la qualité."
+            }
+        },
+        "ctaTitle": "Commencer l'Analyse et la Rédaction Maintenant",
+        "ctaSubtitle": "Bénéficiez de la puissance du modèle spécialisé de LegalAI pour soutenir votre travail juridique",
+        "tryService": "Essayer le Service",
+        "browseServices": "Parcourir d'Autres Services"
+    },
+    "DocumentAnalysisPage": {
+        "title": "Analyse de Documents et Preuves Numériques",
+        "subtitle": "Dans le même onglet de chat séparé propulsé par le modèle juridique, vous pouvez discuter directement avec des documents juridiques et des matériaux visuels, y compris des fichiers texte, des images et des preuves.",
+        "mainDescTitle": "Chat Dédié aux Documents et Images",
+        "mainDesc": "Un service avancé qui permet un chat direct avec des documents juridiques et des matériaux visuels dans un onglet de chat séparé propulsé par le modèle juridique propriétaire de la plateforme. Ce service permet aux utilisateurs de comprendre des fichiers juridiques complexes rapidement et avec précision, sans examen manuel fastidieux, tout en conservant un contrôle total sur les données et la confidentialité.",
+        "mainDesc2": "Les utilisateurs peuvent analyser le contenu, le résumer, le comparer et extraire des éléments clés, reliant les documents au contexte juridique de l'affaire sans examen manuel fastidieux.",
+        "designedFor": "Conçu pour une Interaction Directe avec",
+        "legalDocs": "Documents Juridiques",
+        "legalDocsFormats": "PDF – Word – Scans",
+        "visualEvidence": "Images et Preuves Visuelles",
+        "visualFormats": "Photos d'accidents, documents scannés, cartes",
+        "capabilities": "Capacités",
+        "capabilitiesList": [
+            "Analyser un document complet sans lecture manuelle",
+            "Résumer, comparer, extraire des points clés",
+            "Poser des questions directes sur le contenu du fichier",
+            "Lier des images et des documents au texte juridique"
+        ],
+        "howItWorks": "Comment Fonctionne le Service ?",
+        "howItWorksSteps": [
+            "L'utilisateur télécharge des documents ou des matériaux visuels dans l'onglet de chat dédié.",
+            "Le modèle juridique lit et comprend l'intégralité du contenu dans son contexte juridique, puis permet l'interaction de l'utilisateur par le biais de questions naturelles ou de commandes spécifiques (résumer, comparer, extraire des éléments).",
+            "Les résultats sont présentés dans une rédaction juridique organisée, en maintenant la confidentialité des données sans partage ou utilisation en dehors de la portée de la demande, avec les informations sensibles et personnelles filtrées par le modèle intermédiaire."
+        ],
+        "features": "Fonctionnalités / Ce qui est inclus",
+        "featuresList": {
+            "directChat": {
+                "title": "Chat Direct avec les Fichiers",
+                "desc": "Poser des questions juridiques sur le document lui-même sans lire chaque page"
+            },
+            "fastAnalysis": {
+                "title": "Analyse Précise et Rapide",
+                "desc": "Compréhension instantanée de fichiers complexes, économisant du temps et des efforts"
+            },
+            "smartExtraction": {
+                "title": "Résumé et Extraction Intelligents",
+                "desc": "Identifier les faits, les réclamations, les parties et les dates clés"
+            },
+            "visualAnalysis": {
+                "title": "Analyse de Preuves Visuelles",
+                "desc": "Manipulation d'images et de matériaux visuels et lien avec des faits juridiques"
+            },
+            "comparison": {
+                "title": "Comparaison de Documents",
+                "desc": "Mise en évidence des différences et des similitudes entre plusieurs versions ou différents fichiers"
+            },
+            "dataControl": {
+                "title": "Contrôle Total des Données",
+                "desc": "L'utilisateur conserve un contrôle total sur les fichiers, sans les utiliser pour l'entraînement ou les partager avec des tiers"
+            }
+        },
+        "ctaTitle": "Parlez à Vos Documents",
+        "ctaSubtitle": "Analysez et comprenez vos fichiers juridiques en quelques secondes",
+        "startNow": "Commencer Maintenant",
+        "browseServices": "Parcourir d'Autres Services"
+    },
+    "VisualFactsPage": {
+        "title": "Reconstitution Visuelle des Faits Juridiques",
+        "subtitle": "Un service avancé pour transformer des données non structurées et des récits complexes — tels que des rapports de police, des témoignages, des preuves matérielles, des photos, des cartes et des données spatiales — en simulations visuelles qui reproduisent la séquence des événements tels qu'ils sont présumés s'être produits.",
+        "subtitleHighlight": "Nous ne présentons pas seulement des preuves, nous rendons la vérité visible.",
+        "mainDescTitle": "Reconstitution Visuelle des Faits Juridiques",
+        "mainDesc": "La reconstitution visuelle des faits juridiques est un service juridique avancé visant à transformer des données non structurées et des récits complexes en simulations visuelles organisées qui reproduisent la séquence des événements tels qu'ils sont présumés s'être produits, sur la base des faits et preuves fournis.",
+        "mainDesc2": "Ce service permet aux praticiens du droit de passer d'une description textuelle abstraite à une représentation visuelle claire qui aide à la compréhension, à l'analyse et à l'interprétation juridique précise.",
+        "howItWorks": "Comment ça Marche ?",
+        "howItWorksSteps": [
+            "L'utilisateur commence par fournir au système les données disponibles sur l'affaire, telles que des rapports, des témoignages, des photos, des cartes et des données spatiales.",
+            "L'IA analyse ces entrées et comprend les relations entre les personnes, les lieux, les temps et les événements, puis agit comme un réalisateur numérique, un directeur de la photographie et un acteur pour construire une représentation visuelle séquentielle.",
+            "L'utilisateur peut examiner la simulation résultante et tester des scénarios alternatifs en modifiant des hypothèses, permettant une compréhension plus profonde de l'incident sous différents angles."
+        ],
+        "features": "Fonctionnalités / Ce qui est inclus",
+        "featuresList": {
+            "dataVisual": {
+                "title": "Transformer des Données Non Structurées en Scène Visuelle",
+                "desc": "De rapports et témoignages dispersés à un récit visuel intégré."
+            },
+            "deepUnderstanding": {
+                "title": "Compréhension Plus Approfondie des Faits",
+                "desc": "Faciliter la compréhension des relations temporelles et spatiales entre les événements."
+            },
+            "testScenarios": {
+                "title": "Tester des Scénarios",
+                "desc": "Comparer différentes hypothèses basées sur les mêmes données."
+            },
+            "visualEvidence": {
+                "title": "Renforcer la Force de la Preuve Visuelle",
+                "desc": "Une image vaut mille mots, surtout dans les cas complexes."
+            },
+            "contradictions": {
+                "title": "Détecter les Contradictions Potentielles",
+                "desc": "Mettre en évidence les conflits logiques ou physiques entre différents récits."
+            },
+            "support": {
+                "title": "Outil de Support Juridique, Pas un Remplacement de la Décision Humaine",
+                "desc": "Utilisé comme une aide analytique et illustrative dans le cadre professionnel."
+            }
+        },
+        "useCases": "Que Peut-on Reconstituer ?",
+        "useCasesList": {
+            "traffic": "Accidents de la Route",
+            "realEstate": "Litiges Immobiliers et de Construction",
+            "timeline": "Affaires Dépendantes d'une Chronologie Complexe",
+            "educational": "Objectifs Éducatifs et Formation Juridique",
+            "visual": "Faits Visuellement"
+        },
+        "ctaTitle": "Rendez la Vérité Visible",
+        "ctaSubtitle": "Transformez vos affaires complexes en simulations visuelles claires et convaincantes",
+        "bookConsultation": "Réserver une Consultation Gratuite",
+        "browseServices": "Parcourir d'Autres Services"
+    },
+    "SecurityPage": {
+        "title": "Sécurité et Confidentialité Numérique",
+        "subtitle": "LegalAI accorde la plus haute importance à la protection des données et à la confidentialité des informations, reconnaissant la sensibilité du travail juridique et les exigences de confiance et de conformité.",
+        "overview": "La plateforme fournit une suite complète de services numériques sécurisés, spécifiquement conçus pour protéger les communications, les fichiers et l'identité numérique des utilisateurs, dans un cadre garantissant un contrôle total sur les données.",
+        "coreFunctions": "Fonctions Principales",
+        "coreFunctionsList": [
+            "Sécuriser les communications juridiques sensibles",
+            "Protéger l'identité numérique et empêcher le suivi",
+            "Stocker en toute sécurité les affaires et fichiers juridiques",
+            "Garantir la confidentialité des données pendant le stockage et le transfert",
+            "Permettre aux utilisateurs d'avoir un contrôle total sur leurs données et leurs droits d'accès"
+        ],
+        "howItWorks": "Comment Fonctionne le Système de Sécurité et de Confidentialité ?",
+        "howItWorksDesc": "Des outils numériques sécurisés sont fournis qui fonctionnent indépendamment des modèles d'IA, avec un engagement envers le principe que les données appartiennent uniquement à l'utilisateur, et ne sont pas utilisées pour l'entraînement ou partagées avec un tiers.",
+        "howItWorksDesc2": "Toutes les opérations sont gérées selon des politiques strictes de confidentialité et de contrôle d'accès.",
+        "servicesTitle": "Que Comprend le Service ?",
+        "emailService": {
+            "title": "Email Chiffré",
+            "desc": "Email dédié pour les communications juridiques sensibles, avec chiffrement complet de la correspondance et des pièces jointes et haute protection contre le suivi ou l'accès non autorisé.",
+            "features": [
+                "Chiffrement complet de la correspondance et des pièces jointes",
+                "Haute protection contre le suivi ou l'accès non autorisé",
+                "Adapté à la communication professionnelle et juridique"
+            ]
+        },
+        "vpnService": {
+            "title": "Service VPN Sécurisé",
+            "desc": "Protéger l'identité numérique et masquer l'adresse IP, avec chiffrement complet du trafic internet et prévention du suivi et de la surveillance pour fournir un environnement de travail juridique sécurisé en ligne.",
+            "features": [
+                "Protéger l'identité numérique et masquer l'adresse IP",
+                "Chiffrement complet du trafic internet",
+                "Prévention du suivi et de la surveillance"
+            ]
+        },
+        "cloudService": {
+            "title": "Stockage Cloud Chiffré",
+            "desc": "Stocker des affaires et des fichiers sensibles avec chiffrement complet, avec un contrôle précis sur les permissions d'accès et la capacité de partager des fichiers en toute sécurité si nécessaire.",
+            "features": [
+                "Stocker des affaires et des fichiers sensibles avec chiffrement complet",
+                "Contrôle précis sur les permissions d'accès",
+                "Capacité de partager des fichiers en toute sécurité si nécessaire"
+            ]
+        },
+        "principlesTitle": "Principes de Gouvernance et de Confidentialité",
+        "principles": {
+            "dataControl": {
+                "title": "Contrôle Total des Données",
+                "desc": "L'utilisateur conserve un contrôle total sur ses données"
+            },
+            "noTraining": {
+                "title": "Données Non Utilisées pour l'Entraînement",
+                "desc": "Les données ne sont pas utilisées pour entraîner des modèles d'IA"
+            },
+            "noSharing": {
+                "title": "Aucun Partage avec des Tiers",
+                "desc": "Les informations ne sont pas partagées avec des tiers"
+            },
+            "compliance": {
+                "title": "Respect des Normes Réglementaires",
+                "desc": "Respect strict des exigences de confidentialité et de conformité"
+            }
+        },
+        "ctaTitle": "Protégez Vos Données Juridiques",
+        "ctaSubtitle": "Commencez à travailler dans un environnement entièrement sécurisé et chiffré",
+        "contactUs": "Contactez-nous",
+        "backToServices": "Retour aux Services"
+    },
+    "Common": {
+        "loading": "Chargement...",
+        "error": "Une erreur s'est produite",
+        "retry": "Réessayer",
+        "back": "Retour",
+        "next": "Suivant",
+        "previous": "Précédent",
+        "close": "Fermer",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "delete": "Supprimer",
+        "edit": "Modifier",
+        "view": "Voir",
+        "search": "Rechercher",
+        "filter": "Filtrer",
+        "sort": "Trier",
+        "selectLanguage": "Sélectionner la langue"
+    }
+}

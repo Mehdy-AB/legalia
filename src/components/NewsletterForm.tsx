@@ -3,8 +3,10 @@
 import { useState } from 'react'
 import { Send } from 'lucide-react'
 import { submitToGoogleSheet } from '@/lib/googleSheets'
+import { useTranslations } from 'next-intl'
 
 export default function NewsletterForm() {
+    const t = useTranslations('Footer')
     const [email, setEmail] = useState('')
     const [loading, setLoading] = useState(false)
     const [status, setStatus] = useState<{ type: 'success' | 'error' | null, message: string }>({ type: null, message: '' })
@@ -21,11 +23,11 @@ export default function NewsletterForm() {
                 type: 'newsletter',
                 email: email
             })
-            setStatus({ type: 'success', message: 'تم الاشتراك بنجاح!' })
+            setStatus({ type: 'success', message: t('subscribeSuccess') })
             setEmail('')
         } catch (error) {
             console.error(error)
-            setStatus({ type: 'error', message: 'حدث خطأ. حاول مرة أخرى.' })
+            setStatus({ type: 'error', message: t('subscribeError') })
         } finally {
             setLoading(false)
         }
@@ -33,16 +35,15 @@ export default function NewsletterForm() {
 
     return (
         <div className="mt-8">
-            <h4 className="font-bold text-lg mb-4">اشترك في نشرتنا البريدية</h4>
+            <h4 className="font-bold text-lg mb-4">{t('newsletterTitle')}</h4>
             <form onSubmit={handleSubmit} className="space-y-2">
                 <div className="flex gap-2">
                     <input
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="بريدك الإلكتروني"
+                        placeholder={t('emailPlaceholder')}
                         className="flex-1 bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 text-sm"
-                        dir="rtl"
                         required
                     />
                     <button

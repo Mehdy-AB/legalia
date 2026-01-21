@@ -66,7 +66,7 @@ export default function Home() {
   const faqs = ['q1', 'q2', 'q3', 'q4']
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
       {/* Video Hero Section */}
       <VideoHero />
 
@@ -82,8 +82,8 @@ export default function Home() {
       </video>
 
       {/* Mission Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5" />
+      <section className="py-24 bg-white dark:bg-gray-900 relative overflow-hidden transition-colors duration-300">
+        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5 dark:opacity-10 dark:invert" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -91,55 +91,55 @@ export default function Home() {
               {/* Text Content */}
               <div className="space-y-10">
                 <div className="space-y-6">
-                  <div className="inline-block px-4 py-1.5 bg-amber-100 text-amber-800 rounded-full text-sm font-bold tracking-wide uppercase">
+                  <div className="inline-block px-4 py-1.5 bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 rounded-full text-sm font-bold tracking-wide uppercase transition-colors duration-300">
                     {t('whoWeAre')}
                   </div>
-                  <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                    {t('acceleratingMastery')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-700">{t('masteryHighlight')}</span>
+                  <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                    {t('acceleratingMastery')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-700 dark:from-amber-400 dark:to-amber-600">{t('masteryHighlight')}</span>
                   </h2>
-                  <p className="text-xl text-gray-600 leading-relaxed font-light">
+                  <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-light">
                     {t('missionIntro')}
                   </p>
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                     {t('missionDetail')}
                   </p>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-8">
                   <div className="space-y-3">
-                    <h4 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
                       <div className="w-10 h-1 rounded bg-amber-500"></div> {t('ourMission')}
                     </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                       {t('ourMissionText')}
                     </p>
                   </div>
                   <div className="space-y-3">
-                    <h4 className="text-xl font-bold text-gray-900 flex items-center gap-2">
-                      <div className="w-10 h-1 rounded bg-slate-800"></div> {t('ourApproach')}
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      <div className="w-10 h-1 rounded bg-slate-800 dark:bg-slate-700"></div> {t('ourApproach')}
                     </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                       {t('ourApproachText')}
                     </p>
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center pt-4 border-t border-gray-100">
+                <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center pt-4 border-t border-gray-100 dark:border-gray-800">
                   <div className="flex items-center gap-8">
                     <div>
-                      <div className="text-3xl font-extrabold text-amber-600">150+</div>
-                      <div className="text-sm font-medium text-gray-500 uppercase tracking-wider">{t('clientsServed')}</div>
+                      <div className="text-3xl font-extrabold text-amber-600 dark:text-amber-500">150+</div>
+                      <div className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t('clientsServed')}</div>
                     </div>
-                    <div className="w-px h-12 bg-gray-200"></div>
+                    <div className="w-px h-12 bg-gray-200 dark:bg-gray-700"></div>
                     <div>
-                      <div className="text-3xl font-extrabold text-slate-800">98%</div>
-                      <div className="text-sm font-medium text-gray-500 uppercase tracking-wider">{t('successRate')}</div>
+                      <div className="text-3xl font-extrabold text-slate-800 dark:text-gray-200">98%</div>
+                      <div className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t('successRate')}</div>
                     </div>
                   </div>
 
                   <Link
                     href="/about"
-                    className="group inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                    className="group inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-amber-600 text-white rounded-xl font-bold hover:bg-gray-800 dark:hover:bg-amber-500 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                   >
                     {t('moreAboutUs')}
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -149,8 +149,8 @@ export default function Home() {
 
               {/* Video Content */}
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-slate-900/20 rounded-[2.5rem] transform rotate-3 scale-105 blur-2xl"></div>
-                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/50 h-[500px]">
+                <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-slate-900/20 dark:from-amber-500/10 dark:to-slate-900/40 rounded-[2.5rem] transform rotate-3 scale-105 blur-2xl"></div>
+                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white/50 dark:border-gray-700/50 h-[500px]">
                   <video
                     autoPlay
                     loop
@@ -175,21 +175,21 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-slate-50 dark:bg-black transition-colors duration-300">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2">
               {t('mainServices')}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6 rounded-full" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               {t('discoverServices')}
             </p>
             <div className="flex justify-center mb-6">
               <img
                 src="/images/خدماتنا الرئيسية.jpg"
                 alt={t('mainServices')}
-                className="w-64 md:w-96 h-auto object-contain"
+                className="w-64 md:w-96 h-auto object-contain dark:opacity-80 dark:hover:opacity-100 transition-opacity"
               />
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function Home() {
               >
                 {/* Video Content */}
                 <div className={index % 2 === 0 ? 'md:order-1' : 'md:order-2'}>
-                  <div className={`bg-white rounded-2xl border border-gray-100 shadow-xl h-[300px] md:h-[350px] relative overflow-hidden group hover:border-amber-400/30 transition-colors duration-500`}>
+                  <div className={`bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-xl h-[300px] md:h-[350px] relative overflow-hidden group hover:border-amber-400/30 transition-colors duration-500`}>
                     <video
                       autoPlay
                       loop
@@ -221,23 +221,23 @@ export default function Home() {
                   <div className={`w-14 h-14 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-amber-500/20`}>
                     <service.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                     {tServices(`${service.key}.title`)}
                   </h2>
-                  <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                     {tServices(`${service.key}.description`)}
                   </p>
                   <div className="space-y-2 mb-6">
                     {(tServices.raw(`${service.key}.features`) as string[]).map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-2">
                         <CheckCircle className="w-5 h-5 text-amber-500" />
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-gray-700 dark:text-gray-400">{feature}</span>
                       </div>
                     ))}
                   </div>
                   <Link
                     href={`/services/${service.id}`}
-                    className={`inline-flex items-center gap-2 px-6 py-3 bg-white border border-amber-200 text-amber-700 rounded-lg font-semibold hover:bg-amber-50 hover:border-amber-300 transition-all duration-300 group`}
+                    className={`inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-800 border border-amber-200 dark:border-amber-700 text-amber-700 dark:text-amber-400 rounded-lg font-semibold hover:bg-amber-50 dark:hover:bg-gray-700 hover:border-amber-300 transition-all duration-300 group`}
                   >
                     {t('discoverMore')}
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -256,16 +256,16 @@ export default function Home() {
       <PricingSection />
 
       {/* Blog Preview Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-amber-50 text-amber-600 rounded-full text-sm font-semibold mb-4 border border-amber-100">
+            <div className="inline-block px-4 py-2 bg-amber-50 dark:bg-amber-900/30 text-amber-600 dark:text-amber-300 rounded-full text-sm font-semibold mb-4 border border-amber-100 dark:border-amber-800">
               {t('blog')}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               {t('latestArticles')}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               {t('followNews')}
             </p>
           </div>
@@ -275,9 +275,9 @@ export default function Home() {
               <Link
                 key={post.id}
                 href={`/blog/${post.slug}`}
-                className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-amber-400 transition-all duration-300 hover:shadow-xl block h-full"
+                className="group bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:border-amber-400 dark:hover:border-amber-500 transition-all duration-300 hover:shadow-xl block h-full"
               >
-                <div className={`h-48 bg-gray-100 flex items-center justify-center relative overflow-hidden`}>
+                <div className={`h-48 bg-gray-100 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden`}>
                   {post.image ? (
                     <img
                       src={post.image}
@@ -285,20 +285,20 @@ export default function Home() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   ) : (
-                    <FileText className="w-16 h-16 text-gray-300 group-hover:text-amber-500 transition-colors duration-500" />
+                    <FileText className="w-16 h-16 text-gray-300 dark:text-gray-500 group-hover:text-amber-500 transition-colors duration-500" />
                   )}
                 </div>
                 <div className="p-6">
-                  <span className="inline-block px-3 py-1 bg-amber-50 text-amber-700 rounded-full text-xs font-semibold mb-3 border border-amber-100">
+                  <span className="inline-block px-3 py-1 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-semibold mb-3 border border-amber-100 dark:border-amber-800">
                     {post.category}
                   </span>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors line-clamp-2">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors line-clamp-2">
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
                     {post.excerpt}
                   </p>
-                  <div className="flex items-center justify-between text-sm text-gray-500 mt-auto">
+                  <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mt-auto">
                     <span>{post.date}</span>
                     <ArrowRight className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform text-amber-500" />
                   </div>
@@ -310,7 +310,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 px-8 py-4 border border-gray-300 text-gray-700 rounded-xl font-semibold hover:border-amber-400 hover:text-amber-600 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-200 rounded-xl font-semibold hover:border-amber-400 hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300"
             >
               {t('viewAllArticles')}
               <ArrowRight className="w-5 h-5" />
@@ -320,34 +320,34 @@ export default function Home() {
       </section>
 
       {/* FAQ Preview Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-slate-50 dark:bg-black transition-colors duration-300">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-slate-200 text-slate-700 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block px-4 py-2 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full text-sm font-semibold mb-4">
               {t('faq')}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               {t('haveQuestions')}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               {t('commonQuestions')}
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-4">
             {faqs.map((key, index) => (
-              <details key={index} className="group bg-white rounded-2xl border border-gray-200 hover:border-amber-400 transition-all duration-300">
+              <details key={index} className="group bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-amber-400 dark:hover:border-amber-500 transition-all duration-300">
                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-amber-600 transition-colors ml-4">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors ml-4">
                     {tFaq(`${key}`)}
                   </h3>
-                  <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0">
+                  <div className="w-6 h-6 text-gray-400 dark:text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
                 </summary>
-                <div className="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                <div className="px-6 pb-6 text-gray-600 dark:text-gray-300 leading-relaxed border-t border-gray-100 dark:border-gray-800 pt-4">
                   {tFaq(`a${key.substring(1)}`)}
                 </div>
               </details>
@@ -357,7 +357,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/faq"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-700 rounded-xl font-semibold border border-gray-200 hover:border-amber-400 hover:text-amber-600 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 rounded-xl font-semibold border border-gray-200 dark:border-gray-800 hover:border-amber-400 hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300"
             >
               {t('viewAllQuestions')}
               <ArrowRight className="w-5 h-5" />
@@ -367,7 +367,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-slate-900 text-white">
+      <section className="py-20 bg-slate-900 dark:bg-gray-950 text-white transition-colors duration-300">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-amber-500">
             {t('readyToTransform')}

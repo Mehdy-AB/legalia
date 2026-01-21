@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { routing, isRtlLocale } from '@/i18n/routing'
 import { notFound } from 'next/navigation'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,12 +43,19 @@ export default async function LocaleLayout({
     const dir = isRtlLocale(locale) ? 'rtl' : 'ltr'
 
     return (
-        <html lang={locale} dir={dir}>
-            <body className={`${inter.className} min-h-screen bg-white text-gray-800`}>
+        <html lang={locale} dir={dir} suppressHydrationWarning>
+            <body className={`${inter.className} min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300`}>
                 <NextIntlClientProvider messages={messages}>
-                    <Header />
-                    <main>{children}</main>
-                    <Footer />
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="system"
+                        enableSystem
+                        disableTransitionOnChange
+                    >
+                        <Header />
+                        <main>{children}</main>
+                        <Footer />
+                    </ThemeProvider>
                 </NextIntlClientProvider>
             </body>
         </html>

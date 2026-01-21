@@ -60,10 +60,10 @@ export default function ModernServiceCard({
 
                 {/* Content */}
                 <div className="relative z-10">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-blue-600 transition-colors">
                         {title}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed transition-colors">
                         {description}
                     </p>
                 </div>
